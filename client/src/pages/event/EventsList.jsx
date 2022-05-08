@@ -1,6 +1,7 @@
 import useFetch from "../../hooks/useFetch";
 import DeleteButton from "../../components/DeleteButton";
 import EditButton from "../../components/EditButton";
+import { toLocaleDate } from "../../helpers/DateFormatter";
 import { useEffect, useState } from "react";
 
 const EventsList = () => {
@@ -37,7 +38,7 @@ const EventsList = () => {
                   <th scope="row">{index + 1}</th>
                   <td>{event.id}</td>
                   <td>{event.name}</td>
-                  <td>{event.date}</td>
+                  <td>{toLocaleDate(event.date)}</td>
                   <td>
                     <EditButton to={"/edit-event/" + event.id} />
                   </td>
