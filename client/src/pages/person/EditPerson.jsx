@@ -1,7 +1,5 @@
-import React from "react";
-
 const EditPerson = () => {
-  return <div>EditPerson</div>;
+  return <h1 className="text-center mt-5">EditPerson</h1>;
 };
 
 export default EditPerson;

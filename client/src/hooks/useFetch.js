@@ -16,7 +16,7 @@ const useFetch = (
 
   useEffect(() => {
     setLoading(true);
-    fetch(config.server + url, { method, body, headers })
+    fetch(config.SERVER_ADDRESS + url, { method, body, headers })
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => setError(error))

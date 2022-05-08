@@ -1,7 +1,5 @@
-import React from "react";
-
 const EventsList = () => {
-  return <div>EventsList</div>;
+  return <h1 className="text-center mt-5">EventsList</h1>;
 };
 
 export default EventsList;

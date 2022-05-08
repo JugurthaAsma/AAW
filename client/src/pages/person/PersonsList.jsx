@@ -14,7 +14,7 @@ const PersonsList = () => {
 
   return (
     <>
-      <h1>Persons List</h1>
+      <h1 className="text-center mt-5">Persons List</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {persons && (

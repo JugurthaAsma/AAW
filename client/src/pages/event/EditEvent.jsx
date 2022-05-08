@@ -1,7 +1,5 @@
-import React from "react";
-
 const EditEvent = () => {
-  return <div>EditEvent</div>;
+  return <h1 className="text-center mt-5">EditEvent</h1>;
 };
 
 export default EditEvent;
