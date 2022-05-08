@@ -1,5 +1,6 @@
 import useFetch from "../../hooks/useFetch";
 import DeleteButton from "../../components/DeleteButton";
+import EditButton from "../../components/EditButton";
 import { useEffect, useState } from "react";
 
 const PersonsList = () => {
@@ -38,7 +39,7 @@ const PersonsList = () => {
                   <td>{person.first_name}</td>
                   <td>{person.last_name}</td>
                   <td>
-                    <button className="btn btn-warning">Edit</button>
+                    <EditButton to={"/edit-person/" + person.id} />
                   </td>
                   <td>
                     <DeleteButton url={"/person"} id={person.id} callback={setPersons} />

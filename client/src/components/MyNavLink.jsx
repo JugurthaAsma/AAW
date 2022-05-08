@@ -4,7 +4,7 @@ import "../styles/components/NavBar.css";
 
 const MyNavLink = ({ text, to, icon }) => {
   return (
-    <NavLink className="my-navlink  navbar-brand" activeClassName={"nav-item active"} to={to}>
+    <NavLink className="my-navlink  navbar-brand" to={to}>
       <div className="icon">{icon}</div>
       <div className="title">{text}</div>
     </NavLink>

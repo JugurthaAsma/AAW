@@ -27,11 +27,11 @@ function App() {
             <Routes>
               <Route path="/persons" element={<PersonsList />} />
               <Route path="/add-person" element={<AddPerson />} />
-              <Route path="/edit-person" element={<EditPerson />} />
+              <Route path="/edit-person/:id" element={<EditPerson />} />
 
               <Route path="/events" element={<EventsList />} />
               <Route path="/add-event" element={<AddEvent />} />
-              <Route path="/edit-event" element={<EditEvent />} />
+              <Route path="/edit-event/:id" element={<EditEvent />} />
 
               <Route path="*" element={<ErrorPage />} />
             </Routes>

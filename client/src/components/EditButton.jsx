@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const EditButton = ({ to, text = "Edit" }) => {
   let navigate = useNavigate();
   return (
-    <button onClick={navigate({ to })} className="btn btn-warning">
+    <button onClick={() => navigate(to)} className="btn btn-warning">
       {text}
     </button>
   );

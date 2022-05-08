@@ -9,6 +9,7 @@ app.use(express.json());
 
 // Routes
 
+// persons
 /**
  * Create a new person
  */
@@ -78,6 +79,7 @@ app.delete("/person/:id", async (req, res) => {
   }
 });
 
+// events
 /**
  * Create a new event
  */
