@@ -1,30 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import MyNavLink from "./MyNavLink";
+import { PeopleFill, PersonPlusFill, PersonXFill, CalendarEventFill, CalendarPlusFill, CalendarXFill } from "react-bootstrap-icons";
+
 import "../styles/components/NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <NavLink className="navbar-brand" activeClassName to="/persons">
-        Persons
-      </NavLink>
+    <nav className="my-navbar d-flex flex-column navbar navbar-expand-lg navbar-dark">
+      <MyNavLink icon={<PeopleFill />} text="Persons" to="/persons" />
+      <MyNavLink icon={<PersonPlusFill />} text="Add Person" to="/add-person" />
 
-      <NavLink className="navbar-brand" activeClassName={"nav-item active"} to="/add-person">
-        Add Person
-      </NavLink>
-      <NavLink className="navbar-brand" activeClassName={"nav-item active"} to="/edit-person">
-        Edit Person
-      </NavLink>
-
-      <NavLink className="navbar-brand" activeClassName={"nav-item active"} to="/events">
-        Events
-      </NavLink>
-      <NavLink className="navbar-brand" activeClassName={"nav-item active"} to="/add-event">
-        Add Event
-      </NavLink>
-      <NavLink className="navbar-brand" activeClassName={"nav-item active"} to="/edit-event">
-        Edit Event
-      </NavLink>
+      <MyNavLink icon={<CalendarEventFill />} text="Events" to="/Events" />
+      <MyNavLink icon={<CalendarPlusFill />} text="Add Event" to="/add-event" />
     </nav>
   );
 };

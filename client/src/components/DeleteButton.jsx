@@ -1,6 +1,6 @@
 import config from "../config";
 
-const DeleteButton = ({ url, id, callback }) => {
+const DeleteButton = ({ url, id, callback, text = "X" }) => {
   const handleDelete = () => {
     fetch(config.SERVER_ADDRESS + url + "/" + id, { method: "DELETE" })
       .then((response) => response.json())
@@ -13,7 +13,7 @@ const DeleteButton = ({ url, id, callback }) => {
 
   return (
     <button className="btn btn-danger" onClick={handleDelete}>
-      X
+      {text}
     </button>
   );
 };
