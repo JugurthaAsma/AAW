@@ -9,7 +9,7 @@ import EditEvent from "./pages/event/EditEvent";
 
 import ErrorPage from "./pages/ErrorPage";
 
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";

@@ -1,6 +1,6 @@
 import React from "react";
 import MyNavLink from "./MyNavLink";
-import { PeopleFill, PersonPlusFill, PersonXFill, CalendarEventFill, CalendarPlusFill, CalendarXFill } from "react-bootstrap-icons";
+import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill } from "react-bootstrap-icons";
 
 import "../styles/components/NavBar.css";
 
