@@ -16,3 +16,22 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+/**
+* fade animation for the main page
+*/
+.animated-fadeIn > * {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/**
+* fade animation for the main page
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

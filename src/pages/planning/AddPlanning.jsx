@@ -4,7 +4,7 @@ import Input from "../../components/form/Input";
 
 const AddPlanning = () => {
   const [name, setName] = useState("");
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState();
 
   return (
     <>
@@ -14,7 +14,7 @@ const AddPlanning = () => {
           <Input value={name} placeholder="Enter the planning's name" onChange={(e) => setName(e.target.value)} />
         </div>
         <div className="col-md-5">
-          <Input value={date} type={"date"} placeholder="Enter the planning's date" onChange={(e) => setDate(e.target.value)} />
+          <Input value={date} type="date" placeholder="Enter the planning's date" onChange={(e) => setDate(e.target.value)} />
         </div>
         <div className="col-md-1">
           <AddButton url="/planning" body={{ name, date }} redirect="/plannings" />

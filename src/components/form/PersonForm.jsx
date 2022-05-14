@@ -9,13 +9,22 @@ const PersonForm = ({ title, url, method = "GET" }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(config.SERVER_ADDRESS + url + (method === "GET" && "/" + firstName + "/" + lastName));
 
-    fetch(config.SERVER_ADDRESS + url + (method === "GET" && "/" + firstName + "/" + lastName), {
+    let finalUrl = config.SERVER_ADDRESS + url;
+    let body = JSON.stringify({ firstName, lastName });
+
+    if (method === "GET") {
+      finalUrl += "/" + firstName + "/" + lastName;
+      body = null;
+    }
+
+    console.log("fetching : ", finalUrl);
+
+    fetch(finalUrl, {
       method: method,
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" }, // making preflight request ???
       // if method is GET, we don't need to send the body
-      body: method === "GET" ? null : JSON.stringify({ firstName, lastName }),
+      body,
     })
       .then((response) => {
         console.log(response);

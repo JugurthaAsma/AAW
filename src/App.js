@@ -30,7 +30,7 @@ function App() {
         <main>
           <NavBar />
 
-          <div className="container d-flex flex-column align-items-center justify-content-center">
+          <div className="animated-fadeIn container d-flex flex-column align-items-center justify-content-center">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
