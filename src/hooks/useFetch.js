@@ -13,14 +13,23 @@ const useFetch = (
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  //console.log("useFetch: ", config.SERVER_ADDRESS + url);
 
   useEffect(() => {
     setLoading(true);
-    fetch(config.SERVER_ADDRESS + url, { method, body, headers })
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => setError(error))
-      .finally(() => setLoading(false));
+    const fetchData = async () => {
+      try {
+        const response = await fetch(config.SERVER_ADDRESS + url, { method, body, headers });
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return { data, error, loading };

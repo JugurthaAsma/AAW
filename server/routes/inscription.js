@@ -10,7 +10,7 @@ const pgClient = require("../database/db");
 app.get("/", async (req, res) => {
   try {
     const inscriptions = await pgClient.query("SELECT * FROM inscription");
-    res.json(inscriptions.rows);
+    res.send(inscriptions.rows);
   } catch (error) {
     console.error(error.message);
   }
@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
     const { planning_id, personne_id, manche_id } = req.body;
     // create a new manche
     const newInscription = await pgClient.query("INSERT INTO inscription (planning_id, personne_id, manche_id) VALUES ($1, $2, $3) RETURNING *", [planning_id, personne_id, manche_id]);
-    res.json(newInscription.rows[0]);
+    res.send(newInscription.rows[0]);
   } catch (error) {
     console.error(error.message);
   }
@@ -38,7 +38,7 @@ app.get("/planning/:planning_id", async (req, res) => {
   try {
     const { planning_id } = req.params;
     const inscriptions = await pgClient.query("SELECT * FROM inscription WHERE planning_id = $1", [planning_id]);
-    res.json(inscriptions.rows);
+    res.send(inscriptions.rows);
   } catch (error) {
     console.error(error.message);
   }
@@ -51,7 +51,7 @@ app.get("/personne/:personne_id", async (req, res) => {
   try {
     const { personne_id } = req.params;
     const inscriptions = await pgClient.query("SELECT * FROM inscription WHERE personne_id = $1", [personne_id]);
-    res.json(inscriptions.rows);
+    res.send(inscriptions.rows);
   } catch (error) {
     console.error(error.message);
   }
@@ -64,7 +64,7 @@ app.get("/manche/:manche_id", async (req, res) => {
   try {
     const { manche_id } = req.params;
     const inscriptions = await pgClient.query("SELECT * FROM inscription WHERE manche_id = $1", [manche_id]);
-    res.json(inscriptions.rows);
+    res.send(inscriptions.rows);
   } catch (error) {
     console.error(error.message);
   }
@@ -77,7 +77,7 @@ app.get("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const inscription = await pgClient.query("SELECT * FROM inscription WHERE id = $1", [id]);
-    res.json(inscription.rows[0]);
+    res.send(inscription.rows[0]);
   } catch (error) {
     console.error(error.message);
   }
@@ -91,7 +91,7 @@ app.put("/:id", async (req, res) => {
     const { id } = req.params;
     const { planning_id, personne_id, manche_id } = req.body;
     const updateInscription = await pgClient.query("UPDATE inscription SET planning_id = $1, personne_id = $2, manche_id = $3 WHERE id = $4 RETURNING *", [planning_id, personne_id, manche_id, id]);
-    res.json(updateInscription.rows[0]);
+    res.send(updateInscription.rows[0]);
   } catch (error) {
     console.error(error.message);
   }

@@ -6,8 +6,8 @@ import { toLocaleDate } from "../../helpers/DateFormatter";
 import { Trash, Pen, Eye } from "react-bootstrap-icons";
 
 const PlanningsList = () => {
-  const { data, error, loading } = useFetch("/planning");
   const [plannings, setPlannings] = useState([]);
+  const { data, error, loading } = useFetch("/planning");
 
   useEffect(() => {
     if (data) {

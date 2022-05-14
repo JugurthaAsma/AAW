@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Input from "./Input";
 import config from "../../config";
 import "../../styles/components/PersonForm.css";
+import AuthenticationContext from "../../hooks/AuthenticationContext";
 
 const PersonForm = ({ title, url, method = "GET" }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+
+  const { setToken } = useContext(AuthenticationContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,6 +16,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
     let finalUrl = config.SERVER_ADDRESS + url;
     let body = JSON.stringify({ firstName, lastName });
 
+    // if method is GET, pass the params in the url
     if (method === "GET") {
       finalUrl += "/" + firstName + "/" + lastName;
       body = null;
@@ -23,18 +27,28 @@ const PersonForm = ({ title, url, method = "GET" }) => {
     fetch(finalUrl, {
       method: method,
       headers: { "Content-Type": "application/json" }, // making preflight request ???
-      // if method is GET, we don't need to send the body
       body,
     })
-      .then((response) => {
-        console.log(response);
-        response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log("person ", data);
+        handleLogin(data);
       })
       .catch((error) => console.log(error));
   };
+
+  /**
+   * login
+   * put the token in the AuthenticationContext
+   * redirect to /plannings
+   * @param {String} data.token - the token
+   * @param {String} data.role - the role
+   */
+  const handleLogin = (data) => {
+    console.log("login", data.token, data.role);
+    setToken(data.token);
+  };
+
   return (
     <div className="person-form">
       <h1 className="text-center mt-5">{title}</h1>

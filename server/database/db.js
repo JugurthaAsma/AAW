@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 
 // initialize dotenv to read the .env file
 dotenv.config();
-console.log("connectiong to database : ", process.env.POSTGRESQL_ADDON_URI);
+console.log("connecting to database : ", process.env.POSTGRESQL_ADDON_URI);
 
 // initialize the database configuration
 const pgClient = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
