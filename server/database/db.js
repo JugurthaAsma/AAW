@@ -1,12 +1,15 @@
+// import librairies
+const pg = require("pg");
+const dotenv = require("dotenv");
+
+// initialize dotenv to read the .env file
+dotenv.config();
+console.log("connectiong to database : ", process.env.POSTGRESQL_ADDON_URI);
+
+// initialize the database configuration
+const pgClient = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
+
 // connect to postgres database
-const Pool = require("pg").Pool;
+pgClient.connect();
 
-const pool = new Pool({
-  user: "postgres",
-  password: "postgres",
-  database: "AAW",
-  host: "localhost",
-  port: 5432,
-});
-
-module.exports = pool;
+module.exports = pgClient;

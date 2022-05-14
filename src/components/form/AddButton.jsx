@@ -1,7 +1,9 @@
 import React from "react";
-import config from "../config";
+import config from "../../config";
+import { useNavigate } from "react-router-dom";
 
-const AddButton = ({ url, body, text = "+" }) => {
+const AddButton = ({ url, body, redirect, content = "+" }) => {
+  let navigate = useNavigate();
   const handleAdd = (e) => {
     e.preventDefault();
 
@@ -11,13 +13,17 @@ const AddButton = ({ url, body, text = "+" }) => {
       body: JSON.stringify(body),
     })
       .then((response) => response.json())
-      .then((data) => console.log("add ", data))
+      .then((data) => {
+        console.log("add ", data);
+        console.log("redirect to ", redirect);
+        navigate(redirect);
+      })
       .catch((error) => console.log(error));
   };
 
   return (
     <button className="btn btn-success" onClick={handleAdd}>
-      {text}
+      {content}
     </button>
   );
 };

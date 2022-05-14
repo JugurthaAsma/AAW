@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AddButton from "../../components/AddButton";
-import Input from "../../components/Input";
+import AddButton from "../../components/form/AddButton";
+import Input from "../../components/form/Input";
 
 const AddPerson = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,7 +17,7 @@ const AddPerson = () => {
           <Input value={lastName} placeholder="Enter the last name" onChange={(e) => setLastName(e.target.value)} />
         </div>
         <div className="col-md-1">
-          <AddButton url={"/person"} body={{ firstName, lastName }} />
+          <AddButton url="/person" body={{ firstName, lastName }} redirect="/persons" />
         </div>
       </div>
     </>
