@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import AddButton from "../../components/form/AddButton";
 import Input from "../../components/form/Input";
+import RoleNeedComponent from "../../components/RoleNeedComponent";
 
 const AddPerson = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
   return (
-    <>
+    <RoleNeedComponent neededRole="user">
       <h1 className="text-center mt-5">Add a person</h1>
       <div className="d-flex mt-5 row">
         <div className="col-md-5">
@@ -20,7 +21,7 @@ const AddPerson = () => {
           <AddButton url="/person" body={{ firstName, lastName }} redirect="/persons" />
         </div>
       </div>
-    </>
+    </RoleNeedComponent>
   );
 };
 

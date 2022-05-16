@@ -14,8 +14,7 @@ const AddButton = ({ url, body, redirect, content = "+" }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("add ", data);
-        console.log("redirect to ", redirect);
+        // console.log("add ", data, ", redirect to ", redirect);
         navigate(redirect);
       })
       .catch((error) => console.log(error));

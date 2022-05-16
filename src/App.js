@@ -2,8 +2,6 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
-import RoleNeedComponent from "./components/RoleNeedComponent";
-
 import PersonsList from "./pages/person/PersonsList";
 import AddPerson from "./pages/person/AddPerson";
 import EditPerson from "./pages/person/EditPerson";
@@ -47,17 +45,13 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
-
                 <Route path="/persons" element={<PersonsList />} />
-                <Route path="/add-person" element={<RoleNeedComponent neededRole="user" element={<AddPerson />} />} />
+                <Route path="/add-person" element={<AddPerson />} />
                 <Route path="/edit-person/:id" element={<EditPerson />} />
-
                 <Route path="/plannings" element={<PlanningsList />} />
                 <Route path="/add-planning" element={<AddPlanning />} />
                 <Route path="/edit-planning/:id" element={<EditPlanning />} />
-
                 <Route path="/manches/planning/:id" element={<ManchesList />} />
-
                 <Route path="*" element={<ErrorPage />} />
               </Routes>
             </div>

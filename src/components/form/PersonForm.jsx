@@ -22,7 +22,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
       body = null;
     }
 
-    console.log("fetching : ", finalUrl);
+    //console.log("fetching : ", finalUrl);
 
     fetch(finalUrl, {
       method: method,
@@ -31,7 +31,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("person ", data);
+        //console.log("person ", data);
         handleLogin(data);
       })
       .catch((error) => console.log(error));
@@ -45,7 +45,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
    * @param {String} data.role - the role
    */
   const handleLogin = (data) => {
-    console.log("login", data.token, data.role);
+    //console.log("login", data.token, data.role);
     setToken(data.token);
   };
 

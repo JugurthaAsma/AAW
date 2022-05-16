@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import AddButton from "../../components/form/AddButton";
 import Input from "../../components/form/Input";
+import RoleNeedComponent from "../../components/RoleNeedComponent";
 
 const AddPlanning = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState();
 
   return (
-    <>
+    <RoleNeedComponent neededRole="user">
       <h1 className="text-center mt-5">Add a planning</h1>
       <div className="d-flex mt-5 row">
         <div className="col-md-5">
@@ -20,7 +21,7 @@ const AddPlanning = () => {
           <AddButton url="/planning" body={{ name, date }} redirect="/plannings" />
         </div>
       </div>
-    </>
+    </RoleNeedComponent>
   );
 };
 

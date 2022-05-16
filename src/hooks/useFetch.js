@@ -30,7 +30,7 @@ const useFetch = (
     };
 
     fetchData();
-  }, []);
+  }, [url]);
 
   return { data, error, loading };
 };

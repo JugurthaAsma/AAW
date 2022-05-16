@@ -10,11 +10,9 @@ const useAuthentication = (expected = "user", redirect = "/login") => {
   const { token } = useContext(authenticationContext);
   const { data /*error, loading*/ } = useFetch("/authentication/role/" + token);
 
-  // console.log("data: ", data);
-
   useEffect(() => {
     if (data) {
-      console.log("setting role: ", data.role);
+      // console.log("setting role: ", data.role);
       if (data.role === expected) {
         setRole(data.role);
       } else {

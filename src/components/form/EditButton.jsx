@@ -15,8 +15,7 @@ const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("edit ", data);
-        console.log("redirect to ", redirect);
+        // console.log("edit ", data, ", redirect to ", redirect);
         navigate(redirect);
       })
       .catch((error) => console.log(error));

@@ -8,8 +8,7 @@ const DeleteButton = ({ url, id, callback, redirect, content = "X" }) => {
     fetch(config.SERVER_ADDRESS + url + "/" + id, { method: "DELETE" })
       .then((response) => response.json())
       .then((data) => {
-        console.log("delete ", data);
-        console.log("redirect to ", redirect);
+        // console.log("delete ", data, ", redirect to ", redirect);
         // navigate(redirect); // redirect to the same page seems to be buggy (it doesn't remove the row)
         // so we use a callback instead, (callback expected to be the setState of the parent component)
         callback((elems) => elems.filter((elem) => elem.id !== id));
