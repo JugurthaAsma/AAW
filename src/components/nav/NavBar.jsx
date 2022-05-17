@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="my-navbar d-flex flex-column navbar navbar-expand-lg navbar-dark">
       {NavBarData.map((nav) => (
-        <RoleNeedComponent key={nav.title} neededRole={nav.neededRole}>
+        <RoleNeedComponent key={nav.title} name={nav.title} neededRole={nav.neededRole}>
           <MyNavLink title={nav.title} to={nav.link} icon={nav.icon} />
         </RoleNeedComponent>
       ))}

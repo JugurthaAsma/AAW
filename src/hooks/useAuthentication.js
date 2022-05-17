@@ -19,6 +19,7 @@ const useAuthentication = (expected = "user", redirect = "/login") => {
         navigate(redirect);
       }
     }
+    // eslint-disable-next-line
   }, [data]);
 
   return { role };
