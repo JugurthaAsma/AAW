@@ -2,7 +2,7 @@ const express = require("express");
 const app = express.Router();
 const pgClient = require("../database/db");
 const { tokenExpirationDate } = require("../utils/util");
-
+const { myQuery } = require("../database/db");
 const roles = {
   admin: "admin",
   user: "user",
@@ -18,24 +18,29 @@ const roles = {
  * if he is found, create a token in the token table
  * and send it back to the client
  */
-app.get("/login/:firstName/:lastName", async (req, res) => {
-  console.log("GET /person/:firstName/:lastName");
-  try {
-    const { firstName, lastName } = req.params;
-    const person = await pgClient.query("SELECT * FROM person WHERE first_name = $1 AND last_name = $2", [firstName, lastName]);
-    if (person.rows.length === 0) {
-      res.send({ error: "Person not found" });
+app.post("/login", async (req, res) => {
+  console.log("POST /authentication/login");
+
+  const { firstName, lastName } = req.body;
+  myQuery("SELECT * FROM person WHERE first_name = $1 AND last_name = $2", [firstName, lastName], (err, result) => {
+    if (err || result.rows.length === 0) {
+      res.sendStatus(401);
     } else {
-      console.log("person found", person.rows[0].id, " token expiration date: ", tokenExpirationDate());
-      const token = await pgClient.query("INSERT INTO token (person_id, expired_date) VALUES ($1, $2) RETURNING *", [person.rows[0].id, tokenExpirationDate()]);
-      res.send({
-        token: token.rows[0].token,
-        role: roles.user,
+      const person = result.rows[0];
+      const expiration = tokenExpirationDate();
+      console.log("person found", person.id, " token expiration date: ", expiration);
+      myQuery("INSERT INTO token (person_id, expired_date) VALUES ($1, $2) RETURNING *", [person.id, expiration], (err, result) => {
+        if (err) {
+          res.sendStatus(401);
+        } else {
+          const token = result.rows[0].token;
+          console.log("token created", token);
+          res.cookie("token", token);
+          res.sendStatus(200);
+        }
       });
     }
-  } catch (error) {
-    console.error(error.message);
-  }
+  });
 });
 
 /**
@@ -45,17 +50,14 @@ app.get("/login/:firstName/:lastName", async (req, res) => {
  */
 app.get("/logout/:token", async (req, res) => {
   console.log("GET /logout/:token");
-  try {
-    const { token } = req.params;
-    const result = await pgClient.query("DELETE FROM token WHERE token = $1", [token]);
-    if (result.rowCount === 0) {
-      res.send({ error: "Token not found" });
+  const { token } = req.params;
+  myQuery("DELETE FROM token WHERE token = $1", [token], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
     } else {
-      res.send({ success: "Logout successful" });
+      res.send("logout success");
     }
-  } catch (error) {
-    console.error(error.message);
-  }
+  });
 });
 
 /**

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express.Router();
 const pgClient = require("../database/db");
+const { myQuery } = require("../database/db");
 
 // plannings
 
@@ -8,27 +9,31 @@ const pgClient = require("../database/db");
  * Create a new planning
  */
 app.post("/", async (req, res) => {
-  try {
-    // destructure the request body to get the name and date
-    const { name, date } = req.body;
-    // create a new planning
-    const newPlanning = await pgClient.query("INSERT INTO planning (name, date) VALUES ($1, $2) RETURNING *", [name, date]);
-    res.send(newPlanning.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  // destructure the request body to get the name and date
+  const { name, date } = req.body;
+  console.log("create a new planning ", name, date);
+  // create a new planning
+  myQuery("INSERT INTO planning (name, date) VALUES ($1, $2) RETURNING *", [name, date], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
  * Get all plannings
  */
 app.get("/", async (req, res) => {
-  try {
-    const plannings = await pgClient.query("SELECT * FROM planning");
-    res.send(plannings.rows);
-  } catch (error) {
-    console.error(error.message);
-  }
+  console.log("get all plannings");
+  myQuery("SELECT * FROM planning", [], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows);
+    }
+  });
 });
 
 /**

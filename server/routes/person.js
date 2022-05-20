@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express.Router();
 const pgClient = require("../database/db");
+const { myQuery } = require("../database/db");
 
 // persons
 
@@ -9,16 +10,16 @@ const pgClient = require("../database/db");
  */
 app.post("/", async (req, res) => {
   console.log("POST /person");
-  try {
-    // destructure the request body to get the firstname and lastname
-    const { firstName, lastName } = req.body;
-    // create a new person
-    const newPerson = await pgClient.query("INSERT INTO person (first_name, last_name) VALUES ($1, $2) RETURNING *", [firstName, lastName]);
-
-    res.send(newPerson.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  // destructure the request body to get the firstname and lastname
+  const { firstName, lastName } = req.body;
+  // create a new person
+  myQuery("INSERT INTO person (first_name, last_name) VALUES ($1, $2) RETURNING *", [firstName, lastName], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
@@ -26,12 +27,14 @@ app.post("/", async (req, res) => {
  */
 app.get("/", async (req, res) => {
   console.log("GET /person");
-  try {
-    const persons = await pgClient.query("SELECT * FROM person");
-    res.send(persons.rows);
-  } catch (error) {
-    console.error(error.message);
-  }
+
+  myQuery("SELECT * FROM person", [], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows);
+    }
+  });
 });
 
 /**
@@ -39,14 +42,16 @@ app.get("/", async (req, res) => {
  */
 app.get("/:id", async (req, res) => {
   console.log("GET /person/:id");
-  try {
-    // console.log(req.params);
-    const { id } = req.params;
-    const person = await pgClient.query("SELECT * FROM person WHERE id = $1", [id]);
-    res.send(person.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+
+  const { id } = req.params;
+
+  myQuery("SELECT * FROM person WHERE id = $1", [id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
@@ -71,14 +76,16 @@ app.get("/:firstName/:lastName", async (req, res) => {
  */
 app.put("/:id", async (req, res) => {
   console.log("PUT /person/:id");
-  try {
-    const { id } = req.params;
-    const { firstName, lastName } = req.body;
-    const updatePerson = await pgClient.query("UPDATE person SET first_name = $1, last_name = $2 WHERE id = $3 RETURNING *", [firstName, lastName, id]);
-    res.send(updatePerson.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  const { id } = req.params;
+  const { firstName, lastName } = req.body;
+
+  myQuery("UPDATE person SET first_name = $1, last_name = $2 WHERE id = $3 RETURNING *", [firstName, lastName, id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
@@ -86,13 +93,15 @@ app.put("/:id", async (req, res) => {
  */
 app.delete("/:id", async (req, res) => {
   console.log("DELETE /person/:id");
-  try {
-    const { id } = req.params;
-    const deletePerson = await pgClient.query("DELETE FROM person WHERE id = $1 RETURNING *", [id]);
-    res.send(deletePerson.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  const { id } = req.params;
+
+  myQuery("DELETE FROM person WHERE id = $1 RETURNING *", [id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 module.exports = {

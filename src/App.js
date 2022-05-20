@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
@@ -25,11 +25,18 @@ import Footer from "./components/layout/Footer";
 import "./styles/App.css";
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [person, setPerson] = useState({
+    firstName: "",
+    lastName: "",
+    role: "visitor",
+  });
+
   let AuthenticationContextValue = {
-    token,
-    setToken,
+    person,
+    setPerson,
   };
+
+  console.log("App person:", person);
 
   return (
     <AuthenticationContext.Provider value={AuthenticationContextValue}>
@@ -43,6 +50,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
+
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/persons" element={<PersonsList />} />

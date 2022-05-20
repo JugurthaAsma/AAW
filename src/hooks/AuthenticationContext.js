@@ -1,6 +1,10 @@
 import React from "react";
 
 export default React.createContext({
-  token: null,
-  setToken: () => {},
+  person: {
+    firstName: "",
+    lastName: "",
+    role: "visitor",
+  },
+  setPerson: () => {},
 });

@@ -12,4 +12,23 @@ const pgClient = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
 // connect to postgres database
 pgClient.connect();
 
-module.exports = pgClient;
+const myQuery = (query, values, callback) => {
+  try {
+    pgClient.query(query, values, (err, result) => {
+      if (err) {
+        console.error(err.message);
+        callback(err, null);
+      } else {
+        callback(null, result);
+      }
+    });
+  } catch (error) {
+    console.error(error.message);
+    callback(error, null);
+  }
+};
+
+module.exports = {
+  pgClient,
+  myQuery,
+};

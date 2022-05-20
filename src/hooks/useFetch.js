@@ -19,7 +19,7 @@ const useFetch = (
     setLoading(true);
     const fetchData = async () => {
       try {
-        const response = await fetch(config.SERVER_ADDRESS + url, { method, body, headers });
+        const response = await fetch(config.SERVER_ADDRESS + url, { method, body, headers, credentials: "include" });
         const data = await response.json();
         setData(data);
       } catch (error) {

@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 //const cors = require("cors");
 const pgClient = require("./database/db");
+const { myQuery } = require("./database/db");
+const cookieParser = require("cookie-parser");
 
 const path = require("path");
 
@@ -15,12 +17,49 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(cookieParser());
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "../build")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+// filters
+
+// admin filter
+app.use("*/admin", (req, res, next) => {
+  console.log("je suis dans le filtre admin");
+  // get the token from the cookie
+  const { token } = req.cookies;
+  console.log("token: ", token);
+
+  // get the person role from person table with the token from the token table
+  myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
+    if (err || result.rows.length === 0 || result.rows[0].role !== "admin") {
+      res.sendStatus(401);
+    } else {
+      next();
+    }
+  });
+});
+
+// user filter
+app.use("*/user", (req, res, next) => {
+  console.log("je suis dans le filtre user");
+  // get the token from the cookie
+  const { token } = req.cookies;
+  console.log("token: ", token);
+
+  // get the person role from person table with the token from the token table
+  myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
+    if (err || result.rows.length === 0 || result.rows[0].role !== "user") {
+      res.sendStatus(401);
+    } else {
+      next();
+    }
+  });
 });
 
 // Routes

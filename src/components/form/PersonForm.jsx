@@ -3,16 +3,17 @@ import Input from "./Input";
 import config from "../../config";
 import "../../styles/components/PersonForm.css";
 import AuthenticationContext from "../../hooks/AuthenticationContext";
+import Cookies from "js-cookie";
 
 const PersonForm = ({ title, url, method = "GET" }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
-  const { setToken } = useContext(AuthenticationContext);
+  const { setPerson } = useContext(AuthenticationContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log("****************************************");
     let finalUrl = config.SERVER_ADDRESS + url;
     let body = JSON.stringify({ firstName, lastName });
 
@@ -26,13 +27,14 @@ const PersonForm = ({ title, url, method = "GET" }) => {
 
     fetch(finalUrl, {
       method: method,
-      headers: { "Content-Type": "application/json" }, // making preflight request ???
+      headers: { "Content-Type": "application/json" },
       body,
+      //credentials: "include",
     })
       .then((response) => response.json())
       .then((data) => {
         //console.log("person ", data);
-        handleLogin(data);
+        handleLoginResponse(data);
       })
       .catch((error) => console.log(error));
   };
@@ -44,9 +46,13 @@ const PersonForm = ({ title, url, method = "GET" }) => {
    * @param {String} data.token - the token
    * @param {String} data.role - the role
    */
-  const handleLogin = (data) => {
-    //console.log("login", data.token, data.role);
-    setToken(data.token);
+  const handleLoginResponse = (data) => {
+    console.log("handleLoginResponse", data);
+    setPerson({
+      firstName: data.first_name,
+      lastName: data.last_name,
+      role: data.role,
+    });
   };
 
   return (
