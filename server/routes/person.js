@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express.Router();
-const pgClient = require("../database/db");
 const { myQuery } = require("../database/db");
 
 // persons
@@ -12,6 +11,7 @@ app.post("/", async (req, res) => {
   console.log("POST /person");
   // destructure the request body to get the firstname and lastname
   const { firstName, lastName } = req.body;
+  console.log("create a new person ", firstName, lastName);
   // create a new person
   myQuery("INSERT INTO person (first_name, last_name) VALUES ($1, $2) RETURNING *", [firstName, lastName], (err, result) => {
     if (err) {
@@ -44,6 +44,7 @@ app.get("/:id", async (req, res) => {
   console.log("GET /person/:id");
 
   const { id } = req.params;
+  console.log("get a person by id : ", id);
 
   myQuery("SELECT * FROM person WHERE id = $1", [id], (err, result) => {
     if (err) {
@@ -55,29 +56,13 @@ app.get("/:id", async (req, res) => {
 });
 
 /**
- * Get a person by firstname and lastname
- *
-app.get("/:firstName/:lastName", async (req, res) => {
-  console.log("GET /person/:firstName/:lastName");
-  try {
-    // console.log(req.params);
-    const { firstName, lastName } = req.params;
-    const person = await pgClient.query("SELECT * FROM person WHERE first_name = $1 AND last_name = $2", [firstName, lastName]);
-    console.log(person.rows[0]);
-    res.send(person.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
-});
-*/
-
-/**
  * Update a person by id
  */
 app.put("/:id", async (req, res) => {
   console.log("PUT /person/:id");
   const { id } = req.params;
   const { firstName, lastName } = req.body;
+  console.log("update a person by id : ", id, " firstName : ", firstName, " lastName : ", lastName);
 
   myQuery("UPDATE person SET first_name = $1, last_name = $2 WHERE id = $3 RETURNING *", [firstName, lastName, id], (err, result) => {
     if (err) {
@@ -94,6 +79,7 @@ app.put("/:id", async (req, res) => {
 app.delete("/:id", async (req, res) => {
   console.log("DELETE /person/:id");
   const { id } = req.params;
+  console.log("delete a person by id : ", id);
 
   myQuery("DELETE FROM person WHERE id = $1 RETURNING *", [id], (err, result) => {
     if (err) {

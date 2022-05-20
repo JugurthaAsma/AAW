@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express.Router();
-const pgClient = require("../database/db");
 const { myQuery } = require("../database/db");
 
 // plannings
@@ -40,40 +39,47 @@ app.get("/", async (req, res) => {
  * Get an planning by id
  */
 app.get("/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const planning = await pgClient.query("SELECT * FROM planning WHERE id = $1", [id]);
-    res.send(planning.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  const { id } = req.params;
+  console.log("get an planning by id : ", id);
+
+  myQuery("SELECT * FROM planning WHERE id = $1", [id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
  * Update an planning by id
  */
 app.put("/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { name, date } = req.body;
-    const updatePlanning = await pgClient.query("UPDATE planning SET name = $1, date = $2 WHERE id = $3 RETURNING *", [name, date, id]);
-    res.send(updatePlanning.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  const { id } = req.params;
+  const { name, date } = req.body;
+  console.log("update an planning by id : ", id, " name : ", name, " date : ", date);
+  myQuery("UPDATE planning SET name = $1, date = $2 WHERE id = $3", [name, date, id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 /**
  * Delete an planning by id
  */
 app.delete("/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const deletePlanning = await pgClient.query("DELETE FROM planning WHERE id = $1 RETURNING *", [id]);
-    res.send(deletePlanning.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
+  const { id } = req.params;
+  console.log("delete an planning by id : ", id);
+  myQuery("DELETE FROM planning WHERE id = $1", [id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
 });
 
 module.exports = {

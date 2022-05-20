@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const pgClient = require("./database/db");
 const { myQuery } = require("./database/db");
 const cookieParser = require("cookie-parser");
 
@@ -74,55 +73,6 @@ app.use("/person", personRouter);
 app.use("/planning", planningRouter);
 app.use("/manche", mancheRouter);
 app.use("/authentication", authenticationRouter);
-
-/**
- * Create a new event_person
- */
-app.post("/event_person", async (req, res) => {
-  try {
-    // destructure the request body to get the event_id and person_id
-    const { eventId, personId } = req.body;
-    // create a new event_person
-    const newEventPerson = await pgClient.query("INSERT INTO event_person (event_id, person_id) VALUES ($1, $2) RETURNING *", [eventId, personId]);
-    res.send(newEventPerson.rows[0]);
-  } catch (error) {
-    console.error(error.message);
-  }
-});
-
-/**
- * Get an event by id and all the persons that are attending it
- */
-app.get("/event/:id/persons", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const event = await pgClient.query("SELECT * FROM event WHERE id = $1", [id]);
-    const persons = await pgClient.query("SELECT * FROM person WHERE id IN (SELECT person_id FROM event_person WHERE event_id = $1)", [id]);
-    res.send({
-      event: event.rows[0],
-      persons: persons.rows,
-    });
-  } catch (error) {
-    console.error(error.message);
-  }
-});
-
-/**
- * Get a person by id and all the events that he is attending
- */
-app.get("/person/:id/events", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const person = await pgClient.query("SELECT * FROM person WHERE id = $1", [id]);
-    const events = await pgClient.query("SELECT * FROM event WHERE id IN (SELECT event_id FROM event_person WHERE person_id = $1)", [id]);
-    res.send({
-      person: person.rows[0],
-      events: events.rows,
-    });
-  } catch (error) {
-    console.error(error.message);
-  }
-});
 
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
