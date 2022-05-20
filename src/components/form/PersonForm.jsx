@@ -3,8 +3,10 @@ import Input from "./Input";
 import config from "../../config";
 import "../../styles/components/PersonForm.css";
 import AuthenticationContext from "../../hooks/AuthenticationContext";
+import { useNavigate } from "react-router-dom";
 
 const PersonForm = ({ title, url, method = "GET" }) => {
+  let navigate = useNavigate();
   const [firstName, setFirstName] = useState("admin");
   const [lastName, setLastName] = useState("admin");
 
@@ -12,6 +14,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     let finalUrl = config.SERVER_ADDRESS + url;
     let body = JSON.stringify({ firstName, lastName });
 
@@ -42,12 +45,12 @@ const PersonForm = ({ title, url, method = "GET" }) => {
    * @param {String} data.role - the role
    */
   const handleLoginResponse = (data) => {
-    // console.log("handleLoginResponse", data);
     setPerson({
       firstName: data.first_name,
       lastName: data.last_name,
       role: data.role,
     });
+    navigate("/plannings");
   };
 
   return (

@@ -1,7 +1,7 @@
 import useAuthentication from "../hooks/useAuthentication";
 
 const RoleNeedComponent = ({ neededRole = "visitor", children }) => {
-  const { role } = useAuthentication(neededRole);
+  const { role } = useAuthentication();
   return role.includes(neededRole) ? children : null;
 };
 

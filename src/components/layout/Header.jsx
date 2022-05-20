@@ -1,6 +1,6 @@
 import React from "react";
 import MyNavLink from "../nav/MyNavLink";
-import { HouseFill, PersonCircle, PersonPlus, Envelope } from "react-bootstrap-icons";
+import { HouseFill, PersonCircle, PersonPlus, BoxArrowRight, Envelope } from "react-bootstrap-icons";
 import RoleNeedComponent from "../RoleNeedComponent";
 
 import "../../styles/components/Header.css";
@@ -20,6 +20,11 @@ const Header = () => {
         <RoleNeedComponent>
           <li>
             <MyNavLink to="/sign-up" title="Sign Up" className="nav-item" icon={<PersonPlus />} />
+          </li>
+        </RoleNeedComponent>
+        <RoleNeedComponent neededRole="user">
+          <li>
+            <MyNavLink to="/logout" title="Logout" className="nav-item" icon={<BoxArrowRight />} />
           </li>
         </RoleNeedComponent>
         <li>

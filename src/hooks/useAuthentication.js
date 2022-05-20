@@ -1,17 +1,14 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import authenticationContext from "./AuthenticationContext";
-import { useNavigate } from "react-router-dom";
 
-const useAuthentication = (expected = "user", redirect = "/home") => {
-  let navigate = useNavigate();
-
+/**
+ * Get the role of the current user
+ * will be useful if we change the authentication logic in the future
+ * for now, we just return the role of the current user in the context
+ * @returns {string} The role of the current user
+ */
+const useAuthentication = () => {
   const { person } = useContext(authenticationContext);
-
-  useEffect(() => {
-    if (person.role.includes(expected)) {
-      navigate(redirect);
-    }
-  }, [person.role, expected, navigate, redirect]);
 
   return { role: person.role };
 };

@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
@@ -15,6 +15,7 @@ import ManchesList from "./pages/manche/ManchesList";
 import Home from "./pages/Home";
 import Login from "./pages/authentication/Login";
 import SignUp from "./pages/authentication/SignUp";
+import Logout from "./pages/authentication/Logout";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -37,7 +38,6 @@ function App() {
   };
 
   console.log("App person:", person);
-
   return (
     <AuthenticationContext.Provider value={AuthenticationContextValue}>
       <div className="App">
@@ -50,8 +50,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
-
                 <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/logout" element={<Logout />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/persons" element={<PersonsList />} />
                 <Route path="/add-person" element={<AddPerson />} />
