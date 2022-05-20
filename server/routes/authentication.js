@@ -36,7 +36,7 @@ app.post("/login", async (req, res) => {
           const token = result.rows[0].token;
           console.log("token created", token);
           res.cookie("token", token);
-          res.sendStatus(200);
+          res.send(person);
         }
       });
     }

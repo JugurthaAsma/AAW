@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-//const cors = require("cors");
+const cors = require("cors");
 const pgClient = require("./database/db");
 const { myQuery } = require("./database/db");
 const cookieParser = require("cookie-parser");
@@ -8,7 +8,8 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 
 //middleware
-//app.use(cors());
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+/* // not working
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -16,7 +17,7 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   next();
 });
-
+*/
 app.use(cookieParser());
 app.use(express.json());
 
@@ -37,7 +38,7 @@ app.use("*/admin", (req, res, next) => {
 
   // get the person role from person table with the token from the token table
   myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
-    if (err || result.rows.length === 0 || result.rows[0].role !== "admin") {
+    if (err || result.rows.length === 0 || result.rows[0].role.includes("admin")) {
       res.sendStatus(401);
     } else {
       next();
@@ -54,7 +55,7 @@ app.use("*/user", (req, res, next) => {
 
   // get the person role from person table with the token from the token table
   myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
-    if (err || result.rows.length === 0 || result.rows[0].role !== "user") {
+    if (err || result.rows.length === 0 || result.rows[0].role.includes("user")) {
       res.sendStatus(401);
     } else {
       next();

@@ -3,17 +3,15 @@ import Input from "./Input";
 import config from "../../config";
 import "../../styles/components/PersonForm.css";
 import AuthenticationContext from "../../hooks/AuthenticationContext";
-import Cookies from "js-cookie";
 
 const PersonForm = ({ title, url, method = "GET" }) => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("admin");
+  const [lastName, setLastName] = useState("admin");
 
   const { setPerson } = useContext(AuthenticationContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("****************************************");
     let finalUrl = config.SERVER_ADDRESS + url;
     let body = JSON.stringify({ firstName, lastName });
 
@@ -23,19 +21,16 @@ const PersonForm = ({ title, url, method = "GET" }) => {
       body = null;
     }
 
-    //console.log("fetching : ", finalUrl);
+    // console.log("fetching : ", finalUrl);
 
     fetch(finalUrl, {
       method: method,
       headers: { "Content-Type": "application/json" },
       body,
-      //credentials: "include",
+      credentials: "include",
     })
       .then((response) => response.json())
-      .then((data) => {
-        //console.log("person ", data);
-        handleLoginResponse(data);
-      })
+      .then((data) => handleLoginResponse(data))
       .catch((error) => console.log(error));
   };
 
@@ -47,7 +42,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
    * @param {String} data.role - the role
    */
   const handleLoginResponse = (data) => {
-    console.log("handleLoginResponse", data);
+    // console.log("handleLoginResponse", data);
     setPerson({
       firstName: data.first_name,
       lastName: data.last_name,
@@ -61,7 +56,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
       <form className="needs-validation" onSubmit={handleSubmit}>
         <div className="form-group was-validated">
           <label htmlFor="firstName">First Name</label>
-          <Input onChange={(e) => setFirstName(e.target.value)} placeholder="Enter your first name" />
+          <Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="Enter your first name" />
           <div className="invalid-feedback">Please enter your first name</div>
         </div>
         <div className="form-group was-validated">
