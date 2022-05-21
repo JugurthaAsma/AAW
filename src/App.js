@@ -16,7 +16,7 @@ import Home from "./pages/Home";
 import Login from "./pages/authentication/Login";
 import SignUp from "./pages/authentication/SignUp";
 import Logout from "./pages/authentication/Logout";
-import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
 import ErrorPage from "./pages/ErrorPage";
 
 import Header from "./components/layout/Header";
@@ -56,7 +56,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/logout" element={<Logout />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/persons" element={<PersonsList />} />
                 <Route path="/add-person" element={<AddPerson />} />
                 <Route path="/edit-person/:id" element={<EditPerson />} />
