@@ -6,7 +6,7 @@ const EditPlanning = () => {
   let { id } = useParams();
 
   return (
-    <RoleNeedComponent neededRole="user">
+    <RoleNeedComponent neededRole="admin">
       <h1 className="text-center mt-5">Edit planning #{id}</h1>;
     </RoleNeedComponent>
   );

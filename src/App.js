@@ -26,6 +26,10 @@ import Footer from "./components/layout/Footer";
 import "./styles/App.css";
 
 function App() {
+  /**
+   * saving the current person in the context of the app
+   * children components can change this value by using setPerson (ex. login component)
+   */
   const [person, setPerson] = useState({
     firstName: "",
     lastName: "",

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
+import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components/form/RedirectButton";
+import JoinButton from "../../components/form/JoinButton";
 import { useParams } from "react-router-dom";
 
 const ManchesList = () => {
   let { id } = useParams();
-  const { data, error, loading } = useFetch("/manche/planning/" + id);
+  const { data, error, loading } = useFetch("/manche/" + (id !== "0" ? "planning/" + id : ""));
   const [manches, setManches] = useState([]);
 
   useEffect(() => {
@@ -29,8 +31,13 @@ const ManchesList = () => {
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Order</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
+                <RoleNeedComponent neededRole="user">
+                  <th scope="col">Join</th>
+                </RoleNeedComponent>
+                <RoleNeedComponent neededRole="admin">
+                  <th scope="col">Edit</th>
+                  <th scope="col">Delete</th>
+                </RoleNeedComponent>
               </tr>
             </thead>
             <tbody>
@@ -40,12 +47,19 @@ const ManchesList = () => {
                   <td>{manche.id}</td>
                   <td>{manche.name}</td>
                   <td>{manche.ordre}</td>
-                  <td>
-                    <RedirectButton to={"/edit-manche/" + manche.id} />
-                  </td>
-                  <td>
-                    <DeleteButton url={"/manche"} id={manche.id} callback={setManches} /* redirect={"/persons"} */ />
-                  </td>
+                  <RoleNeedComponent neededRole="user">
+                    <td>
+                      <JoinButton />
+                    </td>
+                  </RoleNeedComponent>
+                  <RoleNeedComponent neededRole="admin">
+                    <td>
+                      <RedirectButton to={"/edit-manche/" + manche.id} />
+                    </td>
+                    <td>
+                      <DeleteButton url={"/manche"} id={manche.id} callback={setManches} /* redirect={"/persons"} */ />
+                    </td>
+                  </RoleNeedComponent>
                 </tr>
               ))}
             </tbody>

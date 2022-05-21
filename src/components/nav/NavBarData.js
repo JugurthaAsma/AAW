@@ -1,34 +1,35 @@
 import React from "react";
-import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill } from "react-bootstrap-icons";
+import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill, ListStars } from "react-bootstrap-icons";
 
 export const NavBarData = [
   {
     title: "Persons",
     link: "/persons",
-    neededRole: "user",
+    neededRole: "admin",
     icon: <PeopleFill />,
   },
   {
     title: "Add Person",
     link: "/add-person",
-    neededRole: "user",
+    neededRole: "admin",
     icon: <PersonPlusFill />,
   },
   {
     title: "Plannings",
     link: "/plannings",
-    neededRole: null,
+    neededRole: "",
     icon: <CalendarEventFill />,
   },
   {
     title: "Add Planning",
     link: "/add-planning",
-    neededRole: "user",
+    neededRole: "admin",
     icon: <CalendarPlusFill />,
   },
   {
     title: "Manches",
-    link: "/manches/planning",
-    neededRole: "user",
+    link: "/manches/planning/0",
+    neededRole: "",
+    icon: <ListStars />,
   },
 ];

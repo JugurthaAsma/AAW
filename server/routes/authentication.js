@@ -2,11 +2,6 @@ const express = require("express");
 const app = express.Router();
 const { tokenExpirationDate } = require("../utils/util");
 const { myQuery } = require("../database/db");
-const roles = {
-  admin: "admin",
-  user: "user",
-  unknown: "unknown",
-};
 
 // routes
 
@@ -47,15 +42,24 @@ app.post("/login", async (req, res) => {
  * delete the token from the token table
  * and send a success message
  */
-app.get("/logout/:token", async (req, res) => {
-  console.log("GET /logout/:token");
-  const { token } = req.params;
+app.get("/logout", async (req, res) => {
+  console.log("GET /logout");
+  const { token } = req.cookies;
+  console.log("logout token: ", token);
+
   myQuery("DELETE FROM token WHERE token = $1", [token], (err, result) => {
-    if (err) {
-      res.sendStatus(401);
-    } else {
-      res.send("logout success");
-    }
+    res.sendStatus(err ? 401 : 200);
+  });
+});
+
+/**
+ * Logout all the persons
+ */
+app.get("/logoutAll", async (req, res) => {
+  console.log("GET /logoutAll");
+  console.log("DISCONNECT ALL");
+  myQuery("DELETE FROM token", [], (err, result) => {
+    res.sendStatus(err ? 401 : 200);
   });
 });
 

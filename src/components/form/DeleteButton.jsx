@@ -1,8 +1,10 @@
 import React from "react";
 import config from "../../config";
+import { Trash } from "react-bootstrap-icons";
+
 //import { useNavigate } from "react-router-dom";
 
-const DeleteButton = ({ url, id, callback, redirect, content = "X" }) => {
+const DeleteButton = ({ url, id, callback, redirect, content = <Trash /> }) => {
   //let navigate = useNavigate();
   const handleDelete = () => {
     fetch(config.SERVER_ADDRESS + url + "/" + id, { method: "DELETE" })

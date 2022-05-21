@@ -40,6 +40,7 @@ app.use("*/admin", (req, res, next) => {
     if (err || result.rows.length === 0 || result.rows[0].role.includes("admin")) {
       res.sendStatus(401);
     } else {
+      req.person = result.rows[0];
       next();
     }
   });
@@ -57,6 +58,7 @@ app.use("*/user", (req, res, next) => {
     if (err || result.rows.length === 0 || result.rows[0].role.includes("user")) {
       res.sendStatus(401);
     } else {
+      req.person = result.rows[0];
       next();
     }
   });

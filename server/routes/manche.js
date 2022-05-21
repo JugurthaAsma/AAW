@@ -41,7 +41,7 @@ app.post("/:planning_id", async (req, res) => {
  * Get all manches for a planning
  */
 app.get("/planning/:planning_id", async (req, res) => {
-  log("GET /manche/planning/:planning_id");
+  console.log("GET /manche/planning/:planning_id");
 
   const { planning_id } = req.params;
   console.log("get all manches for a planning ", planning_id);

@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Pen } from "react-bootstrap-icons";
 
-const RedirectButton = ({ to, content = "redirect", className = "btn btn-warning" }) => {
+const RedirectButton = ({ to, content = <Pen />, className = "btn btn-warning" }) => {
   let navigate = useNavigate();
 
   return (
