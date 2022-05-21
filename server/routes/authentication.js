@@ -43,8 +43,8 @@ app.post("/login", async (req, res) => {
  * delete the token from the token table
  * and send a success message
  */
-app.get("/logout", async (req, res) => {
-  logger("GET /logout");
+app.get("/logout/user", async (req, res) => {
+  logger("GET /logout/user");
   const { token } = req.cookies;
   logger("logout token: ", token);
 
@@ -56,9 +56,8 @@ app.get("/logout", async (req, res) => {
 /**
  * Logout all the persons
  */
-app.get("/logoutAll", async (req, res) => {
-  logger("GET /logoutAll");
-  logger("DISCONNECT ALL");
+app.get("/logoutAll/admin", async (req, res) => {
+  logger("GET /logoutAll/admin, DISCONNECT ALL");
   myQuery("DELETE FROM token", [], (err, result) => {
     res.sendStatus(err ? 401 : 200);
   });

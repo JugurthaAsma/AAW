@@ -7,7 +7,7 @@ const Logout = () => {
   let navigate = useNavigate();
   const { setPerson } = useContext(AuthenticationContext);
   useEffect(() => {
-    fetch(config.SERVER_ADDRESS + "/authentication/logout", {
+    fetch(config.SERVER_ADDRESS + "/authentication/logout/user", {
       credentials: "include",
     })
       .then((res) => {

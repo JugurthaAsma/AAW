@@ -23,7 +23,7 @@ app.get("/", async (req, res) => {
 /**
  * Create a new manche for a planning
  */
-app.post("/:planning_id", async (req, res) => {
+app.post("/:planning_id/admin", async (req, res) => {
   log("POST /manche");
 
   // destructure the request body to get the name and ordre
@@ -77,7 +77,7 @@ app.get("/:id", async (req, res) => {
 /**
  *  Update a manche
  */
-app.put("/:id", async (req, res) => {
+app.put("/:id/admin", async (req, res) => {
   logger("PUT /manche/:id");
 
   const { id } = req.params;
@@ -96,7 +96,7 @@ app.put("/:id", async (req, res) => {
 /**
  * Delete a manche
  */
-app.delete("/:id", async (req, res) => {
+app.delete("/:id/admin", async (req, res) => {
   logger("DELETE /manche/:id");
   const { id } = req.params;
   logger("delete a manche by id : ", id);
