@@ -1,0 +1,42 @@
+.card-img-top {
+  width: 200px;
+  clip-path: ellipse(50% 50%);
+}
+
+.card {
+  align-items: center;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card-body {
+  text-align: center;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  background: #1068b0;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.images {
+  height: 300px;
+}
+
+#icon {
+  margin: 5px;
+  width: 40px;
+  /* color: #2777b857;*/
+  border-radius: 4px;
+  height: auto;
+}

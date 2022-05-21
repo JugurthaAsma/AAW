@@ -28,7 +28,7 @@ const Header = () => {
           </li>
         </RoleNeedComponent>
         <li>
-          <MyNavLink to="/contact" title="Contact" className="nav-item" icon={<Envelope />} />
+          <MyNavLink to="/about-us" title="About Us" className="nav-item" icon={<Envelope />} />
         </li>
       </ul>
     </header>
