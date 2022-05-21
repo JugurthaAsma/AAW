@@ -12,7 +12,7 @@ const AddPerson = () => {
       <h1 className="text-center mt-5">Add a person</h1>
       <div className="d-flex mt-5 row">
         <div className="col-md-5">
-          <Input value={firstName} placeholder="Enter the first name" onChange={(e) => setFirstName(e.target.value)} />
+          <Input value={firstName} placeholder="Enter the first name" onChange={(e) => setFirstName(e.target.value)} autoFocus />
         </div>
         <div className="col-md-5">
           <Input value={lastName} placeholder="Enter the last name" onChange={(e) => setLastName(e.target.value)} />

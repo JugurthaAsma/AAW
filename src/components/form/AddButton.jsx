@@ -11,6 +11,7 @@ const AddButton = ({ url, body, redirect, content = "+" }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
+      credentials: "include",
     })
       .then((response) => response.json())
       .then((data) => {

@@ -8,7 +8,7 @@ const { logger } = require("../utils/util");
 /**
  * Create a new planning
  */
-app.post("/", async (req, res) => {
+app.post("/admin", async (req, res) => {
   // destructure the request body to get the name and date
   const { name, date } = req.body;
   logger("create a new planning ", name, date);
@@ -71,10 +71,10 @@ app.put("/:id", async (req, res) => {
 /**
  * Delete an planning by id
  */
-app.delete("/:id", async (req, res) => {
+app.delete("/:id/admin", async (req, res) => {
   const { id } = req.params;
-  logger("delete an planning by id : ", id);
-  myQuery("DELETE FROM planning WHERE id = $1", [id], (err, result) => {
+  logger("delete a planning by id : ", id);
+  myQuery("DELETE FROM planning WHERE id = $1 RETURNING *", [id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {

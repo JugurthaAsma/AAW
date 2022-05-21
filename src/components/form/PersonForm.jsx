@@ -59,7 +59,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
       <form className="needs-validation" onSubmit={handleSubmit}>
         <div className="form-group was-validated">
           <label htmlFor="firstName">First Name</label>
-          <Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="Enter your first name" />
+          <Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="Enter your first name" autoFocus />
           <div className="invalid-feedback">Please enter your first name</div>
         </div>
         <div className="form-group was-validated">

@@ -38,7 +38,7 @@ app.use("*/admin", (req, res, next) => {
 
   // get the person role from person table with the token from the token table
   myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
-    if (err || result.rows.length === 0 || result.rows[0].role.includes("admin")) {
+    if (err || result.rows.length === 0 || !result.rows[0].role.includes("admin")) {
       res.sendStatus(401);
     } else {
       req.person = result.rows[0];

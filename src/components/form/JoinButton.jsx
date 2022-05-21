@@ -7,7 +7,10 @@ const JoinButton = ({ url, id, redirect = "/plannings", content = <PersonPlusFil
   let navigate = useNavigate();
 
   const handleJoin = () => {
-    fetch(config.SERVER_ADDRESS + url + "/" + id, { method: "POST" })
+    fetch(config.SERVER_ADDRESS + url + "/" + id, {
+      method: "POST",
+      credentials: "include",
+    })
       .then((response) => response.json())
       .then((data) => {
         // console.log("join ", data, ", redirect to ", redirect);

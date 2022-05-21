@@ -12,6 +12,7 @@ const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
+      credentials: "include",
     })
       .then((response) => response.json())
       .then((data) => {
