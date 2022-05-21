@@ -1,0 +1,25 @@
+Sat May 21 2022 11:51:45 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sat May 21 2022 11:51:45 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sat May 21 2022 17:25:05 GMT+0100 (UTC+01:00)
+Sat May 21 2022 11:51:45 GMT+0100 (UTC+01:00) - token created 6ac3da40-46be-462f-9f71-bee0f2972df2
+Sat May 21 2022 11:56:27 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sat May 21 2022 11:56:27 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sat May 21 2022 17:29:47 GMT+0100 (UTC+01:00)
+Sat May 21 2022 11:56:27 GMT+0100 (UTC+01:00) - token created 9f5986e8-20cc-473c-af08-515af5584a03
+Sat May 21 2022 12:03:30 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:03:30 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:03:42 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:03:42 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:04:32 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:04:32 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:04:42 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:04:42 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:09:39 GMT+0100 (UTC+01:00) - GET /person
+Sat May 21 2022 12:09:45 GMT+0100 (UTC+01:00) - get all plannings
+Sat May 21 2022 12:09:48 GMT+0100 (UTC+01:00) - GET /manche
+Sat May 21 2022 12:11:46 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:11:46 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:11:53 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sat May 21 2022 12:11:53 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sat May 21 2022 12:12:13 GMT+0100 (UTC+01:00) - passing by admin filter
+Sat May 21 2022 12:12:13 GMT+0100 (UTC+01:00) - token:  
+Sat May 21 2022 12:13:40 GMT+0100 (UTC+01:00) - passing by user filter
+Sat May 21 2022 12:13:40 GMT+0100 (UTC+01:00) - token:  

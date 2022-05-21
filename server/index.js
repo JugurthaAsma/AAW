@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const { myQuery } = require("./database/db");
 const cookieParser = require("cookie-parser");
+const { logger } = require("./utils/util");
 
 const path = require("path");
 
@@ -30,10 +31,10 @@ app.get("/", (req, res) => {
 
 // admin filter
 app.use("*/admin", (req, res, next) => {
-  console.log("je suis dans le filtre admin");
+  logger("passing by admin filter");
   // get the token from the cookie
   const { token } = req.cookies;
-  console.log("token: ", token);
+  logger("token: ", token);
 
   // get the person role from person table with the token from the token table
   myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
@@ -48,10 +49,10 @@ app.use("*/admin", (req, res, next) => {
 
 // user filter
 app.use("*/user", (req, res, next) => {
-  console.log("je suis dans le filtre user");
+  logger("passing by user filter");
   // get the token from the cookie
   const { token } = req.cookies;
-  console.log("token: ", token);
+  logger("token: ", token);
 
   // get the person role from person table with the token from the token table
   myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1)", [token], (err, result) => {
@@ -77,5 +78,5 @@ app.use("/manche", mancheRouter);
 app.use("/authentication", authenticationRouter);
 
 app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+  logger("Server is running on port 5000");
 });

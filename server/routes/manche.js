@@ -1,13 +1,15 @@
 const express = require("express");
 const app = express.Router();
 const { myQuery } = require("../database/db");
+const { logger } = require("../utils/util");
+
 // manches
 
 /**
  * get all manches
  */
 app.get("/", async (req, res) => {
-  console.log("GET /manche");
+  logger("GET /manche");
 
   myQuery("SELECT * FROM manche", [], (err, result) => {
     if (err) {
@@ -26,7 +28,7 @@ app.post("/:planning_id", async (req, res) => {
 
   // destructure the request body to get the name and ordre
   const { name, ordre } = req.body;
-  console.log("create a new manche ", name, ordre);
+  logger("create a new manche ", name, ordre);
   // create a new manche
   myQuery("INSERT INTO manche (name, ordre, planning_id) VALUES ($1, $2, $3) RETURNING *", [name, ordre, req.params.planning_id], (err, result) => {
     if (err) {
@@ -41,10 +43,10 @@ app.post("/:planning_id", async (req, res) => {
  * Get all manches for a planning
  */
 app.get("/planning/:planning_id", async (req, res) => {
-  console.log("GET /manche/planning/:planning_id");
+  logger("GET /manche/planning/:planning_id");
 
   const { planning_id } = req.params;
-  console.log("get all manches for a planning ", planning_id);
+  logger("get all manches for a planning ", planning_id);
 
   myQuery("SELECT * FROM manche WHERE planning_id = $1", [planning_id], (err, result) => {
     if (err) {
@@ -59,9 +61,9 @@ app.get("/planning/:planning_id", async (req, res) => {
  * Get a manche by id
  */
 app.get("/:id", async (req, res) => {
-  console.log("GET /manche/:id");
+  logger("GET /manche/:id");
   const { id } = req.params;
-  console.log("get a manche by id : ", id);
+  logger("get a manche by id : ", id);
 
   myQuery("SELECT * FROM manche WHERE id = $1", [id], (err, result) => {
     if (err) {
@@ -76,11 +78,11 @@ app.get("/:id", async (req, res) => {
  *  Update a manche
  */
 app.put("/:id", async (req, res) => {
-  console.log("PUT /manche/:id");
+  logger("PUT /manche/:id");
 
   const { id } = req.params;
   const { name, ordre } = req.body;
-  console.log("update a manche by id : ", id, " name : ", name, " ordre : ", ordre);
+  logger("update a manche by id : ", id, " name : ", name, " ordre : ", ordre);
 
   myQuery("UPDATE manche SET name = $1, ordre = $2 WHERE id = $3", [name, ordre, id], (err, result) => {
     if (err) {
@@ -95,9 +97,9 @@ app.put("/:id", async (req, res) => {
  * Delete a manche
  */
 app.delete("/:id", async (req, res) => {
-  console.log("DELETE /manche/:id");
+  logger("DELETE /manche/:id");
   const { id } = req.params;
-  console.log("delete a manche by id : ", id);
+  logger("delete a manche by id : ", id);
 
   myQuery("DELETE FROM manche WHERE id = $1", [id], (err, result) => {
     if (err) {
@@ -112,9 +114,9 @@ app.delete("/:id", async (req, res) => {
  * Delete all manches for a planning
  */
 app.delete("/planning/:planning_id", async (req, res) => {
-  console.log("DELETE /manche/planning/:planning_id");
+  logger("DELETE /manche/planning/:planning_id");
   const { planning_id } = req.params;
-  console.log("delete all manches for a planning : ", planning_id);
+  logger("delete all manches for a planning : ", planning_id);
 
   myQuery("DELETE FROM manche WHERE planning_id = $1", [planning_id], (err, result) => {
     if (err) {

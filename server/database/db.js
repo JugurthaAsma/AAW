@@ -1,10 +1,11 @@
 // import librairies
 const pg = require("pg");
 const dotenv = require("dotenv");
+const { logger } = require("../utils/util");
 
 // initialize dotenv to read the .env file
 dotenv.config();
-console.log("connecting to database : ", process.env.POSTGRESQL_ADDON_URI);
+logger("connecting to database : ", process.env.POSTGRESQL_ADDON_URI);
 
 // initialize the database configuration
 const pgClient = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
