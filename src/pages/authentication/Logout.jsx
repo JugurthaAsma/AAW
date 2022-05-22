@@ -8,21 +8,16 @@ const Logout = () => {
   const { setPerson } = useContext(AuthenticationContext);
   useEffect(() => {
     fetch(config.SERVER_ADDRESS + "/authentication/logout/user", {
+      method: "DELETE",
       credentials: "include",
-    })
-      .then((res) => {
-        if (res.status === 200) {
-          setPerson({
-            firstName: "",
-            lastName: "",
-            role: "visitor",
-          });
-          navigate("/");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    });
+
+    setPerson({
+      firstName: "",
+      lastName: "",
+      role: "visitor",
+    });
+    navigate("/");
   }, []);
   return <h1>Loging out ...</h1>;
 };

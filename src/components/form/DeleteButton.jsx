@@ -13,11 +13,14 @@ import { Trash } from "react-bootstrap-icons";
  * @param {JSX} content The content to be displayed inside the button (default: <Trash />)
  * @returns
  */
-const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash /> }) => {
+const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash />, className = "btn btn-danger" }) => {
   //let navigate = useNavigate();
   const handleDelete = () => {
-    console.log(config.SERVER_ADDRESS + url + "/" + id + "/" + role);
-    fetch(config.SERVER_ADDRESS + url + "/" + id + "/" + role, {
+    let fianlUrl = url;
+    fianlUrl += id ? "/" + id : "";
+    fianlUrl += role ? "/" + role : "";
+    console.log(config.SERVER_ADDRESS + fianlUrl);
+    fetch(config.SERVER_ADDRESS + fianlUrl, {
       method: "DELETE",
       credentials: "include",
     })
@@ -32,7 +35,7 @@ const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash /> }
   };
 
   return (
-    <button className="btn btn-danger" onClick={handleDelete}>
+    <button className={className} onClick={handleDelete}>
       {content}
     </button>
   );

@@ -42,9 +42,10 @@ app.post("/login", async (req, res) => {
  * for logout
  * delete the token from the token table
  * and send a success message
+ * as user
  */
-app.get("/logout/user", async (req, res) => {
-  logger("GET /logout/user");
+app.delete("/logout/user", async (req, res) => {
+  logger("DELETE /logout/user");
   const { token } = req.cookies;
   logger("logout token: ", token);
 
@@ -54,11 +55,30 @@ app.get("/logout/user", async (req, res) => {
 });
 
 /**
- * Logout all the persons
+ * for logout a specific person
+ * as admin
  */
-app.get("/logoutAll/admin", async (req, res) => {
+app.delete("/logout/:id/admin", async (req, res) => {
+  const { id } = req.params;
+  logger("GET /logout/:id/admin, logout id: ", id);
+
+  myQuery("DELETE FROM token WHERE person_id = $1", [id], (err, result) => {
+    res.sendStatus(err ? 401 : 200);
+  });
+});
+
+/**
+ * Logout all the persons
+ * as admin
+ */
+app.delete("/logoutAll/admin", async (req, res) => {
   logger("GET /logoutAll/admin, DISCONNECT ALL");
-  myQuery("DELETE FROM token", [], (err, result) => {
+
+  // get the token from the cookie
+  const { token } = req.cookies;
+
+  // delete all the tokens except the admin token
+  myQuery("DELETE FROM token WHERE token != $1", [token], (err, result) => {
     res.sendStatus(err ? 401 : 200);
   });
 });

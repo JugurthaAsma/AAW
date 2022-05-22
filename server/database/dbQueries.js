@@ -22,7 +22,6 @@ module.exports = {
         if (err) {
           res.sendStatus(401);
         } else {
-          console.log(result.rows);
           res.send(result.rows);
         }
       }

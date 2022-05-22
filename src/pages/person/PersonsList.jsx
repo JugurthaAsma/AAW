@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components/form/RedirectButton";
-import { Trash, Pen } from "react-bootstrap-icons";
+import { Trash, Pen, BoxArrowRight } from "react-bootstrap-icons";
 
 const PersonsList = () => {
   const { data, error, loading } = useFetch("/person");
@@ -21,6 +21,9 @@ const PersonsList = () => {
       {error && <p>Error: {error.message}</p>}
       {persons && (
         <>
+          <h4>
+            Disconnect everyone <DeleteButton url="/authentication/logoutAll" role="admin" content={<BoxArrowRight />} className="btn btn-dark" />
+          </h4>
           <table className="table table-striped">
             <thead>
               <tr>
@@ -29,6 +32,7 @@ const PersonsList = () => {
                 <th scope="col">First name</th>
                 <th scope="col">Last name</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Disconnect</th>
                 <th scope="col">Delete</th>
               </tr>
             </thead>
@@ -41,6 +45,9 @@ const PersonsList = () => {
                   <td>{person.last_name}</td>
                   <td>
                     <RedirectButton to={"/edit-person/" + person.id} content={<Pen />} />
+                  </td>
+                  <td>
+                    <DeleteButton url="/authentication/logout" id={person.id} role="admin" content={<BoxArrowRight />} className="btn btn-dark" />
                   </td>
                   <td>
                     <DeleteButton url={"/person"} id={person.id} role="admin" callback={setPersons} content={<Trash />} /* redirect={"/persons"} */ />
