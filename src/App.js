@@ -2,16 +2,23 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
+// Person pages
 import PersonsList from "./pages/person/PersonsList";
 import AddPerson from "./pages/person/AddPerson";
 import EditPerson from "./pages/person/EditPerson";
 
+// planning pages
 import PlanningsList from "./pages/planning/PlanningsList";
 import AddPlanning from "./pages/planning/AddPlanning";
 import EditPlanning from "./pages/planning/EditPlanning";
 
+// manche pages
 import ManchesList from "./pages/manche/ManchesList";
+ 
+// inscription pages
+import InscriptionList from "./pages/inscription/InscriptionList";
 
+// other pages
 import Home from "./pages/Home";
 import Login from "./pages/authentication/Login";
 import SignUp from "./pages/authentication/SignUp";
@@ -19,6 +26,7 @@ import Logout from "./pages/authentication/Logout";
 import AboutUs from "./pages/AboutUs";
 import ErrorPage from "./pages/ErrorPage";
 
+// layout
 import Header from "./components/layout/Header";
 import NavBar from "./components/nav/NavBar";
 import Footer from "./components/layout/Footer";
@@ -64,6 +72,7 @@ function App() {
                 <Route path="/add-planning" element={<AddPlanning />} />
                 <Route path="/edit-planning/:id" element={<EditPlanning />} />
                 <Route path="/manches/planning/:id" element={<ManchesList />} />
+                <Route path="/inscriptions/manche/:id" element={<InscriptionList />} />
                 <Route path="*" element={<ErrorPage />} />
               </Routes>
             </div>

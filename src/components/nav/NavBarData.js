@@ -1,5 +1,5 @@
 import React from "react";
-import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill, ListStars } from "react-bootstrap-icons";
+import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill, ListStars, PersonLinesFill } from "react-bootstrap-icons";
 
 export const NavBarData = [
   {
@@ -31,5 +31,11 @@ export const NavBarData = [
     link: "/manches/planning/0",
     neededRole: "",
     icon: <ListStars />,
+  },
+  {
+    title: "Incriptions",
+    link: "/inscriptions/manche/0",
+    neededRole: "user",
+    icon: <PersonLinesFill />,
   },
 ];

@@ -69,12 +69,14 @@ app.use("*/user", (req, res, next) => {
 const { personRouter } = require("./routes/person");
 const { planningRouter } = require("./routes/planning");
 const { mancheRouter } = require("./routes/manche");
+const { inscriptionRouter } = require("./routes/inscription");
 const { authenticationRouter } = require("./routes/authentication");
 
 // use the routers
 app.use("/person", personRouter);
 app.use("/planning", planningRouter);
 app.use("/manche", mancheRouter);
+app.use("/inscription", inscriptionRouter);
 app.use("/authentication", authenticationRouter);
 
 app.listen(5000, () => {

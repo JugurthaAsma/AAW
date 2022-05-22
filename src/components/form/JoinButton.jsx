@@ -3,11 +3,11 @@ import config from "../../config";
 import { PersonPlusFill } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
-const JoinButton = ({ url, id, redirect = "/plannings", content = <PersonPlusFill /> }) => {
+const JoinButton = ({ url, body, redirect = "/plannings", content = <PersonPlusFill /> }) => {
   let navigate = useNavigate();
 
   const handleJoin = () => {
-    fetch(config.SERVER_ADDRESS + url + "/" + id, {
+    fetch(config.SERVER_ADDRESS + url, {
       method: "POST",
       credentials: "include",
     })

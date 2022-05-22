@@ -3,6 +3,8 @@ const app = express.Router();
 const { myQuery } = require("../database/db");
 const { logger } = require("../utils/util");
 
+const { getAllInscriptions } = require("../database/dbQueries");
+
 // inscription
 
 /**
@@ -11,29 +13,26 @@ const { logger } = require("../utils/util");
 app.get("/", async (req, res) => {
   logger("GET /inscription");
 
-  myQuery("SELECT * FROM inscription", [], (err, result) => {
-    if (err) {
-      res.sendStatus(401);
-    } else {
-      res.send(result.rows);
-    }
-  });
+  // get all inscriptions with their manches, plannings and persons
+  getAllInscriptions(res);
 });
 
 /**
  * Create a new inscription for a planning, a personne and a manche
  */
-app.post("/", async (req, res) => {
+app.post("/user", async (req, res) => {
   logger("POST /inscription");
-  // destructure the request body to get the name and ordre
-  const { planning_id, personne_id, manche_id } = req.body;
-  logger("create a new inscription ", planning_id, personne_id, manche_id);
-  // create a new manche
+  // get the personne_id from the request
+  const person_id = req.person.id;
+  // destructure the request body to get the manche_id and the planning_id
+  const { manche_id, planning_id } = req.body;
 
-  myQuery("INSERT INTO inscription (planning_id, personne_id, manche_id) VALUES ($1, $2, $3) RETURNING *", [planning_id, personne_id, manche_id], (err, result) => {
+  // create a new inscription
+  myQuery("INSERT INTO inscription (planning_id, person_id, manche_id) VALUES ($1, $2, $3) RETURNING *", [planning_id, person_id, manche_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
+      logger("create a new inscription for planning : ", planning_id, " person : ", person_id, " and manche :", manche_id);
       res.send(result.rows[0]);
     }
   });

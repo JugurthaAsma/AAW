@@ -3,7 +3,8 @@ import useFetch from "../../hooks/useFetch";
 import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components/form/RedirectButton";
-import JoinButton from "../../components/form/JoinButton";
+import AddButton from "../../components/form/AddButton";
+import { PersonPlusFill } from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
 
 const ManchesList = () => {
@@ -49,7 +50,15 @@ const ManchesList = () => {
                   <td>{manche.ordre}</td>
                   <RoleNeedComponent neededRole="user">
                     <td>
-                      <JoinButton />
+                      <AddButton
+                        url="/inscription/user"
+                        body={{
+                          manche_id: manche.id,
+                          planning_id: manche.planning_id,
+                        }}
+                        content={<PersonPlusFill />}
+                        redirect="/plannings"
+                      />
                     </td>
                   </RoleNeedComponent>
                   <RoleNeedComponent neededRole="admin">
