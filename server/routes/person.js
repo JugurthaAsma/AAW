@@ -59,7 +59,7 @@ app.get("/:id", async (req, res) => {
 /**
  * Update a person by id
  */
-app.put("/:id", async (req, res) => {
+app.put("/:id/user", async (req, res) => {
   logger("PUT /person/:id");
   const { id } = req.params;
   const { firstName, lastName } = req.body;
@@ -77,7 +77,7 @@ app.put("/:id", async (req, res) => {
 /**
  * Delete a person by id
  */
-app.delete("/:id", async (req, res) => {
+app.delete("/:id/admin", async (req, res) => {
   logger("DELETE /person/:id");
   const { id } = req.params;
   logger("delete a person by id : ", id);

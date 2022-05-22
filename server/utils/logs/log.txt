@@ -1,101 +1,251 @@
-Sat May 21 2022 21:00:06 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:00:10 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:00:11 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:00:11 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
-Sat May 21 2022 21:00:25 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:00:26 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:03:20 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:03:20 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:04:07 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:04:08 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:04:18 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:04:18 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:04:31 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:04:31 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:04:34 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:04:34 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:04:39 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:04:39 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:05:08 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:05:09 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:06:03 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:06:24 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:06:24 GMT+0100 (UTC+01:00) - token:  f52ad46f-f773-4301-99fb-b6ca077fbbe3
-Sat May 21 2022 21:07:28 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:07:28 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:07:31 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:07:32 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:07:35 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:07:35 GMT+0100 (UTC+01:00) - token:  f52ad46f-f773-4301-99fb-b6ca077fbbe3
-Sat May 21 2022 21:07:35 GMT+0100 (UTC+01:00) - GET /logout/user
-Sat May 21 2022 21:07:35 GMT+0100 (UTC+01:00) - logout token:  f52ad46f-f773-4301-99fb-b6ca077fbbe3
-Sat May 21 2022 21:07:38 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:07:39 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:07:40 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:08:27 GMT+0100 (UTC+01:00) - POST /authentication/login
-Sat May 21 2022 21:08:27 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 02:41:47 GMT+0100 (UTC+01:00)
-Sat May 21 2022 21:08:27 GMT+0100 (UTC+01:00) - token created 222d76a2-fdf4-48e8-a3ea-903a0a1c5d6c
-Sat May 21 2022 21:08:28 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:08:30 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:08:30 GMT+0100 (UTC+01:00) - token:  222d76a2-fdf4-48e8-a3ea-903a0a1c5d6c
-Sat May 21 2022 21:08:30 GMT+0100 (UTC+01:00) - GET /logout/user
-Sat May 21 2022 21:08:30 GMT+0100 (UTC+01:00) - logout token:  222d76a2-fdf4-48e8-a3ea-903a0a1c5d6c
-Sat May 21 2022 21:09:50 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:09:50 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:10:09 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:10:09 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:10:16 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
-Sat May 21 2022 21:10:16 GMT+0100 (UTC+01:00) - Server is running on port 5000
-Sat May 21 2022 21:10:54 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:11:01 GMT+0100 (UTC+01:00) - POST /authentication/login
-Sat May 21 2022 21:11:02 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 02:44:22 GMT+0100 (UTC+01:00)
-Sat May 21 2022 21:11:02 GMT+0100 (UTC+01:00) - token created d00ac590-03fb-43ed-aa11-22b2a8813f4d
-Sat May 21 2022 21:11:02 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:43:56 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:43:56 GMT+0100 (UTC+01:00) - token:  d00ac590-03fb-43ed-aa11-22b2a8813f4d
-Sat May 21 2022 21:43:56 GMT+0100 (UTC+01:00) - GET /logout/user
-Sat May 21 2022 21:43:56 GMT+0100 (UTC+01:00) - logout token:  d00ac590-03fb-43ed-aa11-22b2a8813f4d
-Sat May 21 2022 21:44:41 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:44:45 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:44:47 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:44:49 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:44:49 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
-Sat May 21 2022 21:44:52 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:44:53 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:44:55 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:44:55 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
-Sat May 21 2022 21:44:56 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:44:57 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:44:57 GMT+0100 (UTC+01:00) - get all manches for a planning  de388c5b-6da5-41b7-837b-96f70686e8da
-Sat May 21 2022 21:44:59 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:45:01 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:45:01 GMT+0100 (UTC+01:00) - get all manches for a planning  c3b4a1f9-9344-4da1-971a-c68872d6055a
-Sat May 21 2022 21:45:03 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:45:28 GMT+0100 (UTC+01:00) - POST /authentication/login
-Sat May 21 2022 21:45:28 GMT+0100 (UTC+01:00) - person found 003c7cea-536d-4749-b3fd-5ade30931875  token expiration date:  Sun May 22 2022 03:18:48 GMT+0100 (UTC+01:00)
-Sat May 21 2022 21:45:28 GMT+0100 (UTC+01:00) - token created 5f6bdfe2-63e3-4842-8d22-ece8a9cc1e9c
-Sat May 21 2022 21:45:28 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:45:37 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:45:37 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
-Sat May 21 2022 21:45:49 GMT+0100 (UTC+01:00) - token:  5f6bdfe2-63e3-4842-8d22-ece8a9cc1e9c
-Sat May 21 2022 21:45:49 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:45:49 GMT+0100 (UTC+01:00) - GET /logout/user
-Sat May 21 2022 21:45:49 GMT+0100 (UTC+01:00) - logout token:  5f6bdfe2-63e3-4842-8d22-ece8a9cc1e9c
-Sat May 21 2022 21:45:52 GMT+0100 (UTC+01:00) - POST /authentication/login
-Sat May 21 2022 21:45:52 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 03:19:12 GMT+0100 (UTC+01:00)
-Sat May 21 2022 21:45:52 GMT+0100 (UTC+01:00) - token created 7c25377b-553f-447a-94f3-827e7c74a17f
-Sat May 21 2022 21:45:52 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:46:03 GMT+0100 (UTC+01:00) - GET /person
-Sat May 21 2022 21:46:10 GMT+0100 (UTC+01:00) - GET /manche
-Sat May 21 2022 21:46:23 GMT+0100 (UTC+01:00) - GET /person
-Sat May 21 2022 21:46:26 GMT+0100 (UTC+01:00) - get all plannings
-Sat May 21 2022 21:46:36 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
-Sat May 21 2022 21:46:36 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
-Sat May 21 2022 21:46:58 GMT+0100 (UTC+01:00) - passing by user filter
-Sat May 21 2022 21:46:58 GMT+0100 (UTC+01:00) - token:  7c25377b-553f-447a-94f3-827e7c74a17f
-Sat May 21 2022 21:46:58 GMT+0100 (UTC+01:00) - GET /logout/user
-Sat May 21 2022 21:46:58 GMT+0100 (UTC+01:00) - logout token:  7c25377b-553f-447a-94f3-827e7c74a17f
-Sat May 21 2022 21:47:07 GMT+0100 (UTC+01:00) - POST /authentication/login
-Sat May 21 2022 21:47:07 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 03:20:27 GMT+0100 (UTC+01:00)
-Sat May 21 2022 21:47:07 GMT+0100 (UTC+01:00) - token created 3de6a641-f089-4e23-bb4a-1e946a28d9bd
-Sat May 21 2022 21:47:07 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 12:48:36 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 12:48:36 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 12:49:52 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 12:49:52 GMT+0100 (UTC+01:00) - person found 003c7cea-536d-4749-b3fd-5ade30931875  token expiration date:  Sun May 22 2022 18:23:12 GMT+0100 (UTC+01:00)
+Sun May 22 2022 12:49:52 GMT+0100 (UTC+01:00) - token created 6db6b216-867d-4157-abb4-c90057b1b274
+Sun May 22 2022 12:49:52 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 12:50:03 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 12:50:03 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Sun May 22 2022 12:51:36 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 12:52:10 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 12:52:10 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - token:  6db6b216-867d-4157-abb4-c90057b1b274
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 12:52:14 GMT+0100 (UTC+01:00) - logout token:  6db6b216-867d-4157-abb4-c90057b1b274
+Sun May 22 2022 12:52:18 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 12:52:18 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 18:25:38 GMT+0100 (UTC+01:00)
+Sun May 22 2022 12:52:18 GMT+0100 (UTC+01:00) - token created 26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:52:18 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 12:52:24 GMT+0100 (UTC+01:00) - POST /person
+Sun May 22 2022 12:52:24 GMT+0100 (UTC+01:00) - create a new person  qc kh
+Sun May 22 2022 12:52:24 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:52:36 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 12:52:36 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 12:52:42 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:52:42 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:52:52 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:52:52 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:53:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 12:53:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 12:53:15 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:53:15 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:53:15 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 12:53:15 GMT+0100 (UTC+01:00) - delete a person by id :  a27f1b0e-4b71-44b6-826a-fa35f5b1c5cd
+Sun May 22 2022 12:53:26 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:53:28 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:53:28 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:53:28 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 12:53:28 GMT+0100 (UTC+01:00) - delete a person by id :  8914da93-d108-41e5-97b2-ef4d05f213e5
+Sun May 22 2022 12:53:30 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:55:14 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:55:26 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:56:45 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:56:45 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:56:45 GMT+0100 (UTC+01:00) - POST /person
+Sun May 22 2022 12:56:45 GMT+0100 (UTC+01:00) - create a new person  sdgq qsdgqsdg
+Sun May 22 2022 12:56:45 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:56:51 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 12:56:51 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 12:56:51 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 12:56:51 GMT+0100 (UTC+01:00) - delete a person by id :  cd7ea37e-d509-4d79-a1fb-39e99431d808
+Sun May 22 2022 12:59:38 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 12:59:41 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:00:07 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:00:12 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:00:12 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:00:12 GMT+0100 (UTC+01:00) - POST /person
+Sun May 22 2022 13:00:12 GMT+0100 (UTC+01:00) - create a new person  qsefqs qsdgqdg
+Sun May 22 2022 13:00:12 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:00:57 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:00:59 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:00:59 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:00:59 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 13:00:59 GMT+0100 (UTC+01:00) - delete a person by id :  27761229-d3d2-4462-842b-844e3df17148
+Sun May 22 2022 13:01:13 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:01:13 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:01:13 GMT+0100 (UTC+01:00) - POST /person
+Sun May 22 2022 13:01:13 GMT+0100 (UTC+01:00) - create a new person  QFqf sdvsqdgsdv
+Sun May 22 2022 13:01:13 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:01:15 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:01:15 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:01:15 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 13:01:15 GMT+0100 (UTC+01:00) - delete a person by id :  8357ed0f-256d-4279-8de7-f1193a72d7a3
+Sun May 22 2022 13:01:21 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:01:58 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:01:58 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:01:58 GMT+0100 (UTC+01:00) - create a new planning  qsgqdrgqdsr 2022-05-28
+Sun May 22 2022 13:01:58 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:02:02 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:02:02 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:02:44 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:02:50 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:02:52 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:02:52 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:02:52 GMT+0100 (UTC+01:00) - delete a planning by id :  39ddaa3f-b8ea-43fb-8f61-f992d53847fd
+Sun May 22 2022 13:03:02 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:03:02 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:03:02 GMT+0100 (UTC+01:00) - create a new planning  qsdfqs 2022-05-28
+Sun May 22 2022 13:03:02 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:03:06 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:03:06 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:03:06 GMT+0100 (UTC+01:00) - delete a planning by id :  d92679a3-0e36-463b-946e-635c5bd4e6eb
+Sun May 22 2022 13:03:19 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:03:52 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:04:10 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:04:29 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:04:31 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:04:31 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:04:58 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:04:58 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:05:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:05:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:06:32 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:06:36 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:06:41 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:06:50 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:06:50 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:06:50 GMT+0100 (UTC+01:00) - DELETE /manche/:id
+Sun May 22 2022 13:06:50 GMT+0100 (UTC+01:00) - delete a manche by id :  621a2618-ecab-4748-bc05-f03cc814d1ad
+Sun May 22 2022 13:08:40 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:08:40 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:08:43 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:08:56 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:10:25 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:10:25 GMT+0100 (UTC+01:00) - token:  
+Sun May 22 2022 13:23:15 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:23:15 GMT+0100 (UTC+01:00) - token:  
+Sun May 22 2022 13:23:42 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:23:42 GMT+0100 (UTC+01:00) - token:  
+Sun May 22 2022 13:24:02 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:24:02 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Sun May 22 2022 13:24:06 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:24:09 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:24:31 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:25:27 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:25:27 GMT+0100 (UTC+01:00) - token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:25:27 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:25:27 GMT+0100 (UTC+01:00) - logout token:  26949e2d-ae8d-430b-99a8-e18178adf84a
+Sun May 22 2022 13:25:41 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:25:41 GMT+0100 (UTC+01:00) - person found 003c7cea-536d-4749-b3fd-5ade30931875  token expiration date:  Sun May 22 2022 18:59:01 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:25:41 GMT+0100 (UTC+01:00) - token created 3eee6d66-77c4-4d6a-9d58-e7016e40a9af
+Sun May 22 2022 13:25:41 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:27:49 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:27:49 GMT+0100 (UTC+01:00) - person found 003c7cea-536d-4749-b3fd-5ade30931875  token expiration date:  Sun May 22 2022 19:01:09 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:27:49 GMT+0100 (UTC+01:00) - token created 1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:27:49 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:27:56 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:27:58 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:28:01 GMT+0100 (UTC+01:00) - token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:28:01 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:28:01 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:28:01 GMT+0100 (UTC+01:00) - logout token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:29:33 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:29:33 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:31:03 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:31:03 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:32:04 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:32:04 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:32:09 GMT+0100 (UTC+01:00) - POST /person
+Sun May 22 2022 13:32:09 GMT+0100 (UTC+01:00) - create a new person  test test
+Sun May 22 2022 13:32:09 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:32:13 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:32:13 GMT+0100 (UTC+01:00) - token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:33:54 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:33:56 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:33:58 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:33:58 GMT+0100 (UTC+01:00) - token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:34:02 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:34:02 GMT+0100 (UTC+01:00) - token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:34:08 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:34:08 GMT+0100 (UTC+01:00) - token:  1157cf00-a3e7-43ca-95c2-bcb0deec3934
+Sun May 22 2022 13:34:12 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:34:13 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 19:07:33 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:34:13 GMT+0100 (UTC+01:00) - token created b104d06e-5aa4-4dca-adc5-934eb7dc36e9
+Sun May 22 2022 13:34:13 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:34:14 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:34:14 GMT+0100 (UTC+01:00) - token:  b104d06e-5aa4-4dca-adc5-934eb7dc36e9
+Sun May 22 2022 13:34:14 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:34:14 GMT+0100 (UTC+01:00) - logout token:  b104d06e-5aa4-4dca-adc5-934eb7dc36e9
+Sun May 22 2022 13:34:24 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:34:25 GMT+0100 (UTC+01:00) - person found c204ef55-3d97-4878-b465-c61c3afaa458  token expiration date:  Sun May 22 2022 19:07:45 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:34:25 GMT+0100 (UTC+01:00) - token created 54b0eb51-6705-47a3-b064-7cbf8d0e855a
+Sun May 22 2022 13:34:25 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:34:29 GMT+0100 (UTC+01:00) - token:  54b0eb51-6705-47a3-b064-7cbf8d0e855a
+Sun May 22 2022 13:34:29 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:34:29 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:34:29 GMT+0100 (UTC+01:00) - logout token:  54b0eb51-6705-47a3-b064-7cbf8d0e855a
+Sun May 22 2022 13:37:12 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:37:12 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:37:16 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:37:16 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:37:57 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:37:57 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 19:11:17 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:37:57 GMT+0100 (UTC+01:00) - token created bd776bc3-e825-45a7-8cd6-036782113b20
+Sun May 22 2022 13:37:57 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:37:59 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:38:07 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:38:07 GMT+0100 (UTC+01:00) - token:  bd776bc3-e825-45a7-8cd6-036782113b20
+Sun May 22 2022 13:38:19 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:38:19 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:38:22 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:38:22 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:38:30 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:38:32 GMT+0100 (UTC+01:00) - passing by admin filter
+Sun May 22 2022 13:38:32 GMT+0100 (UTC+01:00) - token:  bd776bc3-e825-45a7-8cd6-036782113b20
+Sun May 22 2022 13:38:32 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Sun May 22 2022 13:38:32 GMT+0100 (UTC+01:00) - delete a person by id :  c204ef55-3d97-4878-b465-c61c3afaa458
+Sun May 22 2022 13:38:37 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:38:37 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:39:33 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Sun May 22 2022 13:39:33 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Sun May 22 2022 13:40:02 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:40:02 GMT+0100 (UTC+01:00) - token:  bd776bc3-e825-45a7-8cd6-036782113b20
+Sun May 22 2022 13:40:02 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:40:02 GMT+0100 (UTC+01:00) - logout token:  bd776bc3-e825-45a7-8cd6-036782113b20
+Sun May 22 2022 13:40:11 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:14 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:40:15 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:17 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:17 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Sun May 22 2022 13:40:18 GMT+0100 (UTC+01:00) - GET /manche
+Sun May 22 2022 13:40:20 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:21 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:21 GMT+0100 (UTC+01:00) - get all manches for a planning  de388c5b-6da5-41b7-837b-96f70686e8da
+Sun May 22 2022 13:40:22 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:24 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:24 GMT+0100 (UTC+01:00) - get all manches for a planning  4f8c3a00-9e03-4707-bc97-b4e537e5b397
+Sun May 22 2022 13:40:25 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:26 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:26 GMT+0100 (UTC+01:00) - get all manches for a planning  c3b4a1f9-9344-4da1-971a-c68872d6055a
+Sun May 22 2022 13:40:28 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:40 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:40:40 GMT+0100 (UTC+01:00) - person found 003c7cea-536d-4749-b3fd-5ade30931875  token expiration date:  Sun May 22 2022 19:14:00 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:40:40 GMT+0100 (UTC+01:00) - token created 4e9bb4d9-fe1f-4d7e-811f-46a3f7f4bcc5
+Sun May 22 2022 13:40:40 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:46 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:46 GMT+0100 (UTC+01:00) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Sun May 22 2022 13:40:48 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:49 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:49 GMT+0100 (UTC+01:00) - get all manches for a planning  de388c5b-6da5-41b7-837b-96f70686e8da
+Sun May 22 2022 13:40:50 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:51 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:51 GMT+0100 (UTC+01:00) - get all manches for a planning  4f8c3a00-9e03-4707-bc97-b4e537e5b397
+Sun May 22 2022 13:40:53 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:40:54 GMT+0100 (UTC+01:00) - GET /manche/planning/:planning_id
+Sun May 22 2022 13:40:54 GMT+0100 (UTC+01:00) - get all manches for a planning  c3b4a1f9-9344-4da1-971a-c68872d6055a
+Sun May 22 2022 13:40:55 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:43:39 GMT+0100 (UTC+01:00) - passing by user filter
+Sun May 22 2022 13:43:39 GMT+0100 (UTC+01:00) - token:  4e9bb4d9-fe1f-4d7e-811f-46a3f7f4bcc5
+Sun May 22 2022 13:43:39 GMT+0100 (UTC+01:00) - GET /logout/user
+Sun May 22 2022 13:43:39 GMT+0100 (UTC+01:00) - logout token:  4e9bb4d9-fe1f-4d7e-811f-46a3f7f4bcc5
+Sun May 22 2022 13:43:45 GMT+0100 (UTC+01:00) - POST /authentication/login
+Sun May 22 2022 13:43:45 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Sun May 22 2022 19:17:05 GMT+0100 (UTC+01:00)
+Sun May 22 2022 13:43:45 GMT+0100 (UTC+01:00) - token created fa71d4ef-5447-4c40-b875-4312ab6c77ef
+Sun May 22 2022 13:43:45 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:43:47 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:43:55 GMT+0100 (UTC+01:00) - GET /person
+Sun May 22 2022 13:43:58 GMT+0100 (UTC+01:00) - get all plannings
+Sun May 22 2022 13:44:03 GMT+0100 (UTC+01:00) - GET /manche

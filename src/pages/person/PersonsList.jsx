@@ -43,7 +43,7 @@ const PersonsList = () => {
                     <RedirectButton to={"/edit-person/" + person.id} content={<Pen />} />
                   </td>
                   <td>
-                    <DeleteButton url={"/person"} id={person.id + "/admin"} callback={setPersons} content={<Trash />} /* redirect={"/persons"} */ />
+                    <DeleteButton url={"/person"} id={person.id} role="admin" callback={setPersons} content={<Trash />} /* redirect={"/persons"} */ />
                   </td>
                 </tr>
               ))}

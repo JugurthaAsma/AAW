@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../img/hylia.png";
-import img2 from "../img/jugurtha.png";
+import hylia from "../img/hylia.png";
+import jugurtha from "../img/jugurtha.png";
 import "../styles/components/AboutUs.css";
 import { Linkedin } from "react-bootstrap-icons";
 import { Github } from "react-bootstrap-icons";
@@ -11,13 +11,13 @@ const AboutUs = () => {
     <>
       <h1 className="text-center mt-5">About Us</h1>
       <div className="cards">
-        <div class="card">
+        <div className="card">
           <div className="images">
-            <img class="card-img-top" src={img} alt="Hylia" />
+            <img className="card-img-top" src={hylia} alt="Hylia" />
           </div>
-          <div class="card-body">
-            <h3 class="card-title">Hylia </h3>
-            <p class="card-text">Hello, i'm Hylia (AKA Hylionx!). I am in the first year of a master's degree in software design. I come from the north of France. Fries, fries, fries! </p>
+          <div className="card-body">
+            <h3 className="card-title">Hylia </h3>
+            <p className="card-text">Hello, i'm Hylia (AKA Hylionx!). I am in the first year of a master's degree in software design. I come from the north of France. Fries, fries, fries! </p>
           </div>
           <div className="network">
             <a href="https://fr.linkedin.com/in/hylia-boudahba-58310417b">
@@ -32,13 +32,13 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div class="card">
+        <div className="card">
           <div className="images">
-            <img class="card-img-top" src={img2} alt="Jugurtha" />
+            <img className="card-img-top" src={jugurtha} alt="Jugurtha" />
           </div>
-          <div class="card-body">
-            <h3 class="card-title">Jugurtha </h3>
-            <p class="card-text">
+          <div className="card-body">
+            <h3 className="card-title">Jugurtha </h3>
+            <p className="card-text">
               Hello, i'm future SERLIEN Jugurtha (AKA Jugo!). I am in the first year of a master's degree in software design. I am passionate about IT. So you're gonna have to put up with me!{" "}
             </p>
           </div>

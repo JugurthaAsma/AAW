@@ -52,7 +52,7 @@ const PlanningsList = () => {
                       <RedirectButton to={"/edit-planning/" + planning.id} />
                     </td>
                     <td>
-                      <DeleteButton url="/planning" id={planning.id + "/admin"} callback={setPlannings} />
+                      <DeleteButton url="/planning" id={planning.id} role="admin" callback={setPlannings} />
                     </td>
                   </RoleNeedComponent>
                 </tr>

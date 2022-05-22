@@ -18,7 +18,7 @@ const AddPerson = () => {
           <Input value={lastName} placeholder="Enter the last name" onChange={(e) => setLastName(e.target.value)} />
         </div>
         <div className="col-md-1">
-          <AddButton url="/person" body={{ firstName, lastName }} redirect="/persons" />
+          <AddButton url="/person/admin" body={{ firstName, lastName }} redirect="/persons" />
         </div>
       </div>
     </RoleNeedComponent>

@@ -8,7 +8,7 @@ const AddPlanning = () => {
   const [date, setDate] = useState();
 
   return (
-    <RoleNeedComponent neededRole="user">
+    <RoleNeedComponent neededRole="admin">
       <h1 className="text-center mt-5">Add a planning</h1>
       <div className="d-flex mt-5 row">
         <div className="col-md-5">

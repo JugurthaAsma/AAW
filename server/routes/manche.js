@@ -101,7 +101,7 @@ app.delete("/:id/admin", async (req, res) => {
   const { id } = req.params;
   logger("delete a manche by id : ", id);
 
-  myQuery("DELETE FROM manche WHERE id = $1", [id], (err, result) => {
+  myQuery("DELETE FROM manche WHERE id = $1 RETURNING *", [id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
@@ -113,16 +113,16 @@ app.delete("/:id/admin", async (req, res) => {
 /**
  * Delete all manches for a planning
  */
-app.delete("/planning/:planning_id", async (req, res) => {
+app.delete("/planning/:planning_id/admin", async (req, res) => {
   logger("DELETE /manche/planning/:planning_id");
   const { planning_id } = req.params;
   logger("delete all manches for a planning : ", planning_id);
 
-  myQuery("DELETE FROM manche WHERE planning_id = $1", [planning_id], (err, result) => {
+  myQuery("DELETE FROM manche WHERE planning_id = $1 RETURNING *", [planning_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      res.send(result.rows[0]);
+      res.send(result.rows);
     }
   });
 });
