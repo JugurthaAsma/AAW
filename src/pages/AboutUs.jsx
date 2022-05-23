@@ -2,9 +2,7 @@ import React from "react";
 import hylia from "../img/hylia.png";
 import jugurtha from "../img/jugurtha.png";
 import "../styles/components/AboutUs.css";
-import { Linkedin } from "react-bootstrap-icons";
-import { Github } from "react-bootstrap-icons";
-import { Google } from "react-bootstrap-icons";
+import { Linkedin, Github, EnvelopeFill } from "react-bootstrap-icons";
 
 const AboutUs = () => {
   return (
@@ -27,7 +25,7 @@ const AboutUs = () => {
               <Github id="icon" />
             </a>
             <a href="mailto:hylia.boudahba@gmail.com">
-              <Google id="icon" />
+              <EnvelopeFill id="icon" />
             </a>
           </div>
         </div>
@@ -50,7 +48,7 @@ const AboutUs = () => {
               <Github id="icon" />
             </a>
             <a href="mailto:jugurtha.1703@gmail.com">
-              <Google id="icon" />
+              <EnvelopeFill id="icon" />
             </a>
           </div>
         </div>
