@@ -1,5 +1,4 @@
 import React from "react";
-import config from "../../config";
 import { Trash } from "react-bootstrap-icons";
 
 //import { useNavigate } from "react-router-dom";
@@ -19,17 +18,17 @@ const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash />, 
     let fianlUrl = url;
     fianlUrl += id ? "/" + id : "";
     fianlUrl += role ? "/" + role : "";
-    console.log(config.SERVER_ADDRESS + fianlUrl);
-    fetch(config.SERVER_ADDRESS + fianlUrl, {
+    //console.log( fianlUrl);
+    fetch(fianlUrl, {
       method: "DELETE",
       credentials: "include",
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("delete ", data, ", redirect to ");
+        //console.log("delete ", data, ", redirect to ");
         // navigate(redirect); // redirect to the same page seems to be buggy (it doesn't remove the row)
         // so we use a callback instead, (callback expected to be the setState of the parent component)
-        callback((elems) => elems.filter((elem) => elem.id !== id));
+        callback();
       })
       .catch((error) => console.log(error));
   };

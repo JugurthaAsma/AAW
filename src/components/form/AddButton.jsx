@@ -1,5 +1,4 @@
 import React from "react";
-import config from "../../config";
 import { useNavigate } from "react-router-dom";
 
 const AddButton = ({ url, body, redirect, content = "+" }) => {
@@ -7,7 +6,7 @@ const AddButton = ({ url, body, redirect, content = "+" }) => {
   const handleAdd = (e) => {
     e.preventDefault();
 
-    fetch(config.SERVER_ADDRESS + url, {
+    fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

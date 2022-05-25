@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import Input from "./Input";
-import config from "../../config";
 import "../../styles/components/PersonForm.css";
 import AuthenticationContext from "../../hooks/AuthenticationContext";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +14,7 @@ const PersonForm = ({ title, url, method = "GET" }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let finalUrl = config.SERVER_ADDRESS + url;
+    let finalUrl = url;
     let body = JSON.stringify({ firstName, lastName });
 
     // if method is GET, pass the params in the url

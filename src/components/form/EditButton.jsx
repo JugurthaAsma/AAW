@@ -1,5 +1,4 @@
 import React from "react";
-import config from "../../config";
 import { useNavigate } from "react-router-dom";
 
 const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
@@ -8,7 +7,7 @@ const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
   const handleEdit = (e) => {
     e.preventDefault();
 
-    fetch(config.SERVER_ADDRESS + url, {
+    fetch(url, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

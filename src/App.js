@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import config from "./config.json";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
@@ -39,18 +38,15 @@ function App() {
    * make first fetch with the token to get the person data
    */
   useEffect(() => {
-    fetch(config.SERVER_ADDRESS + "/authentication/", {
+    fetch("/authentication/", {
       credentials: "include",
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("logged person with token : ", data);
+        //console.log("logged person with token : ", data);
         setPerson(data);
       });
   }, []);
-
-  const token = ("; " + document.cookie).split(`; token=`).pop().split(";")[0];
-  console.log(token);
 
   /**
    * saving the current person in the context of the app
@@ -62,12 +58,12 @@ function App() {
     role: "visitor",
   });
 
+  // context value of the context provider
   let AuthenticationContextValue = {
     person,
     setPerson,
   };
 
-  console.log("App person:", person);
   return (
     <AuthenticationContext.Provider value={AuthenticationContextValue}>
       <div className="App">

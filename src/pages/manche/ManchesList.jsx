@@ -66,7 +66,7 @@ const ManchesList = () => {
                       <RedirectButton to={"/edit-manche/" + manche.id} />
                     </td>
                     <td>
-                      <DeleteButton url="/manche" id={manche.id} role="admin" callback={setManches} /* redirect={"/persons"} */ />
+                      <DeleteButton url="/manche" id={manche.id} role="admin" callback={() => setManches((elems) => elems.filter((elem) => elem.id !== id))} /* redirect={"/persons"} */ />
                     </td>
                   </RoleNeedComponent>
                 </tr>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import config from "../config";
 
 const useFetch = (
   url,
@@ -13,13 +12,12 @@ const useFetch = (
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  //console.log("useFetch: ", config.SERVER_ADDRESS + url);
 
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
       try {
-        const response = await fetch(config.SERVER_ADDRESS + url, { method, body, headers, credentials: "include" });
+        const response = await fetch(url, { method, body, headers, credentials: "include" });
         const data = await response.json();
         setData(data);
       } catch (error) {
@@ -30,6 +28,7 @@ const useFetch = (
     };
 
     fetchData();
+    // eslint-disable-next-line
   }, [url]);
 
   return { data, error, loading };

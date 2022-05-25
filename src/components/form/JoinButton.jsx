@@ -1,5 +1,4 @@
 import React from "react";
-import config from "../../config";
 import { PersonPlusFill } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +6,7 @@ const JoinButton = ({ url, body, redirect = "/plannings", content = <PersonPlusF
   let navigate = useNavigate();
 
   const handleJoin = () => {
-    fetch(config.SERVER_ADDRESS + url, {
+    fetch(url, {
       method: "POST",
       credentials: "include",
     })

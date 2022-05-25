@@ -33,7 +33,7 @@ export const NavBarData = [
     icon: <ListStars />,
   },
   {
-    title: "Incriptions",
+    title: "Inscriptions",
     link: "/inscriptions/manche/0",
     neededRole: "user",
     icon: <PersonLinesFill />,

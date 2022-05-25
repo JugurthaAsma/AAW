@@ -50,7 +50,13 @@ const PersonsList = () => {
                     <DeleteButton url="/authentication/logout" id={person.id} role="admin" content={<BoxArrowRight />} className="btn btn-dark" />
                   </td>
                   <td>
-                    <DeleteButton url={"/person"} id={person.id} role="admin" callback={setPersons} content={<Trash />} /* redirect={"/persons"} */ />
+                    <DeleteButton
+                      url={"/person"}
+                      id={person.id}
+                      role="admin"
+                      callback={() => setPersons((elems) => elems.filter((elem) => elem.id !== person.id))}
+                      content={<Trash />} /* redirect={"/persons"} */
+                    />
                   </td>
                 </tr>
               ))}

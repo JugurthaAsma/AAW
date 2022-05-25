@@ -19,7 +19,7 @@ const InscriptionList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Inscriptions List</h1>
-      {console.log(inscriptions)}
+
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {inscriptions && (
@@ -68,7 +68,7 @@ const InscriptionList = () => {
                   <td>{inscription.person_last_name}</td>
                   <RoleNeedComponent neededRole="admin">
                     <td>
-                      <DeleteButton url="/inscription" id={inscription.id} role="admin" callback={setInscriptions} />
+                      <DeleteButton url="/inscription" id={inscription.id} role="admin" callback={() => setInscriptions((elems) => elems.filter((elem) => elem.id !== id))} />
                     </td>
                   </RoleNeedComponent>
                 </tr>
