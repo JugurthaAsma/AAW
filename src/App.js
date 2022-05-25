@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import config from "./config.json";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthenticationContext from "./hooks/AuthenticationContext";
 
@@ -14,7 +15,7 @@ import EditPlanning from "./pages/planning/EditPlanning";
 
 // manche pages
 import ManchesList from "./pages/manche/ManchesList";
- 
+
 // inscription pages
 import InscriptionList from "./pages/inscription/InscriptionList";
 
@@ -34,6 +35,23 @@ import Footer from "./components/layout/Footer";
 import "./styles/App.css";
 
 function App() {
+  /**
+   * make first fetch with the token to get the person data
+   */
+  useEffect(() => {
+    fetch(config.SERVER_ADDRESS + "/authentication/", {
+      credentials: "include",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("logged person with token : ", data);
+        setPerson(data);
+      });
+  }, []);
+
+  const token = ("; " + document.cookie).split(`; token=`).pop().split(";")[0];
+  console.log(token);
+
   /**
    * saving the current person in the context of the app
    * children components can change this value by using setPerson (ex. login component)

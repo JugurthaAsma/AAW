@@ -3,8 +3,27 @@ const app = express.Router();
 const { tokenExpirationDate } = require("../utils/util");
 const { myQuery } = require("../database/db");
 const { logger } = require("../utils/util");
+const { getPerson } = require("../database/dbQueries");
 
 // routes
+
+/**
+ * for authentication with the token
+ * Get the token from the cookie
+ * Get the person data from person table
+ * with the token from the token table
+ * by checking if the token not expired_date is greater than now
+ *
+ */
+app.get("/", (req, res) => {
+  /**
+   * Call the getPerson function
+   * will put in req.person, the the person logged with the token from the cookie
+   */
+  getPerson(req, res, () => {
+    res.send(req.person);
+  });
+});
 
 /**
  * for login

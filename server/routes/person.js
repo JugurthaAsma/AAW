@@ -8,7 +8,7 @@ const { logger } = require("../utils/util");
 /**
  * Create a new person
  */
-app.post("/", async (req, res) => {
+app.post("/admin", async (req, res) => {
   logger("POST /person");
   // destructure the request body to get the firstname and lastname
   const { firstName, lastName } = req.body;

@@ -1,9 +1,47 @@
 const { myQuery } = require("../database/db");
+const { tokenExpirationDate, logger } = require("../utils/util");
 
 /**
  * data base SQL queries
  */
 module.exports = {
+  /**
+   * get the person data from person table
+   * with the token from the token table
+   * by checking if the token not expired_date is greater than now
+   * @param {string} token
+   * @returns {Object} person
+   */
+  getPerson: (req, res, callback) => {
+    // get the token from the cookie
+    const { token } = req.cookies;
+
+    logger("getPerson with token : ", token);
+
+    /**
+     * get the person data from person table
+     * with the token from the token table
+     * by checking if the token not expired_date is greater than now
+     */
+    myQuery("SELECT * FROM person WHERE id = (SELECT person_id FROM token WHERE token = $1 AND expired_date > NOW())", [token], (err, result) => {
+      if (err || result.rows.length === 0) {
+        res.sendStatus(401);
+      } else {
+        /**
+         * Update the token expiration date
+         */
+        myQuery("UPDATE token SET expired_date = $1 WHERE token = $2", [tokenExpirationDate(), token], (err, result) => {
+          if (err) {
+            logger("error updating token expiration date: ", err);
+          }
+        });
+        req.person = result.rows[0];
+        logger("person found : ", req.person.id);
+        callback();
+      }
+    });
+  },
+
   /**
    * get all inscriptions with their manches, plannings and persons
    */
