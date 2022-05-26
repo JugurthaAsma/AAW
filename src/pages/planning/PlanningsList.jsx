@@ -3,6 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components//form/RedirectButton";
+import FilterSearch from "../../components/form/FilterSearch";
 import { toLocaleDate } from "../../helpers/DateFormatter";
 import { Eye } from "react-bootstrap-icons";
 
@@ -18,6 +19,7 @@ const PlanningsList = () => {
 
   return (
     <>
+      <FilterSearch data={data} setData={(event) => setPlannings(data.filter((val) => val.name.toLowerCase().includes(event.target.value.toLowerCase())))} />
       <h1 className="text-center mt-5">Plannings List</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
