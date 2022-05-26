@@ -7,7 +7,7 @@ const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
   const handleEdit = (e) => {
     e.preventDefault();
 
-    fetch(url, {
+    fetch(process.env.REACT_APP_API_URL + url, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

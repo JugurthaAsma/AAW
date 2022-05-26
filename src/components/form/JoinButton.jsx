@@ -6,7 +6,7 @@ const JoinButton = ({ url, body, redirect = "/plannings", content = <PersonPlusF
   let navigate = useNavigate();
 
   const handleJoin = () => {
-    fetch(url, {
+    fetch(process.env.REACT_APP_API_URL + url, {
       method: "POST",
       credentials: "include",
     })

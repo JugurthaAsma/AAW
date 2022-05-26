@@ -6,7 +6,7 @@ const AddButton = ({ url, body, redirect, content = "+" }) => {
   const handleAdd = (e) => {
     e.preventDefault();
 
-    fetch(url, {
+    fetch(process.env.REACT_APP_API_URL + url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

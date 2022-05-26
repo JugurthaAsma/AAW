@@ -15,7 +15,7 @@ const FilterSearch = ({ setData }) => {
 
   return (
     <div className="w-25 m-5 input-group md-form form-sm form-2 pl-0">
-      <input onChange={handleChange} className="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" />
+      <input value={value} onChange={handleChange} className="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" />
       <span className="input-group-text red lighten-3" id="basic-text1">
         <Search className="fas fa-search text-grey" />
       </span>

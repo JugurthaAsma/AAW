@@ -6,7 +6,7 @@ const Logout = () => {
   let navigate = useNavigate();
   const { setPerson } = useContext(AuthenticationContext);
   useEffect(() => {
-    fetch("/authentication/logout/user", {
+    fetch(process.env.REACT_APP_API_URL + "/authentication/logout/user", {
       method: "DELETE",
       credentials: "include",
     });

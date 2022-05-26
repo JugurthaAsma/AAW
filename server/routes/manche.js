@@ -24,14 +24,12 @@ app.get("/", async (req, res) => {
  * Create a new manche for a planning
  * as admin
  */
-app.post("/:planning_id/admin", async (req, res) => {
-  log("POST /manche");
-
+app.post("/admin", async (req, res) => {
   // destructure the request body to get the name and ordre
-  const { name, ordre } = req.body;
-  logger("create a new manche ", name, ordre);
+  const { planning_id, name, ordre } = req.body;
+  logger("POST /manche, create a new manche ", name, ordre);
   // create a new manche
-  myQuery("INSERT INTO manche (name, ordre, planning_id) VALUES ($1, $2, $3) RETURNING *", [name, ordre, req.params.planning_id], (err, result) => {
+  myQuery("INSERT INTO manche (name, ordre, planning_id) VALUES ($1, $2, $3) RETURNING *", [name, ordre, planning_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {

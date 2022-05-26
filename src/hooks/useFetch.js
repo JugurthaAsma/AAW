@@ -17,7 +17,7 @@ const useFetch = (
     setLoading(true);
     const fetchData = async () => {
       try {
-        const response = await fetch(url, { method, body, headers, credentials: "include" });
+        const response = await fetch(process.env.REACT_APP_API_URL + url, { method, body, headers, credentials: "include" });
         const data = await response.json();
         setData(data);
       } catch (error) {

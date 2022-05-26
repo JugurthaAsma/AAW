@@ -4,7 +4,7 @@ import "../../styles/components/PersonForm.css";
 import AuthenticationContext from "../../hooks/AuthenticationContext";
 import { useNavigate } from "react-router-dom";
 
-const PersonForm = ({ title, url, method = "GET" }) => {
+const PersonForm = ({ title, url }) => {
   let navigate = useNavigate();
   const [firstName, setFirstName] = useState("admin");
   const [lastName, setLastName] = useState("admin");
@@ -14,21 +14,12 @@ const PersonForm = ({ title, url, method = "GET" }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let finalUrl = url;
-    let body = JSON.stringify({ firstName, lastName });
+    //console.log("fetching : ", process.env.REACT_APP_API_URL + url);
 
-    // if method is GET, pass the params in the url
-    if (method === "GET") {
-      finalUrl += "/" + firstName + "/" + lastName;
-      body = null;
-    }
-
-    // console.log("fetching : ", finalUrl);
-
-    fetch(finalUrl, {
-      method: method,
+    fetch(process.env.REACT_APP_API_URL + url, {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body,
+      body: JSON.stringify({ firstName, lastName }),
       credentials: "include",
     })
       .then((response) => response.json())
