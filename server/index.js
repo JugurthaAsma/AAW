@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const { myQuery } = require("./database/db");
 const { logger } = require("./utils/util");
 const { getPerson } = require("./database/dbQueries");
 const path = require("path");
@@ -31,6 +30,7 @@ app.get("/", (req, res) => {
 
 // admin filter
 app.use("*/admin", (req, res, next) => {
+  logger("passing by admin filter");
   /**
    * Call the getPerson function
    * will put in req.person, the the person logged with the token from the cookie
@@ -46,6 +46,7 @@ app.use("*/admin", (req, res, next) => {
 
 // user filter
 app.use("*/user", (req, res, next) => {
+  logger("passing by user filter");
   /**
    * Call the getPerson function
    * will put in req.person, the the person logged with the token from the cookie
