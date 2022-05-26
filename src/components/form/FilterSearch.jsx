@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Search } from "react-bootstrap-icons";
 
 /**
  *
@@ -13,9 +14,11 @@ const FilterSearch = ({ setData }) => {
   };
 
   return (
-    <div className="md-form my-0">
-      <input className="form-control" value={value} onChange={handleChange} type="text" placeholder="Search" aria-label="Search" />
-      <i className="fas fa-search text-white ml-3" aria-hidden="true"></i>
+    <div className="w-25 m-5 input-group md-form form-sm form-2 pl-0">
+      <input onChange={handleChange} className="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" />
+      <span className="input-group-text red lighten-3" id="basic-text1">
+        <Search className="fas fa-search text-grey" />
+      </span>
     </div>
   );
 };
