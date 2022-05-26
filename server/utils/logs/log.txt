@@ -1479,3 +1479,80 @@ Wed May 25 2022 23:34:07 GMT+0100 (UTC+01:00) - GET /inscription
 Wed May 25 2022 23:34:07 GMT+0100 (UTC+01:00) - getPerson with token :  0c33d009-8903-4942-b84d-a93c0a7e76fe
 Wed May 25 2022 23:34:07 GMT+0100 (UTC+01:00) - person found :  003c7cea-536d-4749-b3fd-5ade30931875
 Wed May 25 2022 23:34:10 GMT+0100 (UTC+01:00) - GET /manche
+Thu May 26 2022 11:01:44 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:01:44 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:02:13 GMT+0100 (UTC+01:00) - getPerson with token :  
+Thu May 26 2022 11:02:26 GMT+0100 (UTC+01:00) - get all plannings
+Thu May 26 2022 11:02:27 GMT+0100 (UTC+01:00) - GET /manche
+Thu May 26 2022 11:12:40 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:12:40 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:12:42 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:12:42 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:12:57 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:12:57 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:12:58 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:12:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:12 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:12 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:26 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:26 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:29 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:29 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:39 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:39 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:41 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:41 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:47 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:47 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:56 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:56 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:13:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:13:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:14:02 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:14:02 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:14:09 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:14:09 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:14:37 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:14:37 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:14:39 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:14:39 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:14:46 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:14:46 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:15:25 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:15:25 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:15:30 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:15:31 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:15:42 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:15:42 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:16:11 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:16:11 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:16:28 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:16:28 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:16:30 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:16:30 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:16:40 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:16:40 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:16:47 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:16:47 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:03 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:03 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:17 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:17 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:21 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:21 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:24 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:25 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:36 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:36 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:17:55 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:17:55 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:18:01 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:18:01 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:19:17 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:19:17 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:19:20 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:19:20 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:19:26 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:19:26 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Thu May 26 2022 11:20:57 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Thu May 26 2022 11:20:57 GMT+0100 (UTC+01:00) - Server is running on port 5000

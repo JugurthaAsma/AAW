@@ -7,6 +7,7 @@ const { logger } = require("../utils/util");
 
 /**
  * Create a new person
+ * as admin
  */
 app.post("/admin", async (req, res) => {
   logger("POST /person");
@@ -58,6 +59,7 @@ app.get("/:id", async (req, res) => {
 
 /**
  * Update a person by id
+ * as user
  */
 app.put("/:id/user", async (req, res) => {
   logger("PUT /person/:id");
@@ -76,6 +78,7 @@ app.put("/:id/user", async (req, res) => {
 
 /**
  * Delete a person by id
+ * as admin
  */
 app.delete("/:id/admin", async (req, res) => {
   logger("DELETE /person/:id");

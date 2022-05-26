@@ -7,6 +7,7 @@ const { logger } = require("../utils/util");
 
 /**
  * Create a new planning
+ * as admin
  */
 app.post("/admin", async (req, res) => {
   // destructure the request body to get the name and date
@@ -54,8 +55,9 @@ app.get("/:id", async (req, res) => {
 
 /**
  * Update an planning by id
+ * as admin
  */
-app.put("/:id", async (req, res) => {
+app.put("/:id/admin", async (req, res) => {
   const { id } = req.params;
   const { name, date } = req.body;
   logger("update an planning by id : ", id, " name : ", name, " date : ", date);
@@ -70,6 +72,7 @@ app.put("/:id", async (req, res) => {
 
 /**
  * Delete an planning by id
+ * as admin
  */
 app.delete("/:id/admin", async (req, res) => {
   const { id } = req.params;

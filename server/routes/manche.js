@@ -22,6 +22,7 @@ app.get("/", async (req, res) => {
 
 /**
  * Create a new manche for a planning
+ * as admin
  */
 app.post("/:planning_id/admin", async (req, res) => {
   log("POST /manche");
@@ -75,7 +76,8 @@ app.get("/:id", async (req, res) => {
 });
 
 /**
- *  Update a manche
+ * Update a manche
+ * as admin
  */
 app.put("/:id/admin", async (req, res) => {
   logger("PUT /manche/:id");
@@ -95,6 +97,7 @@ app.put("/:id/admin", async (req, res) => {
 
 /**
  * Delete a manche
+ * as admin
  */
 app.delete("/:id/admin", async (req, res) => {
   logger("DELETE /manche/:id");
@@ -112,6 +115,7 @@ app.delete("/:id/admin", async (req, res) => {
 
 /**
  * Delete all manches for a planning
+ * as admin
  */
 app.delete("/planning/:planning_id/admin", async (req, res) => {
   logger("DELETE /manche/planning/:planning_id");
