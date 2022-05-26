@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
+import FilterSearch from "../../components/form/FilterSearch";
 import { toLocaleDate } from "../../helpers/DateFormatter";
 import { useParams } from "react-router-dom";
 
@@ -19,6 +20,18 @@ const InscriptionList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Inscriptions List</h1>
+      <FilterSearch
+        data={data}
+        setData={(event) =>
+          setInscriptions(
+            data.filter((val) =>
+              (toLocaleDate(val.planning_date) + val.planning_id + val.planning_name + val.manche_id + val.manche_name + val.person_id + val.person_first_name + val.person_last_name)
+                .toLowerCase()
+                .includes(event.target.value.toLowerCase())
+            )
+          )
+        }
+      />
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}

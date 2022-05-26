@@ -4,6 +4,7 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components/form/RedirectButton";
 import AddButton from "../../components/form/AddButton";
+import FilterSearch from "../../components/form/FilterSearch";
 import { PersonPlusFill } from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
 
@@ -21,6 +22,8 @@ const ManchesList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Manches List</h1>
+      <FilterSearch data={data} setData={(event) => setManches(data.filter((val) => (val.id + val.name + val.ordre).toLowerCase().includes(event.target.value.toLowerCase())))} />
+
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {manches && (

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components/form/RedirectButton";
+import FilterSearch from "../../components/form/FilterSearch";
 import { Trash, Pen, BoxArrowRight } from "react-bootstrap-icons";
 
 const PersonsList = () => {
@@ -17,6 +18,8 @@ const PersonsList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Persons List</h1>
+      <FilterSearch data={data} setData={(event) => setPersons(data.filter((val) => (val.id + val.first_name + val.last_name).toLowerCase().includes(event.target.value.toLowerCase())))} />
+
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {persons && (

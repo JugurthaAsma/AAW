@@ -8,8 +8,8 @@ import { toLocaleDate } from "../../helpers/DateFormatter";
 import { Eye } from "react-bootstrap-icons";
 
 const PlanningsList = () => {
-  const [plannings, setPlannings] = useState([]);
   const { data, error, loading } = useFetch("/planning");
+  const [plannings, setPlannings] = useState([]);
 
   useEffect(() => {
     if (data) {
@@ -19,8 +19,8 @@ const PlanningsList = () => {
 
   return (
     <>
-      <FilterSearch data={data} setData={(event) => setPlannings(data.filter((val) => val.name.toLowerCase().includes(event.target.value.toLowerCase())))} />
       <h1 className="text-center mt-5">Plannings List</h1>
+      <FilterSearch data={data} setData={(event) => setPlannings(data.filter((val) => (val.id + val.name + toLocaleDate(val.date)).toLowerCase().includes(event.target.value.toLowerCase())))} />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {plannings && (
