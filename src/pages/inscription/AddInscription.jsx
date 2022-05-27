@@ -22,7 +22,7 @@ const AddInscription = () => {
       </div>
       <div className="d-flex mt-3 row">
         <div className="col-md-1">
-          <AddButton url="/inscription/admin" body={{ person_id, manche_id, planning_id }} redirect={"/inscriptions/manche/" + manche_id} content="Submit" />
+          <AddButton url="/inscription/admin" body={{ person_id, manche_id, planning_id }} redirect={"/inscriptions/manche/0"} content="Submit" />
         </div>
       </div>
     </RoleNeedComponent>

@@ -65,7 +65,11 @@ const InscriptionList = () => {
                         url="/inscription"
                         id={inscription.planning_id + "/" + inscription.person_id + "/" + inscription.manche_id}
                         role="admin"
-                        callback={() => setInscriptions((elems) => elems.filter((elem) => elem.planning_id + "/" + elem.person_id + "/" + elem.manche_id !== id))}
+                        callback={() =>
+                          setInscriptions((elems) =>
+                            elems.filter((elem) => !(elem.planning_id === inscription.planning_id && elem.person_id === inscription.person_id && elem.manche_id === inscription.manche_id))
+                          )
+                        }
                       />
                     </td>
                   </RoleNeedComponent>

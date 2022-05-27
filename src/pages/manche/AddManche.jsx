@@ -6,7 +6,7 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 
 const AddManche = () => {
   const [name, setName] = useState("");
-  const [ordre, setOrdre] = useState();
+  const [ordre, setOrdre] = useState(1);
   const [planning_id, setPlanning_id] = useState(0);
   console.log(planning_id);
 
