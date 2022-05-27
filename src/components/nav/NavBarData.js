@@ -1,5 +1,5 @@
 import React from "react";
-import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill, ListStars, PersonLinesFill, JournalPlus } from "react-bootstrap-icons";
+import { PeopleFill, PersonPlusFill, CalendarEventFill, CalendarPlusFill, ListStars, JournalPlus, Clipboard2CheckFill, Clipboard2PlusFill } from "react-bootstrap-icons";
 
 export const NavBarData = [
   {
@@ -42,6 +42,12 @@ export const NavBarData = [
     title: "Inscriptions",
     link: "/inscriptions/manche/0",
     neededRole: "user",
-    icon: <PersonLinesFill />,
+    icon: <Clipboard2CheckFill />,
+  },
+  {
+    title: "Add Inscription",
+    link: "/add-inscription",
+    neededRole: "admin",
+    icon: <Clipboard2PlusFill />,
   },
 ];

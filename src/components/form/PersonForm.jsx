@@ -45,7 +45,7 @@ const PersonForm = ({ title, url }) => {
 
   return (
     <div className="person-form">
-      <h1 className="text-center mt-5">{title}</h1>
+      <h1 className="text-center">{title}</h1>
       <form className="needs-validation" onSubmit={handleSubmit}>
         <div className="form-group was-validated">
           <label htmlFor="firstName">First Name</label>

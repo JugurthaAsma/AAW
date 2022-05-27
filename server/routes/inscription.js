@@ -22,7 +22,7 @@ app.get("/", async (req, res) => {
  * as user
  */
 app.post("/user", async (req, res) => {
-  // get the personne_id from the request
+  // get the person_id from the request
   const person_id = req.person.id;
   // destructure the request body to get the manche_id and the planning_id
   const { manche_id, planning_id } = req.body;
@@ -41,21 +41,21 @@ app.post("/user", async (req, res) => {
 });
 
 /**
- * Create a new inscription for a planning, a personne and a manche
+ * Create a new inscription for a planning, a person and a manche
  * as admin
  */
 app.post("/admin", async (req, res) => {
-  // destructure the request body to get the personne_id, the manche_id and the planning_id
-  const { personne_id, manche_id, planning_id } = req.body;
+  // destructure the request body to get the person_id, the manche_id and the planning_id
+  const { person_id, manche_id, planning_id } = req.body;
 
-  logger("POST /inscription/admin, personne_id: " + personne_id, "manche_id: " + manche_id, "planning_id: " + planning_id);
+  logger("POST /inscription/admin, person_id: " + person_id, "manche_id: " + manche_id, "planning_id: " + planning_id);
 
   // create a new inscription
-  myQuery("INSERT INTO inscription (planning_id, person_id, manche_id) VALUES ($1, $2, $3) RETURNING *", [planning_id, personne_id, manche_id], (err, result) => {
+  myQuery("INSERT INTO inscription (planning_id, person_id, manche_id) VALUES ($1, $2, $3) RETURNING *", [planning_id, person_id, manche_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      logger("create a new inscription for planning : ", planning_id, " person : ", personne_id, " and manche :", manche_id);
+      logger("create a new inscription for planning : ", planning_id, " person : ", person_id, " and manche :", manche_id);
       res.send(result.rows[0]);
     }
   });
@@ -80,11 +80,11 @@ app.get("/planning/:planning_id", async (req, res) => {
 /**
  * Get all inscriptions for a personne
  */
-app.get("/personne/:personne_id", async (req, res) => {
-  const { personne_id } = req.params;
-  logger("GET /inscription/personne/:personne_id, get all inscriptions for a personne ", personne_id);
+app.get("/personne/:person_id", async (req, res) => {
+  const { person_id } = req.params;
+  logger("GET /inscription/personne/:person_id, get all inscriptions for a personne ", person_id);
 
-  myQuery("SELECT * FROM inscription WHERE personne_id = $1", [personne_id], (err, result) => {
+  myQuery("SELECT * FROM inscription WHERE person_id = $1", [person_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
@@ -131,10 +131,10 @@ app.get("/:id", async (req, res) => {
  */
 app.put("/:id/admin", async (req, res) => {
   const { id } = req.params;
-  const { planning_id, personne_id, manche_id } = req.body;
-  logger("PUT /inscription/:id, update inscription ", id, planning_id, personne_id, manche_id);
+  const { planning_id, person_id, manche_id } = req.body;
+  logger("PUT /inscription/:id, update inscription ", id, planning_id, person_id, manche_id);
 
-  myQuery("UPDATE inscription SET planning_id = $1, personne_id = $2, manche_id = $3 WHERE id = $4 RETURNING *", [planning_id, personne_id, manche_id, id], (err, result) => {
+  myQuery("UPDATE inscription SET planning_id = $1, person_id = $2, manche_id = $3 WHERE id = $4 RETURNING *", [planning_id, person_id, manche_id, id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {

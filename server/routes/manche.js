@@ -27,7 +27,7 @@ app.get("/", async (req, res) => {
 app.post("/admin", async (req, res) => {
   // destructure the request body to get the name and ordre
   const { planning_id, name, ordre } = req.body;
-  logger("POST /manche, create a new manche ", name, ordre);
+  logger("POST /manche/admin, create a new manche ", name, ordre);
   // create a new manche
   myQuery("INSERT INTO manche (name, ordre, planning_id) VALUES ($1, $2, $3) RETURNING *", [name, ordre, planning_id], (err, result) => {
     if (err) {

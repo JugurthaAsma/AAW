@@ -21,7 +21,7 @@ const formatOptions = (data) => {
  * @param {Function} setData - The function to call when the select value is changed (supposed to be setState of the parent component)
  * @returns {JSX.Element} - The select component
  */
-const MySelect = ({ url, setData, placeholder = "Select ..." }) => {
+const MySelect = ({ url, setData, ...rest }) => {
   console.log(url);
   const [options, setOptions] = useState([]);
 
@@ -32,7 +32,7 @@ const MySelect = ({ url, setData, placeholder = "Select ..." }) => {
       .catch((err) => console.log(err));
   }, [url, setData]);
 
-  return <Select options={options} onChange={(selectedOption) => setData(selectedOption.value)} isSearchable={true} isClearable={true} placeholder={placeholder} />;
+  return <Select options={options} onChange={(selectedOption) => setData(selectedOption.value)} isSearchable={true} isClearable={true} {...rest} className="form-select-lg" />;
 };
 
 export default MySelect;

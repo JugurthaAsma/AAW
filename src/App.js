@@ -18,6 +18,7 @@ import AddManche from "./pages/manche/AddManche";
 
 // inscription pages
 import InscriptionList from "./pages/inscription/InscriptionList";
+import AddInscription from "./pages/inscription/AddInscription";
 
 // other pages
 import Home from "./pages/Home";
@@ -93,6 +94,7 @@ function App() {
                 <Route path="/add-manche" element={<AddManche />} />
 
                 <Route path="/inscriptions/manche/:id" element={<InscriptionList />} />
+                <Route path="/add-inscription" element={<AddInscription />} />
 
                 <Route path="*" element={<ErrorPage />} />
               </Routes>
