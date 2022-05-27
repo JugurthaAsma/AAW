@@ -1854,3 +1854,25 @@ Fri May 27 2022 02:09:34 GMT+0200 (heure d’été d’Europe centrale) - GET /m
 Fri May 27 2022 02:09:34 GMT+0200 (heure d’été d’Europe centrale) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
 Fri May 27 2022 02:09:36 GMT+0200 (heure d’été d’Europe centrale) - GET /manche
 Fri May 27 2022 02:09:37 GMT+0200 (heure d’été d’Europe centrale) - GET /inscription
+Fri May 27 2022 02:19:41 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:19:44 GMT+0200 (heure d’été d’Europe centrale) - POST /authentication/login
+Fri May 27 2022 02:19:44 GMT+0200 (heure d’été d’Europe centrale) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 02:20:04 GMT+0200 (heure d’été d’Europe centrale)
+Fri May 27 2022 02:19:44 GMT+0200 (heure d’été d’Europe centrale) - token created 7f44f1d4-4f86-48a8-a233-0ff285874c54
+Fri May 27 2022 02:19:44 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:19:49 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:20:01 GMT+0200 (heure d’été d’Europe centrale) - GET /inscription
+Fri May 27 2022 02:20:07 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:20:09 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:20:09 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  7f44f1d4-4f86-48a8-a233-0ff285874c54
+Fri May 27 2022 02:20:09 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:20:09 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:20:09 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:20:11 GMT+0200 (heure d’été d’Europe centrale) - GET /inscription
+Fri May 27 2022 02:24:47 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:25:33 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  7f44f1d4-4f86-48a8-a233-0ff285874c54
+Fri May 27 2022 02:25:33 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:25:52 GMT+0200 (heure d’été d’Europe centrale) - passing by user filter
+Fri May 27 2022 02:25:52 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  7f44f1d4-4f86-48a8-a233-0ff285874c54
+Fri May 27 2022 02:25:52 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:25:52 GMT+0200 (heure d’été d’Europe centrale) - DELETE /logout/user
+Fri May 27 2022 02:25:52 GMT+0200 (heure d’été d’Europe centrale) - logout token:  7f44f1d4-4f86-48a8-a233-0ff285874c54

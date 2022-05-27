@@ -20,7 +20,8 @@ const Home = () => {
               <div className="title">Consulter la liste des personnes</div>
               <div>Avec le mode admin, vous avez la possibilité de modifier, déconnecter ou même supprimer un utilisateur. 
               Un bouton "déconnecter tout le monde" permet de déconnecter toute les personnes qui sont listées.
-              Vous aurez aussi la possibilité de reecherche une personne plus facilemnt grâce à l'input de recherche.
+              Vous aurez aussi la possibilité de reecherche une personne plus facilement grâce à l'input de recherche.
+              L'administrateur peut ajouter une perosnne à la liste.
               </div>
               <div className="grid-about"></div>
             </div>
@@ -29,13 +30,23 @@ const Home = () => {
             <div className="box">
               <div className="box-content" id="minibox">
                 <div className="title">Consulter la liste des plannings</div>
-                <div>Même si ce n'est que des notions...</div>
+                <div> Consulter les manches auquelles l'utilisateur est inscrit. On peut également modifier ou supprimer un planning.
+                  L'administrateur peut ajouter un planning.
+                </div>
                 <div className="grid-about"></div>
               </div>
             </div>
           </div>
         </div>
-
+        <div className="box">
+          <div className="box-content" id="minibox">
+                  <div className="title">Consulter les manches</div>
+                  <div> Consulter les manches auquelles l'utilisateur est inscrit. On peut également modifier ou supprimer un planning.
+                    L'administrateur peut ajouter un planning.
+                  </div>
+                  <div className="grid-about"></div>
+          </div>
+        </div>
 
     </div>
   </div>
