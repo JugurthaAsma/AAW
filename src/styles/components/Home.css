@@ -7,17 +7,7 @@
     width: 100%;
 }
 
-body {
-    min-height: 100vh;
-    color: var(--color-text);
-    background: var(--color-background-mute);
-    transition: color .5s,background-color .5s;
-    font-size: 15px;
-    font-family: silka regular,sans-serif;
-    line-height: 24px;
-    letter-spacing: .5px;
-    font-weight: 400;
-}
+
 
 .box .box-content {
     padding: 36px;
