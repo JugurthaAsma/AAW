@@ -2,37 +2,45 @@ const express = require("express");
 const app = express.Router();
 const { tokenExpirationDate } = require("../utils/util");
 const { myQuery } = require("../database/db");
+const { addPerson } = require("../database/dbQueries");
 const { logger } = require("../utils/util");
 
 // persons
 
 /**
- * Create a new person (also sign up)
+ * Create a new person (for sign up request)
  */
 app.post("/", async (req, res) => {
   logger("POST /person");
-  // destructure the request body to get the firstname and lastname
-  const { firstName, lastName } = req.body;
-  logger("create a new person ", firstName, lastName);
-  // create a new person
-  myQuery("INSERT INTO person (first_name, last_name) VALUES ($1, $2) RETURNING *", [firstName, lastName], (err, result) => {
-    if (err) {
-      res.sendStatus(401);
-    } else {
-      const person = result.rows[0];
-      const expiration = tokenExpirationDate();
-      logger("person found", person.id, " token expiration date: ", expiration);
-      myQuery("INSERT INTO token (person_id, expired_date) VALUES ($1, $2) RETURNING *", [person.id, expiration], (err, result) => {
-        if (err) {
-          res.sendStatus(401);
-        } else {
-          const token = result.rows[0].token;
-          logger("token created", token);
-          res.cookie("token", token);
-          res.send(person);
-        }
-      });
-    }
+
+  addPerson(req, res, () => {
+    const { person } = res;
+    const expiration = tokenExpirationDate();
+    logger("person found", person.id, " token expiration date: ", expiration);
+    myQuery("INSERT INTO token (person_id, expired_date) VALUES ($1, $2) RETURNING *", [person.id, expiration], (err, result) => {
+      if (err) {
+        res.sendStatus(401);
+      } else {
+        const token = result.rows[0].token;
+        logger("token created", token);
+        res.cookie("token", token);
+        res.send(person);
+      }
+    });
+  });
+});
+
+/**
+ * Create a new person (for admin adding person )
+ * as admin
+ */
+app.post("/admin", async (req, res) => {
+  logger("POST /person/admin");
+
+  addPerson(req, res, () => {
+    const { person } = res;
+    logger("person Added", person.id);
+    res.send(person);
   });
 });
 

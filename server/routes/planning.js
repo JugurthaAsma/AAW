@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express.Router();
 const { myQuery } = require("../database/db");
-const { logger } = require("../utils/util");
+const { logger, toLocaleDate } = require("../utils/util");
 
 // plannings
 
@@ -32,7 +32,12 @@ app.get("/", async (req, res) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      res.send(result.rows);
+      // format the date of each planning
+      const plannings = result.rows.map((planning) => {
+        planning.date = toLocaleDate(planning.date);
+        return planning;
+      });
+      res.send(plannings);
     }
   });
 });
@@ -48,7 +53,10 @@ app.get("/:id", async (req, res) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      res.send(result.rows[0]);
+      // format the date of the planning
+      const planning = result.rows[0];
+      planning.date = toLocaleDate(planning.date);
+      res.send(planning);
     }
   });
 });

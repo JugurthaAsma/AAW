@@ -3,7 +3,6 @@ import useFetch from "../../hooks/useFetch";
 import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import FilterSearch from "../../components/form/FilterSearch";
-import { toLocaleDate } from "../../helpers/DateFormatter";
 import { useParams } from "react-router-dom";
 
 const InscriptionList = () => {
@@ -50,7 +49,7 @@ const InscriptionList = () => {
               {inscriptions?.map((inscription, index) => (
                 <tr key={index}>
                   <th scope="row">{index + 1}</th>
-                  <td>{toLocaleDate(inscription.planning_date)}</td>
+                  <td>{inscription.planning_date}</td>
                   <RoleNeedComponent neededRole="admin">
                     <td>{inscription.planning_id}</td>
                     <td>{inscription.manche_id}</td>

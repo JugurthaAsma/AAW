@@ -4,7 +4,6 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 import DeleteButton from "../../components/form/DeleteButton";
 import RedirectButton from "../../components//form/RedirectButton";
 import FilterSearch from "../../components/form/FilterSearch";
-import { toLocaleDate } from "../../helpers/DateFormatter";
 import { Eye } from "react-bootstrap-icons";
 
 const PlanningsList = () => {
@@ -45,7 +44,7 @@ const PlanningsList = () => {
                   <th scope="row">{index + 1}</th>
                   <td>{planning.id}</td>
                   <td>{planning.name}</td>
-                  <td>{toLocaleDate(planning.date)}</td>
+                  <td>{planning.date}</td>
                   <td>
                     <RedirectButton to={"/manches/planning/" + planning.id} content={<Eye />} className="btn btn-info" />
                   </td>

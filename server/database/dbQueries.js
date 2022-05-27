@@ -1,5 +1,5 @@
 const { myQuery } = require("../database/db");
-const { tokenExpirationDate, logger } = require("../utils/util");
+const { tokenExpirationDate, logger, toLocaleDate } = require("../utils/util");
 
 /**
  * data base SQL queries
@@ -9,7 +9,9 @@ module.exports = {
    * get the person data from person table
    * with the token from the token table
    * by checking if the token not expired_date is greater than now
-   * @param {string} token
+   * @param {Object} req - request object
+   * @param {Object} res - response object
+   * @param {Function} callback - callback function to call after the query
    * @returns {Object} person
    */
   getPerson: (req, res, callback) => {
@@ -43,6 +45,31 @@ module.exports = {
   },
 
   /**
+   * add a person to the person table
+   * @param {Object} req - request object
+   * @param {Object} res - response object
+   * @param {Function} callback - callback function to call after the query
+   * @returns {Object} person
+   */
+  addPerson: (req, res, callback) => {
+    // destructure the request body to get the firstname and lastname
+    const { firstName, lastName } = req.body;
+    logger("add a new person ", firstName, lastName);
+
+    // create a new person
+    myQuery("INSERT INTO person (first_name, last_name) VALUES ($1, $2) RETURNING *", [firstName, lastName], (err, result) => {
+      if (err) {
+        res.sendStatus(401);
+      } else {
+        const person = result.rows[0];
+        // put the person in the response object
+        res.person = person;
+        callback();
+      }
+    });
+  },
+
+  /**
    * get all inscriptions with their manches, plannings and persons
    */
   getAllInscriptions: (res) => {
@@ -60,7 +87,12 @@ module.exports = {
         if (err) {
           res.sendStatus(401);
         } else {
-          res.send(result.rows);
+          // format the planning_date of each inscription
+          const inscriptions = result.rows.map((inscription) => {
+            inscription.planning_date = toLocaleDate(inscription.planning_date);
+            return inscription;
+          });
+          res.send(inscriptions);
         }
       }
     );

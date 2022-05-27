@@ -1,6 +1,5 @@
 import React from "react";
 import { Search } from "react-bootstrap-icons";
-import { toLocaleDate } from "../../helpers/DateFormatter";
 
 /**
  * Format a item according to its type
@@ -8,9 +7,13 @@ import { toLocaleDate } from "../../helpers/DateFormatter";
  * @param {String} key - The key of the item to be formatted
  * @returns {string} - The formatted item value in lowercase
  */
-const format = (item, key) => {
-  key.includes("date") && (item[key] = toLocaleDate(item[key]));
-  return ("" + item[key]).toLowerCase();
+const format = (item) => {
+  let result = Object.keys(item).reduce((acc, key) => {
+    acc += item[key] + " ";
+    return acc;
+  }, "");
+  console.log(result);
+  return result.toLowerCase();
 };
 
 /**
@@ -18,9 +21,9 @@ const format = (item, key) => {
  * @param {Array} data - Array of items to be filtered.
  * @param {Function} setData - The function to filter the data expcted to be setState of the parent component
  */
-const FilterSearch = ({ data, setData, keys }) => {
+const FilterSearch = ({ data, setData }) => {
   const handleChange = (event) => {
-    setData(data.filter((item) => keys.some((key) => format(item, key).includes(event.target.value.toLowerCase()))));
+    setData(data.filter((item) => format(item).includes(event.target.value.toLowerCase())));
   };
 
   return (

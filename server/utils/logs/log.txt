@@ -2079,3 +2079,628 @@ Fri May 27 2022 18:43:54 GMT+0200 (heure d’été d’Europe centrale) - getPer
 Fri May 27 2022 18:43:54 GMT+0200 (heure d’été d’Europe centrale) - person found :  a8a2d54f-390d-4ff8-b132-554ced9a60b3
 Fri May 27 2022 18:43:54 GMT+0200 (heure d’été d’Europe centrale) - logout token:  037d2a5e-f3d4-429a-b7e5-3d13a04c9091
 Fri May 27 2022 18:43:54 GMT+0200 (heure d’été d’Europe centrale) - DELETE /logout/user
+Fri May 27 2022 19:11:18 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 19:11:18 GMT+0100 (UTC+01:00) - getPerson with token :  d171ebe0-e3bf-437f-b84f-4cb306c51298
+Fri May 27 2022 19:11:18 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:11:18 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 19:11:18 GMT+0100 (UTC+01:00) - logout token:  d171ebe0-e3bf-437f-b84f-4cb306c51298
+Fri May 27 2022 19:11:22 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 19:11:23 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 19:11:24 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 19:13:53 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 19:13:53 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 19:14:13 GMT+0100 (UTC+01:00)
+Fri May 27 2022 19:13:53 GMT+0100 (UTC+01:00) - token created 6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:13:53 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 19:21:29 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:21:29 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:21:51 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:21:51 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:21:56 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:21:56 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:21:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:21:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:22:03 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:22:03 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:22:24 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:22:24 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:22:27 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:22:27 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:22:34 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:22:34 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:22:37 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:22:37 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:27:20 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:27:20 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:27:40 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:27:40 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:27:45 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:27:45 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:27:48 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:27:48 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:19 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:19 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:25 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:25 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:29 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:29 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:34 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:34 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:35 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:35 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:38 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:38 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:55 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:55 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:28:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:28:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:29:05 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:29:05 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:29:09 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:29:09 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:29:58 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:29:58 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:30:01 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:30:01 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:30:10 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 19:30:10 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 19:30:21 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 19:30:40 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:30:40 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:55:24 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:55:24 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 19:59:31 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:03:12 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:03:12 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:05:28 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:06:08 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:07:02 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:07:02 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:07:02 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:07:42 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:08:20 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:08:37 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:08:43 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:08:54 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:11:10 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:11:51 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:12:11 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:12:17 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:12:32 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:12:41 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:13:07 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:16:14 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:16:14 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:16:14 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:16:47 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:17:42 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:17:54 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:23:43 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:23:43 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:24:05 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:24:05 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:24:18 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:24:18 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:25:05 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:25:05 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:25:08 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:25:08 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:25:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:25:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:25:22 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:25:22 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:25:26 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:25:26 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:26:10 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:26:10 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:26:15 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 20:26:15 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 20:26:18 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:26:18 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:26:19 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:27:12 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:27:34 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:27:53 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:27:53 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:27:53 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:28:05 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:29:14 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:29:17 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:30:32 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:30:47 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:30:50 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:34:45 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 20:36:42 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:36:42 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 20:36:42 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:37:44 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 20:38:01 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:39:52 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 20:39:52 GMT+0100 (UTC+01:00) - getPerson with token :  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:39:52 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 20:39:52 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 20:39:52 GMT+0100 (UTC+01:00) - logout token:  6b4cf9d5-2930-4578-9bc1-47c347f28427
+Fri May 27 2022 20:39:53 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 20:39:57 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 20:39:57 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 20:40:17 GMT+0100 (UTC+01:00)
+Fri May 27 2022 20:39:57 GMT+0100 (UTC+01:00) - token created b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 20:39:57 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:02:46 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:02:46 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:02:49 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:02:49 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:02:53 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:02:53 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:02:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:02:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:03:23 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:03:23 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:03:25 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:03:25 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:03:28 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 21:03:32 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 21:03:42 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:03:42 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:03:46 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 21:05:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:05:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:05:16 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:05:16 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:05:23 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:05:23 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:05:43 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:05:43 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:06:07 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:06:07 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:06:15 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:06:15 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:10:28 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:10:30 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:10:35 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:10:35 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:10:35 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:10:35 GMT+0100 (UTC+01:00) - create a new planning  xdrgsdrg 2022-06-03
+Fri May 27 2022 21:10:35 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:11:15 GMT+0100 (UTC+01:00) - getPerson with token :  
+Fri May 27 2022 21:11:23 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:11:23 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:11:43 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:11:23 GMT+0100 (UTC+01:00) - token created 508d105a-5248-4d77-8f2f-8ff0e03af6f7
+Fri May 27 2022 21:11:23 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:14:44 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:14:44 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:14:45 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:14:47 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:14:47 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:14:47 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:14:49 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:14:49 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:14:49 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:14:56 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:14:56 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:14:56 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:15:32 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 21:17:04 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:17:04 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:17:31 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:17:31 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:18:34 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:18:34 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 21:18:35 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:18:50 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:18:50 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:18:50 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:19:17 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 21:19:23 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:19:26 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:19:26 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:19:26 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:19:26 GMT+0100 (UTC+01:00) - delete a planning by id :  9cd6fe2f-b85e-43da-98c5-3ea6c03e07cb
+Fri May 27 2022 21:26:06 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:26:09 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:26:09 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:26:09 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:26:09 GMT+0100 (UTC+01:00) - GET /logoutAll/admin, DISCONNECT ALL
+Fri May 27 2022 21:26:15 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:26:15 GMT+0100 (UTC+01:00) - getPerson with token :  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:26:15 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:26:15 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:26:15 GMT+0100 (UTC+01:00) - logout token:  b44b76b9-2429-40ec-9ad3-de357f2ed8fa
+Fri May 27 2022 21:27:05 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:27:05 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:27:25 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:27:05 GMT+0100 (UTC+01:00) - token created b6548b11-edca-4938-b1dd-7952a78d4828
+Fri May 27 2022 21:27:05 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:27:07 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:27:14 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:27:14 GMT+0100 (UTC+01:00) - getPerson with token :  b6548b11-edca-4938-b1dd-7952a78d4828
+Fri May 27 2022 21:27:14 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:27:14 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:27:14 GMT+0100 (UTC+01:00) - delete a person by id :  6643ba3f-98ea-4ad3-ad0b-06da4b3dc4cb
+Fri May 27 2022 21:27:28 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 21:27:28 GMT+0100 (UTC+01:00) - create a new person  qsfqsgr sdgsdrg
+Fri May 27 2022 21:27:28 GMT+0100 (UTC+01:00) - person found 7940d4da-a129-4161-a41a-04221f81e8b0  token expiration date:  Fri May 27 2022 21:27:48 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:27:28 GMT+0100 (UTC+01:00) - token created 6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:27:28 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:27:34 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:27:34 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:27:34 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:27:45 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:27:45 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:27:45 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:27:49 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:27:49 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:27:49 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:27:57 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:28:00 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:28:04 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:28:04 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:28:04 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:28:36 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:28:36 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:28:36 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:28:58 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:28:58 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:28:58 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:29:05 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:29:05 GMT+0100 (UTC+01:00) - getPerson with token :  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:29:05 GMT+0100 (UTC+01:00) - person found :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:29:05 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:29:05 GMT+0100 (UTC+01:00) - logout token:  6843b25d-004b-4fd5-95a6-e30b3baf32dc
+Fri May 27 2022 21:29:09 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:29:09 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:29:29 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:29:09 GMT+0100 (UTC+01:00) - token created 03ec09cf-0fd7-471a-ad83-7848d7526f4e
+Fri May 27 2022 21:29:09 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:35:00 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:35:00 GMT+0100 (UTC+01:00) - getPerson with token :  03ec09cf-0fd7-471a-ad83-7848d7526f4e
+Fri May 27 2022 21:35:00 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:35:00 GMT+0100 (UTC+01:00) - logout token:  03ec09cf-0fd7-471a-ad83-7848d7526f4e
+Fri May 27 2022 21:35:00 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:35:10 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:35:10 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:35:30 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:35:10 GMT+0100 (UTC+01:00) - token created 8bc8e308-fb82-485a-9107-3b552824ac8e
+Fri May 27 2022 21:35:10 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:35:17 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 21:35:17 GMT+0100 (UTC+01:00) - create a new person  sdfgqdsg qsdgsdfg
+Fri May 27 2022 21:35:17 GMT+0100 (UTC+01:00) - person found 4306f06f-5ca4-432a-b6e2-2d756fc799a7  token expiration date:  Fri May 27 2022 21:35:37 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:35:17 GMT+0100 (UTC+01:00) - token created 9112979b-db53-4941-9532-6a1531b40bdc
+Fri May 27 2022 21:35:17 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:35:22 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:35:22 GMT+0100 (UTC+01:00) - getPerson with token :  9112979b-db53-4941-9532-6a1531b40bdc
+Fri May 27 2022 21:35:22 GMT+0100 (UTC+01:00) - person found :  4306f06f-5ca4-432a-b6e2-2d756fc799a7
+Fri May 27 2022 21:35:31 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:35:31 GMT+0100 (UTC+01:00) - getPerson with token :  9112979b-db53-4941-9532-6a1531b40bdc
+Fri May 27 2022 21:35:31 GMT+0100 (UTC+01:00) - person found :  4306f06f-5ca4-432a-b6e2-2d756fc799a7
+Fri May 27 2022 21:35:31 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:35:31 GMT+0100 (UTC+01:00) - logout token:  9112979b-db53-4941-9532-6a1531b40bdc
+Fri May 27 2022 21:35:53 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:35:53 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:36:13 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:35:53 GMT+0100 (UTC+01:00) - token created 0b89d3a6-737d-4097-ac91-0c99c85a2595
+Fri May 27 2022 21:35:53 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:36:10 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 21:36:10 GMT+0100 (UTC+01:00) - create a new person  dsvsdfbhn hhhhh
+Fri May 27 2022 21:36:10 GMT+0100 (UTC+01:00) - person found 09139458-3fed-4562-9629-9643c7e3ffc7  token expiration date:  Fri May 27 2022 21:36:30 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:36:10 GMT+0100 (UTC+01:00) - token created 817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:36:10 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:36:17 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:36:17 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:36:17 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:36:44 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:36:44 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:36:44 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:37:04 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:37:04 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:37:04 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:37:06 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:37:07 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 21:37:09 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 21:37:16 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:37:16 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:37:16 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:37:30 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:37:30 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:37:30 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:38:23 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:38:23 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:38:29 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:38:29 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:38:32 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:38:32 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:38:38 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:38:38 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:38:44 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:38:44 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:38:44 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:39:37 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:39:37 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:39:38 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:39:38 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:39:38 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:39:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:39:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:40:00 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:40:00 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:40:21 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:40:21 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:40:22 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:22 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:40:23 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:40:27 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:40:27 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:40:27 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:40:32 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:40:32 GMT+0100 (UTC+01:00) - getPerson with token :  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:40:32 GMT+0100 (UTC+01:00) - person found :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:40:32 GMT+0100 (UTC+01:00) - logout token:  817a5832-8b05-487b-a671-0f75b08f5035
+Fri May 27 2022 21:40:32 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:40:34 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:40:34 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:40:54 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:40:34 GMT+0100 (UTC+01:00) - token created 4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:34 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:40:37 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:40:42 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:42 GMT+0100 (UTC+01:00) - getPerson with token :  4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:42 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:40:42 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:40:42 GMT+0100 (UTC+01:00) - delete a person by id :  09139458-3fed-4562-9629-9643c7e3ffc7
+Fri May 27 2022 21:40:45 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:45 GMT+0100 (UTC+01:00) - getPerson with token :  4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:45 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:40:45 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:40:45 GMT+0100 (UTC+01:00) - delete a person by id :  4306f06f-5ca4-432a-b6e2-2d756fc799a7
+Fri May 27 2022 21:40:46 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:46 GMT+0100 (UTC+01:00) - getPerson with token :  4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:46 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:40:46 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:40:46 GMT+0100 (UTC+01:00) - delete a person by id :  1e7d2ccb-d828-45fe-90eb-de18fa18b50b
+Fri May 27 2022 21:40:47 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:47 GMT+0100 (UTC+01:00) - getPerson with token :  4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:47 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:40:47 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:40:47 GMT+0100 (UTC+01:00) - delete a person by id :  7940d4da-a129-4161-a41a-04221f81e8b0
+Fri May 27 2022 21:40:48 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:40:48 GMT+0100 (UTC+01:00) - getPerson with token :  4afe4b4c-1cc7-4cf7-b7ff-924557aac583
+Fri May 27 2022 21:40:48 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:40:48 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:40:48 GMT+0100 (UTC+01:00) - delete a person by id :  eb78eee3-2c6a-4953-8dd7-a6022ed20508
+Fri May 27 2022 21:40:55 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 21:40:55 GMT+0100 (UTC+01:00) - create a new person  aaa aaa
+Fri May 27 2022 21:40:55 GMT+0100 (UTC+01:00) - person found 3a1ff730-36d5-4435-8f0f-cff32c4be46a  token expiration date:  Fri May 27 2022 21:41:15 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:40:55 GMT+0100 (UTC+01:00) - token created 38447d49-5471-45a5-aec0-d375462cd5d0
+Fri May 27 2022 21:40:55 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:41:01 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:41:01 GMT+0100 (UTC+01:00) - getPerson with token :  38447d49-5471-45a5-aec0-d375462cd5d0
+Fri May 27 2022 21:41:01 GMT+0100 (UTC+01:00) - person found :  3a1ff730-36d5-4435-8f0f-cff32c4be46a
+Fri May 27 2022 21:43:36 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:43:36 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:43:53 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:43:53 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:43:56 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:43:56 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:43:59 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:43:59 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:44:28 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:44:28 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:44:45 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:44:45 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:44:48 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:44:48 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:44:54 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:44:54 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:44:58 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:44:58 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:45:14 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:45:14 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:45:17 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:45:17 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:45:20 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:45:20 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:45:33 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:45:33 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:50:04 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:50:04 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:51:09 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:51:09 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:51:15 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:51:15 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:51:32 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:51:32 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:52:17 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:52:17 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:52:35 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:52:35 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:52:38 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:52:38 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:52:44 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:52:44 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:55:18 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:55:18 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:59:15 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 21:59:15 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 21:59:25 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 21:59:25 GMT+0100 (UTC+01:00) - getPerson with token :  38447d49-5471-45a5-aec0-d375462cd5d0
+Fri May 27 2022 21:59:25 GMT+0100 (UTC+01:00) - person found :  3a1ff730-36d5-4435-8f0f-cff32c4be46a
+Fri May 27 2022 21:59:25 GMT+0100 (UTC+01:00) - logout token:  38447d49-5471-45a5-aec0-d375462cd5d0
+Fri May 27 2022 21:59:25 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 21:59:27 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 21:59:27 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 21:59:47 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:59:27 GMT+0100 (UTC+01:00) - token created cef385c0-f883-4e57-85db-908990630df5
+Fri May 27 2022 21:59:27 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 21:59:32 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:59:34 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:59:34 GMT+0100 (UTC+01:00) - getPerson with token :  cef385c0-f883-4e57-85db-908990630df5
+Fri May 27 2022 21:59:34 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 21:59:34 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 21:59:34 GMT+0100 (UTC+01:00) - delete a person by id :  3a1ff730-36d5-4435-8f0f-cff32c4be46a
+Fri May 27 2022 21:59:40 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 21:59:40 GMT+0100 (UTC+01:00) - add a new person  aaa aaa
+Fri May 27 2022 21:59:40 GMT+0100 (UTC+01:00) - person found f0a63724-a8e8-4cfb-8469-63b9b698ed02  token expiration date:  Fri May 27 2022 22:00:00 GMT+0100 (UTC+01:00)
+Fri May 27 2022 21:59:40 GMT+0100 (UTC+01:00) - token created 70821b90-d822-40df-a66a-31cfe5ff6e8e
+Fri May 27 2022 21:59:40 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 21:59:56 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 21:59:56 GMT+0100 (UTC+01:00) - getPerson with token :  70821b90-d822-40df-a66a-31cfe5ff6e8e
+Fri May 27 2022 21:59:56 GMT+0100 (UTC+01:00) - person found :  f0a63724-a8e8-4cfb-8469-63b9b698ed02
+Fri May 27 2022 22:00:23 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 22:00:23 GMT+0100 (UTC+01:00) - getPerson with token :  70821b90-d822-40df-a66a-31cfe5ff6e8e
+Fri May 27 2022 22:00:23 GMT+0100 (UTC+01:00) - person found :  f0a63724-a8e8-4cfb-8469-63b9b698ed02
+Fri May 27 2022 22:00:23 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 22:00:23 GMT+0100 (UTC+01:00) - logout token:  70821b90-d822-40df-a66a-31cfe5ff6e8e
+Fri May 27 2022 22:00:37 GMT+0100 (UTC+01:00) - add a new person  bbb bbb
+Fri May 27 2022 22:00:37 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 22:00:37 GMT+0100 (UTC+01:00) - person found 9507022d-671e-4270-82f1-96f8195b7a13  token expiration date:  Fri May 27 2022 22:00:57 GMT+0100 (UTC+01:00)
+Fri May 27 2022 22:00:37 GMT+0100 (UTC+01:00) - token created b335319a-188c-445f-9f67-dc81d45d4ee1
+Fri May 27 2022 22:00:37 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 22:00:41 GMT+0100 (UTC+01:00) - GET /manche
+Fri May 27 2022 22:00:42 GMT+0100 (UTC+01:00) - GET /inscription
+Fri May 27 2022 22:00:44 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 22:00:44 GMT+0100 (UTC+01:00) - getPerson with token :  b335319a-188c-445f-9f67-dc81d45d4ee1
+Fri May 27 2022 22:00:44 GMT+0100 (UTC+01:00) - person found :  9507022d-671e-4270-82f1-96f8195b7a13
+Fri May 27 2022 22:00:44 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 22:00:44 GMT+0100 (UTC+01:00) - logout token:  b335319a-188c-445f-9f67-dc81d45d4ee1
+Fri May 27 2022 22:00:45 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 22:00:45 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 22:01:05 GMT+0100 (UTC+01:00)
+Fri May 27 2022 22:00:45 GMT+0100 (UTC+01:00) - token created dfb65a1c-8ac7-4a27-85c2-69a28ab5b87e
+Fri May 27 2022 22:00:45 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 22:00:48 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:00:51 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:00:51 GMT+0100 (UTC+01:00) - getPerson with token :  dfb65a1c-8ac7-4a27-85c2-69a28ab5b87e
+Fri May 27 2022 22:00:51 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:00:51 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:00:51 GMT+0100 (UTC+01:00) - delete a person by id :  9507022d-671e-4270-82f1-96f8195b7a13
+Fri May 27 2022 22:00:53 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:00:53 GMT+0100 (UTC+01:00) - getPerson with token :  dfb65a1c-8ac7-4a27-85c2-69a28ab5b87e
+Fri May 27 2022 22:00:53 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:00:53 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:00:53 GMT+0100 (UTC+01:00) - delete a person by id :  f0a63724-a8e8-4cfb-8469-63b9b698ed02
+Fri May 27 2022 22:01:25 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:25 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:01:28 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:28 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:01:34 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:34 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:01:36 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:36 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:01:52 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:52 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:01:56 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:01:56 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:02:04 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:02:04 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:02:09 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:02:09 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:02:13 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:02:13 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:02:20 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:02:20 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:03:26 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:03:26 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:03:40 GMT+0100 (UTC+01:00) - getPerson with token :  dfb65a1c-8ac7-4a27-85c2-69a28ab5b87e
+Fri May 27 2022 22:03:40 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:03:44 GMT+0100 (UTC+01:00) - POST /person
+Fri May 27 2022 22:03:44 GMT+0100 (UTC+01:00) - add a new person  aaa aaa
+Fri May 27 2022 22:03:44 GMT+0100 (UTC+01:00) - person found 8af9d377-a6cd-461f-9096-16b9f0213925  token expiration date:  Fri May 27 2022 22:04:04 GMT+0100 (UTC+01:00)
+Fri May 27 2022 22:03:44 GMT+0100 (UTC+01:00) - token created 371743cb-a52b-4c97-bd9e-7650bad5e32a
+Fri May 27 2022 22:03:44 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:03:46 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:03:46 GMT+0100 (UTC+01:00) - getPerson with token :  371743cb-a52b-4c97-bd9e-7650bad5e32a
+Fri May 27 2022 22:03:46 GMT+0100 (UTC+01:00) - person found :  8af9d377-a6cd-461f-9096-16b9f0213925
+Fri May 27 2022 22:04:25 GMT+0100 (UTC+01:00) - getPerson with token :  371743cb-a52b-4c97-bd9e-7650bad5e32a
+Fri May 27 2022 22:04:25 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:04:25 GMT+0100 (UTC+01:00) - person found :  8af9d377-a6cd-461f-9096-16b9f0213925
+Fri May 27 2022 22:04:27 GMT+0100 (UTC+01:00) - passing by user filter
+Fri May 27 2022 22:04:27 GMT+0100 (UTC+01:00) - getPerson with token :  371743cb-a52b-4c97-bd9e-7650bad5e32a
+Fri May 27 2022 22:04:27 GMT+0100 (UTC+01:00) - person found :  8af9d377-a6cd-461f-9096-16b9f0213925
+Fri May 27 2022 22:04:27 GMT+0100 (UTC+01:00) - DELETE /logout/user
+Fri May 27 2022 22:04:27 GMT+0100 (UTC+01:00) - logout token:  371743cb-a52b-4c97-bd9e-7650bad5e32a
+Fri May 27 2022 22:04:30 GMT+0100 (UTC+01:00) - POST /authentication/login
+Fri May 27 2022 22:04:30 GMT+0100 (UTC+01:00) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 22:04:50 GMT+0100 (UTC+01:00)
+Fri May 27 2022 22:04:30 GMT+0100 (UTC+01:00) - token created 461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:04:30 GMT+0100 (UTC+01:00) - get all plannings
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - POST /person/admin
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - add a new person  bbb bbb
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - person Added fa922c68-e7d8-48cb-aea8-450d11f26328
+Fri May 27 2022 22:04:37 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:04:39 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:04:39 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:04:39 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:04:39 GMT+0100 (UTC+01:00) - delete a person by id :  fa922c68-e7d8-48cb-aea8-450d11f26328
+Fri May 27 2022 22:04:39 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:04:40 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:04:40 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:04:40 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:04:40 GMT+0100 (UTC+01:00) - delete a person by id :  8af9d377-a6cd-461f-9096-16b9f0213925
+Fri May 27 2022 22:04:40 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:04:53 GMT+0100 (UTC+01:00) - connecting to database :  postgresql://ulnoik2qpxfs61fak2um:UNSVofhYhkQYCMGhYtNI@b2ty4gxxwlejtxsseto7-postgresql.services.clever-cloud.com:5432/b2ty4gxxwlejtxsseto7
+Fri May 27 2022 22:04:53 GMT+0100 (UTC+01:00) - Server is running on port 5000
+Fri May 27 2022 22:04:53 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:04:58 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:04:58 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:04:58 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:04:58 GMT+0100 (UTC+01:00) - GET /logoutAll/admin, DISCONNECT ALL
+Fri May 27 2022 22:06:34 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:06:34 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:06:34 GMT+0100 (UTC+01:00) - POST /person/admin
+Fri May 27 2022 22:06:34 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:06:34 GMT+0100 (UTC+01:00) - add a new person  fff fff
+Fri May 27 2022 22:06:35 GMT+0100 (UTC+01:00) - person Added 8e97fdbe-f31e-4c52-bbcd-1f95b5f7f37e
+Fri May 27 2022 22:06:35 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:06:38 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:06:38 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:06:38 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:06:38 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:06:38 GMT+0100 (UTC+01:00) - delete a person by id :  8e97fdbe-f31e-4c52-bbcd-1f95b5f7f37e
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - POST /person/admin
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - add a new person  a a
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - person Added 718bb9d6-68f7-4aee-8dc8-2efef0b31322
+Fri May 27 2022 22:07:13 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:07:15 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:07:15 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:07:15 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:07:15 GMT+0100 (UTC+01:00) - DELETE /person/:id
+Fri May 27 2022 22:07:15 GMT+0100 (UTC+01:00) - delete a person by id :  718bb9d6-68f7-4aee-8dc8-2efef0b31322
+Fri May 27 2022 22:07:18 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:07:18 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:07:19 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:07:51 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:07:51 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:07:51 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:07:51 GMT+0100 (UTC+01:00) - GET /logoutAll/admin, DISCONNECT ALL
+Fri May 27 2022 22:07:59 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:07:59 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:07:59 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:07:59 GMT+0100 (UTC+01:00) - GET /logoutAll/admin, DISCONNECT ALL
+Fri May 27 2022 22:08:16 GMT+0100 (UTC+01:00) - passing by admin filter
+Fri May 27 2022 22:08:16 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:08:16 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 22:08:16 GMT+0100 (UTC+01:00) - GET /logoutAll/admin, DISCONNECT ALL
+Fri May 27 2022 22:09:03 GMT+0100 (UTC+01:00) - getPerson with token :  461279e2-ffe1-45ba-a7ba-f4ea5103444d
+Fri May 27 2022 22:09:03 GMT+0100 (UTC+01:00) - GET /person
+Fri May 27 2022 22:09:03 GMT+0100 (UTC+01:00) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0

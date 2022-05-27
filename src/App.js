@@ -14,6 +14,7 @@ import EditPlanning from "./pages/planning/EditPlanning";
 
 // manche pages
 import ManchesList from "./pages/manche/ManchesList";
+import AddManche from "./pages/manche/AddManche";
 
 // inscription pages
 import InscriptionList from "./pages/inscription/InscriptionList";
@@ -79,14 +80,20 @@ function App() {
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/logout" element={<Logout />} />
                 <Route path="/about-us" element={<AboutUs />} />
+
                 <Route path="/persons" element={<PersonsList />} />
                 <Route path="/add-person" element={<AddPerson />} />
                 <Route path="/edit-person/:id" element={<EditPerson />} />
+
                 <Route path="/plannings" element={<PlanningsList />} />
                 <Route path="/add-planning" element={<AddPlanning />} />
                 <Route path="/edit-planning/:id" element={<EditPlanning />} />
+
                 <Route path="/manches/planning/:id" element={<ManchesList />} />
+                <Route path="/add-manche" element={<AddManche />} />
+
                 <Route path="/inscriptions/manche/:id" element={<InscriptionList />} />
+
                 <Route path="*" element={<ErrorPage />} />
               </Routes>
             </div>

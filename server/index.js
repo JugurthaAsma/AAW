@@ -36,6 +36,7 @@ app.use("*/admin", (req, res, next) => {
    * will put in req.person, the the person logged with the token from the cookie
    */
   getPerson(req, res, () => {
+    console.log("***********************************admin found : ", req.person);
     if (req.person.role.includes("admin")) {
       next();
     } else {
@@ -52,6 +53,7 @@ app.use("*/user", (req, res, next) => {
    * will put in req.person, the the person logged with the token from the cookie
    */
   getPerson(req, res, () => {
+    console.log("******************************user found : ", req.person);
     if (req.person.role.includes("user")) {
       next();
     } else {
