@@ -44,15 +44,11 @@ const InscriptionList = () => {
                 <th scope="col">Date</th>
                 <RoleNeedComponent neededRole="admin">
                   <th scope="col">Planning Id</th>
-                </RoleNeedComponent>
-                <th scope="col">Planning name</th>
-                <RoleNeedComponent neededRole="admin">
                   <th scope="col">Manche Id</th>
-                </RoleNeedComponent>
-                <th scope="col">Manche name</th>
-                <RoleNeedComponent neededRole="admin">
                   <th scope="col">Person Id</th>
                 </RoleNeedComponent>
+                <th scope="col">Planning name</th>
+                <th scope="col">Manche name</th>
                 <th scope="col">Person first name</th>
                 <th scope="col">Person last name</th>
 
@@ -68,20 +64,21 @@ const InscriptionList = () => {
                   <td>{toLocaleDate(inscription.planning_date)}</td>
                   <RoleNeedComponent neededRole="admin">
                     <td>{inscription.planning_id}</td>
-                  </RoleNeedComponent>
-                  <td>{inscription.planning_name}</td>
-                  <RoleNeedComponent neededRole="admin">
                     <td>{inscription.manche_id}</td>
-                  </RoleNeedComponent>
-                  <td>{inscription.manche_name}</td>
-                  <RoleNeedComponent neededRole="admin">
                     <td>{inscription.person_id}</td>
                   </RoleNeedComponent>
+                  <td>{inscription.planning_name}</td>
+                  <td>{inscription.manche_name}</td>
                   <td>{inscription.person_first_name}</td>
                   <td>{inscription.person_last_name}</td>
                   <RoleNeedComponent neededRole="admin">
                     <td>
-                      <DeleteButton url="/inscription" id={inscription.id} role="admin" callback={() => setInscriptions((elems) => elems.filter((elem) => elem.id !== id))} />
+                      <DeleteButton
+                        url="/inscription"
+                        id={inscription.planning_id + "/" + inscription.person_id + "/" + inscription.manche_id}
+                        role="admin"
+                        callback={() => setInscriptions((elems) => elems.filter((elem) => (elem.planning_id + "/" + elem.person_id + "/" + elem.manche_id) !== id))}
+                      />
                     </td>
                   </RoleNeedComponent>
                 </tr>

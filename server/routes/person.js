@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express.Router();
+const { tokenExpirationDate } = require("../utils/util");
 const { myQuery } = require("../database/db");
 const { logger } = require("../utils/util");
 
@@ -18,7 +19,19 @@ app.post("/", async (req, res) => {
     if (err) {
       res.sendStatus(401);
     } else {
-      res.send(result.rows[0]);
+      const person = result.rows[0];
+      const expiration = tokenExpirationDate();
+      logger("person found", person.id, " token expiration date: ", expiration);
+      myQuery("INSERT INTO token (person_id, expired_date) VALUES ($1, $2) RETURNING *", [person.id, expiration], (err, result) => {
+        if (err) {
+          res.sendStatus(401);
+        } else {
+          const token = result.rows[0].token;
+          logger("token created", token);
+          res.cookie("token", token);
+          res.send(person);
+        }
+      });
     }
   });
 });
