@@ -18,7 +18,10 @@ const Home = () => {
           <div className="box">
             <div className="box-content" id="minibox">
               <div className="title">Consulter la liste des personnes</div>
-              <div>Ce que je fais de mon temps libre...</div>
+              <div>Avec le mode admin, vous avez la possibilité de modifier, déconnecter ou même supprimer un utilisateur. 
+              Un bouton "déconnecter tout le monde" permet de déconnecter toute les personnes qui sont listées.
+              Vous aurez aussi la possibilité de reecherche une personne plus facilemnt grâce à l'input de recherche.
+              </div>
               <div className="grid-about"></div>
             </div>
           </div>

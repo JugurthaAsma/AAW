@@ -1745,3 +1745,112 @@ Fri May 27 2022 02:00:40 GMT+0200 (heure d’été d’Europe centrale) - getPer
 Fri May 27 2022 02:00:43 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  b27c6f1c-e7ef-4770-92dd-7666f292c80b
 Fri May 27 2022 02:00:57 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  b27c6f1c-e7ef-4770-92dd-7666f292c80b
 Fri May 27 2022 02:01:55 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  b27c6f1c-e7ef-4770-92dd-7666f292c80b
+Fri May 27 2022 02:06:24 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  b27c6f1c-e7ef-4770-92dd-7666f292c80b
+Fri May 27 2022 02:06:31 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:06:51 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:06:52 GMT+0200 (heure d’été d’Europe centrale) - GET /manche/planning/:planning_id
+Fri May 27 2022 02:06:52 GMT+0200 (heure d’été d’Europe centrale) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Fri May 27 2022 02:06:57 GMT+0200 (heure d’été d’Europe centrale) - POST /authentication/login
+Fri May 27 2022 02:06:57 GMT+0200 (heure d’été d’Europe centrale) - person found 5b8bfd4a-6059-4252-b729-4476dd0a88a0  token expiration date:  Fri May 27 2022 02:07:17 GMT+0200 (heure d’été d’Europe centrale)
+Fri May 27 2022 02:06:57 GMT+0200 (heure d’été d’Europe centrale) - token created db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:06:57 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:06:59 GMT+0200 (heure d’été d’Europe centrale) - GET /manche/planning/:planning_id
+Fri May 27 2022 02:06:59 GMT+0200 (heure d’été d’Europe centrale) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - passing by user filter
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - POST /inscription/user, person_id: 5b8bfd4a-6059-4252-b729-4476dd0a88a0 manche_id: fe70ad3a-03ad-4734-8dd3-e40638bff523 planning_id: 56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - create a new inscription for planning :  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c  person :  5b8bfd4a-6059-4252-b729-4476dd0a88a0  and manche : fe70ad3a-03ad-4734-8dd3-e40638bff523
+Fri May 27 2022 02:07:00 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:07:03 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:07:09 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:07:13 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:13 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:13 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:13 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:13 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:07:14 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:14 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:14 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:14 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:07:14 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:15 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:15 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:15 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:15 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:15 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:07:24 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:24 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:24 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:24 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:24 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  86e7420b-e9e2-4e78-9097-aab575594b11
+Fri May 27 2022 02:07:25 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:25 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:25 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:25 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:25 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:07:57 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:57 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:57 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:57 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:57 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:07:59 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:07:59 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:07:59 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:07:59 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:07:59 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  2d3f15db-6552-4982-acaa-2527a479a9f9
+Fri May 27 2022 02:08:01 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:01 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:01 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:01 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:01 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  8f2ce47e-c7be-4388-861e-d914885a29f0
+Fri May 27 2022 02:08:02 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:02 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:02 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:02 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:08:02 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:09 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:09 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:08:09 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:11 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:11 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:11 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:11 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:08:11 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:30 GMT+0200 (heure d’été d’Europe centrale) - POST /person
+Fri May 27 2022 02:08:30 GMT+0200 (heure d’été d’Europe centrale) - create a new person  htfyrd ghvktgf
+Fri May 27 2022 02:08:30 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:08:33 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:33 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:33 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:33 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:33 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  ce4575cf-09cc-40eb-9624-3b57f8577b5c
+Fri May 27 2022 02:08:35 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:35 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:35 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:35 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:08:35 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:51 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:51 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:51 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:51 GMT+0200 (heure d’été d’Europe centrale) - GET /logout/:id/admin, logout id:  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:08:52 GMT+0200 (heure d’été d’Europe centrale) - passing by admin filter
+Fri May 27 2022 02:08:52 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:52 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:08:52 GMT+0200 (heure d’été d’Europe centrale) - DELETE /person/:id
+Fri May 27 2022 02:08:52 GMT+0200 (heure d’été d’Europe centrale) - delete a person by id :  83e1d136-4920-47a3-acae-04268ec742cc
+Fri May 27 2022 02:08:58 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:08:58 GMT+0200 (heure d’été d’Europe centrale) - GET /person
+Fri May 27 2022 02:08:58 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:09:01 GMT+0200 (heure d’été d’Europe centrale) - getPerson with token :  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:09:01 GMT+0200 (heure d’été d’Europe centrale) - passing by user filter
+Fri May 27 2022 02:09:01 GMT+0200 (heure d’été d’Europe centrale) - person found :  5b8bfd4a-6059-4252-b729-4476dd0a88a0
+Fri May 27 2022 02:09:01 GMT+0200 (heure d’été d’Europe centrale) - DELETE /logout/user
+Fri May 27 2022 02:09:01 GMT+0200 (heure d’été d’Europe centrale) - logout token:  db036de2-d8af-4d70-9e2a-8ef4d7d770db
+Fri May 27 2022 02:09:29 GMT+0200 (heure d’été d’Europe centrale) - POST /person
+Fri May 27 2022 02:09:29 GMT+0200 (heure d’été d’Europe centrale) - create a new person  jdfngfhdhjfgfd fdhjghdjdhf
+Fri May 27 2022 02:09:29 GMT+0200 (heure d’été d’Europe centrale) - get all plannings
+Fri May 27 2022 02:09:34 GMT+0200 (heure d’été d’Europe centrale) - GET /manche/planning/:planning_id
+Fri May 27 2022 02:09:34 GMT+0200 (heure d’été d’Europe centrale) - get all manches for a planning  56fb5f17-2bcd-4d8e-930a-ca03bc5a057c
+Fri May 27 2022 02:09:36 GMT+0200 (heure d’été d’Europe centrale) - GET /manche
+Fri May 27 2022 02:09:37 GMT+0200 (heure d’été d’Europe centrale) - GET /inscription
