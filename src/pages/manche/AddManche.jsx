@@ -24,7 +24,7 @@ const AddManche = () => {
           <Input value={ordre} type="number" min={1} placeholder="Manche's order" onChange={(e) => setOrdre(e.target.value)} />
         </div>
         <div className="col-md-1">
-          <AddButton url="/manche/admin" body={{ planning_id, name, ordre }} redirect={"/manche/planning/" + planning_id} />
+          <AddButton url="/manche/admin" body={{ planning_id, name, ordre }} redirect={"/manches/planning/" + planning_id} />
         </div>
       </div>
     </RoleNeedComponent>
