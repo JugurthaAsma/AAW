@@ -20,18 +20,7 @@ const InscriptionList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Inscriptions List</h1>
-      <FilterSearch
-        data={data}
-        setData={(event) =>
-          setInscriptions(
-            data.filter((val) =>
-              (toLocaleDate(val.planning_date) + val.planning_id + val.planning_name + val.manche_id + val.manche_name + val.person_id + val.person_first_name + val.person_last_name)
-                .toLowerCase()
-                .includes(event.target.value.toLowerCase())
-            )
-          )
-        }
-      />
+      <FilterSearch data={data} setData={setInscriptions} keys={["planning_date", "planning_id", "planning_name", "manche_id", "manche_name", "person_id", "person_first_name", "person_last_name"]} />
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
@@ -77,7 +66,7 @@ const InscriptionList = () => {
                         url="/inscription"
                         id={inscription.planning_id + "/" + inscription.person_id + "/" + inscription.manche_id}
                         role="admin"
-                        callback={() => setInscriptions((elems) => elems.filter((elem) => (elem.planning_id + "/" + elem.person_id + "/" + elem.manche_id) !== id))}
+                        callback={() => setInscriptions((elems) => elems.filter((elem) => elem.planning_id + "/" + elem.person_id + "/" + elem.manche_id !== id))}
                       />
                     </td>
                   </RoleNeedComponent>

@@ -18,7 +18,7 @@ app.get("/", async (req, res) => {
 });
 
 /**
- * Create a new inscription for a planning, a personne and a manche
+ * Create a new inscription for a planning, a person and a manche
  * as user
  */
 app.post("/user", async (req, res) => {

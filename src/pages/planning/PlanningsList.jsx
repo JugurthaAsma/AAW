@@ -20,7 +20,7 @@ const PlanningsList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Plannings List</h1>
-      <FilterSearch data={data} setData={(event) => setPlannings(data.filter((val) => (val.id + val.name + toLocaleDate(val.date)).toLowerCase().includes(event.target.value.toLowerCase())))} />
+      <FilterSearch data={data} setData={setPlannings} keys={["id", "name", "date"]} />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {plannings && (

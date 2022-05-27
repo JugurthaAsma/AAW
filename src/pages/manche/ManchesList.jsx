@@ -22,7 +22,7 @@ const ManchesList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Manches List</h1>
-      <FilterSearch data={data} setData={(event) => setManches(data.filter((val) => (val.id + val.name + val.ordre).toLowerCase().includes(event.target.value.toLowerCase())))} />
+      <FilterSearch data={data} setData={setManches} keys={["id", "name", "order"]} />
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}

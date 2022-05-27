@@ -18,7 +18,7 @@ const PersonsList = () => {
   return (
     <>
       <h1 className="text-center mt-5">Persons List</h1>
-      <FilterSearch data={data} setData={(event) => setPersons(data.filter((val) => (val.id + val.first_name + val.last_name).toLowerCase().includes(event.target.value.toLowerCase())))} />
+      <FilterSearch data={data} setData={setPersons} keys={["id", "first_name", "last_name"]} />
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
