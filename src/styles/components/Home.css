@@ -5,6 +5,8 @@
     background: #f2f2f2;
     position: relative;
     width: 100%;
+    margin: 10px;
+
 }
 
 
@@ -49,10 +51,25 @@
     margin: 1em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-weight: 200;
     grid-gap: 1rem;
 }
 
 
 #minibox{
     background-color: white;
+    font-weight: 200;
+}
+p{
+    font-weight: 200;
+}
+
+#section {
+    background: white;
+    border-radius: 10px;
+    font-weight: 400;
+    text-align: center;
+    width: 300px;
+    color: white;
+    background-image: linear-gradient(to bottom, #acc8de, #8db4d4, #6e9fcb, #4e8bc2, #2777b8);
 }
