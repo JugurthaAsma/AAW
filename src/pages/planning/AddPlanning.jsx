@@ -5,7 +5,7 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 
 const AddPlanning = () => {
   const [name, setName] = useState("");
-  const [date, setDate] = useState();
+  const [date, setDate] = useState(new Date().toISOString().substr(0, 10));
 
   return (
     <RoleNeedComponent neededRole="admin">
