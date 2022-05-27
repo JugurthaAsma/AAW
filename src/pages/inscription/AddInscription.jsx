@@ -5,7 +5,7 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 
 const AddInscription = () => {
   const [planning_id, setPlanning_id] = useState();
-  const [manche_id, setManche_id] = useState();
+  const [manche_id, setManche_id] = useState(0);
   const [person_id, setPerson_id] = useState();
 
   return (
@@ -22,7 +22,7 @@ const AddInscription = () => {
       </div>
       <div className="d-flex mt-3 row">
         <div className="col-md-1">
-          <AddButton url="/inscription/admin" body={{ person_id, manche_id, planning_id }} redirect="/inscriptions" content="Submit" />
+          <AddButton url="/inscription/admin" body={{ person_id, manche_id, planning_id }} redirect={"/inscriptions/manche/" + manche_id} content="Submit" />
         </div>
       </div>
     </RoleNeedComponent>

@@ -7,7 +7,7 @@ import RoleNeedComponent from "../../components/RoleNeedComponent";
 const AddManche = () => {
   const [name, setName] = useState("");
   const [ordre, setOrdre] = useState();
-  const [planning_id, setPlanning_id] = useState();
+  const [planning_id, setPlanning_id] = useState(0);
   console.log(planning_id);
 
   return (
@@ -24,7 +24,7 @@ const AddManche = () => {
           <Input value={ordre} type="number" min={1} placeholder="Manche's order" onChange={(e) => setOrdre(e.target.value)} />
         </div>
         <div className="col-md-1">
-          <AddButton url="/manche/admin" body={{ planning_id, name, ordre }} redirect="/manches" />
+          <AddButton url="/manche/admin" body={{ planning_id, name, ordre }} redirect={"/manche/planning/" + planning_id} />
         </div>
       </div>
     </RoleNeedComponent>
