@@ -143,6 +143,22 @@ app.put("/:id/admin", async (req, res) => {
   });
 });
 
+/**
+ * Delete an inscription by planning_id, person_id and manche_id
+ */
+app.delete("/:planning_id/:person_id/:manche_id/admin", async (req, res) => {
+  const { planning_id, person_id, manche_id } = req.params;
+  logger("DELETE /inscription/:planning_id/:person_id/:manche_id, delete inscription ", planning_id, person_id, manche_id);
+
+  myQuery("DELETE FROM inscription WHERE planning_id = $1 AND person_id = $2 AND manche_id = $3 RETURNING *", [planning_id, person_id, manche_id], (err, result) => {
+    if (err) {
+      res.sendStatus(401);
+    } else {
+      res.send(result.rows[0]);
+    }
+  });
+});
+
 module.exports = {
   inscriptionRouter: app,
 };
