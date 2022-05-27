@@ -19,7 +19,7 @@ const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash />, 
     fianlUrl += id ? "/" + id : "";
     fianlUrl += role ? "/" + role : "";
     //console.log( fianlUrl);
-    fetch(fianlUrl, {
+    fetch(process.env.REACT_APP_API_URL + fianlUrl, {
       method: "DELETE",
       credentials: "include",
     })

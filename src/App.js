@@ -38,7 +38,7 @@ function App() {
    * make first fetch with the token to get the person data
    */
   useEffect(() => {
-    fetch("/authentication/", {
+    fetch(process.env.REACT_APP_API_URL + "/authentication/", {
       credentials: "include",
     })
       .then((res) => res.json())
