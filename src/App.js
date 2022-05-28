@@ -38,7 +38,7 @@ import "./styles/App.css";
 
 // for the flash message
 import Bus from "./helpers/Bus";
-window.flash = (message, type = "success") => {
+window.flash = (message = "Your request completed successfully", type = "success") => {
   Bus.emit("flash", { message, type });
 };
 
@@ -55,9 +55,7 @@ function App() {
         //console.log("logged person with token : ", data);
         setPerson(data);
       })
-      .catch((error) => {
-        window.flash(error.message, "danger");
-      });
+      .catch((error) => console.log("No token in cookies"));
   }, []);
 
   /**

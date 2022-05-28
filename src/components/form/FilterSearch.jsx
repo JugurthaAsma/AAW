@@ -1,20 +1,6 @@
 import React from "react";
 import { Search } from "react-bootstrap-icons";
-
-/**
- * Format a item according to its type
- * @param {Object} item - The item to be formatted
- * @param {String} key - The key of the item to be formatted
- * @returns {string} - The formatted item value in lowercase
- */
-const format = (item) => {
-  let result = Object.keys(item).reduce((acc, key) => {
-    acc += item[key] + " ";
-    return acc;
-  }, "");
-  console.log(result);
-  return result.toLowerCase();
-};
+import { format } from "../../helpers/Formatter";
 
 /**
  * @Component FilterSearch - Search input for filtering the list of items.

@@ -21,7 +21,7 @@ const useFetch = (
         const data = await response.json();
         setData(data);
       } catch (error) {
-        window.flash(error.message, "danger");
+        window.flash("Can't get data (" + error.message + ")", "danger");
         setError(error);
       } finally {
         setLoading(false);

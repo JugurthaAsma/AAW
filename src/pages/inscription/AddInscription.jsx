@@ -15,7 +15,7 @@ const AddInscription = () => {
         <MySelect url="/planning" setData={setPlanning_id} placeholder="Select the planning" />
       </div>
       <div className="d-flex mt-5 row" style={{ width: "30rem" }}>
-        <MySelect url={"/manche/planning/" + planning_id} setData={setManche_id} placeholder="Select the manche" />
+        <MySelect url={planning_id && "/manche/planning/" + planning_id} setData={setManche_id} placeholder="Select the manche" isDisabled={!planning_id} />
       </div>
       <div className="d-flex mt-5 row" style={{ width: "30rem" }}>
         <MySelect url="/person" setData={setPerson_id} placeholder="Select the person" />

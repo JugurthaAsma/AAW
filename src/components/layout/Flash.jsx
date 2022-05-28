@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { XCircleFill, CheckCircle, DashCircle, ExclamationTriangle, InfoCircle } from "react-bootstrap-icons";
 import Bus from "../../helpers/Bus";
 
 const Flash = () => {
@@ -12,7 +13,6 @@ const Flash = () => {
       setMessage(message);
       setType(type);
       setTimeout(() => {
-        console.log("hide");
         setShow(false);
       }, 5000);
     });
@@ -20,8 +20,19 @@ const Flash = () => {
 
   return (
     show && (
-      <div className={"flash alert alert-" + type + " alert-dismissible fade show"} role="alert">
-        <h4>{message}</h4>
+      <div className={"flash"}>
+        <div className={"d-flex justify-content-between align-items-center alert alert-" + type}>
+          <div className="fs-3 mx-2">
+            {(type === "success" && <CheckCircle />) || (type === "danger" && <DashCircle />) || (type === "warning" && <ExclamationTriangle />) || (type === "info" && <InfoCircle />)}
+          </div>
+          <div className="fs-5 mx-2">
+            <strong style={{ textTransform: "capitalize" }}>{type} : </strong>
+            {message}
+          </div>
+          <div className="fs-5 mx-2" style={{ cursor: "pointer" }}>
+            <XCircleFill onClick={() => setShow(false)} />
+          </div>
+        </div>
       </div>
     )
   );

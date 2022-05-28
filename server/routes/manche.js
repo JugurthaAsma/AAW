@@ -47,7 +47,7 @@ app.get("/planning/:planning_id", async (req, res) => {
   const { planning_id } = req.params;
   logger("get all manches for a planning ", planning_id);
 
-  myQuery("SELECT * FROM manche WHERE planning_id = $1", [planning_id], (err, result) => {
+  myQuery("SELECT id, planning_id, ordre, name FROM manche WHERE planning_id = $1 order by ordre", [planning_id], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {

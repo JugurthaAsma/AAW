@@ -12,7 +12,7 @@ import { Trash } from "react-bootstrap-icons";
  * @param {JSX} content The content to be displayed inside the button (default: <Trash />)
  * @returns
  */
-const DeleteButton = ({ url, id, role, callback = () => console.log("delete success"), redirect, content = <Trash />, className = "btn btn-danger" }) => {
+const DeleteButton = ({ url, id, role, callback, redirect, content = <Trash />, className = "btn btn-danger", successMessage = "Your deleting request completed successfully" }) => {
   //let navigate = useNavigate();
   const handleDelete = () => {
     let fianlUrl = url;
@@ -26,11 +26,12 @@ const DeleteButton = ({ url, id, role, callback = () => console.log("delete succ
       .then((response) => response.json())
       .then((data) => {
         //console.log("delete ", data, ", redirect to ");
+        window.flash(successMessage);
         // navigate(redirect); // redirect to the same page seems to be buggy (it doesn't remove the row)
         // so we use a callback instead, (callback expected to be the setState of the parent component)
         callback();
       })
-      .catch((error) => window.flash(error.message, "danger"));
+      .catch((error) => window.flash("Can't delete (" + error.message + ")", "danger"));
   };
 
   return (
