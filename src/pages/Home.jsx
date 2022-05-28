@@ -19,7 +19,7 @@ const Home = () => {
         <div className="description">En mode connecté</div>
         <p id="section">Se connecter en tant qu'utilisateur <img className="waving-hand" src={user} alt="user" /> </p>
         <p> Ici, on vous indique ce qu'un utilisateur lambda, qui a créé un compte au préalable, aura comme accès.
-          Un utilisateur n'a aucun droit en écriture, il a seulement un accès en lecture. Pour se connecter en tant qu'utilisateur, vous devez créer un compte 
+          Un utilisateur ne peut que consulter le planning et les inscriptions mais peut décider de rejoindre une manche. Pour se connecter en tant qu'utilisateur, vous devez créer un compte 
           dans le menu "sign up"  en mettant nom et prénom, puis la connexion se fera automatiquement. Si vous décidez de vous déconnecter et vous reconnecter,
           vous avez juste à saisir votre nom et prénom, identique à celui lors de l'inscription.
           Comptes existants: First name: Jugurtha, Last name: Asma  ou First name: Hylia, Last name: Boudahba
