@@ -60,6 +60,7 @@ const ManchesList = () => {
                           planning_id: manche.planning_id,
                         }}
                         content={<PersonPlusFill />}
+                        successMessage="Your Join request completed successfully"
                         redirect="/plannings"
                       />
                     </td>
