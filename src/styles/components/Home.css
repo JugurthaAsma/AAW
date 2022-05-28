@@ -73,3 +73,6 @@ p{
     color: white;
     background-image: linear-gradient(to bottom, #acc8de, #8db4d4, #6e9fcb, #4e8bc2, #2777b8);
 }
+.error{
+    color: red;
+}
