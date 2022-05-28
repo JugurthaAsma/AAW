@@ -28,7 +28,7 @@ app.post("/admin", async (req, res) => {
  */
 app.get("/", async (req, res) => {
   logger("get all plannings");
-  myQuery("SELECT * FROM planning", [], (err, result) => {
+  myQuery("SELECT id, date, name FROM planning", [], (err, result) => {
     if (err) {
       res.sendStatus(401);
     } else {
