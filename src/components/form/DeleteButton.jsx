@@ -30,7 +30,7 @@ const DeleteButton = ({ url, id, role, callback = () => console.log("delete succ
         // so we use a callback instead, (callback expected to be the setState of the parent component)
         callback();
       })
-      .catch((error) => console.log(error));
+      .catch((error) => window.flash(error.message, "danger"));
   };
 
   return (

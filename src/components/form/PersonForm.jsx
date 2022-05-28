@@ -24,7 +24,7 @@ const PersonForm = ({ title, url }) => {
     })
       .then((response) => response.json())
       .then((data) => handleLoginResponse(data))
-      .catch((error) => console.log(error));
+      .catch((error) => window.flash(error.message, "danger"));
   };
 
   /**

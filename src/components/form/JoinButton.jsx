@@ -15,7 +15,7 @@ const JoinButton = ({ url, body, redirect = "/plannings", content = <PersonPlusF
         // console.log("join ", data, ", redirect to ", redirect);
         navigate(redirect);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => window.flash(error.message, "danger"));
   };
 
   return (

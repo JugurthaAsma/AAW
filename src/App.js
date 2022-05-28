@@ -32,8 +32,15 @@ import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/layout/Header";
 import NavBar from "./components/nav/NavBar";
 import Footer from "./components/layout/Footer";
+import Flash from "./components/layout/Flash";
 
 import "./styles/App.css";
+
+// for the flash message
+import Bus from "./helpers/Bus";
+window.flash = (message, type = "success") => {
+  Bus.emit("flash", { message, type });
+};
 
 function App() {
   /**
@@ -47,6 +54,9 @@ function App() {
       .then((data) => {
         //console.log("logged person with token : ", data);
         setPerson(data);
+      })
+      .catch((error) => {
+        window.flash(error.message, "danger");
       });
   }, []);
 
@@ -69,6 +79,7 @@ function App() {
   return (
     <AuthenticationContext.Provider value={AuthenticationContextValue}>
       <div className="App">
+        <Flash />
         <BrowserRouter>
           <Header />
           <main>

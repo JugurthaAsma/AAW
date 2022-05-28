@@ -18,7 +18,7 @@ const EditButton = ({ url, body, redirect, text = "Confirm edit" }) => {
         // console.log("edit ", data, ", redirect to ", redirect);
         navigate(redirect);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => window.flash(error.message, "danger"));
   };
   return (
     <button onClick={handleEdit} className="btn btn-warning">

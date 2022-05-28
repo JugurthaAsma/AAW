@@ -29,7 +29,7 @@ const MySelect = ({ url, setData, ...rest }) => {
     fetch(process.env.REACT_APP_API_URL + url)
       .then((res) => res.json())
       .then((data) => setOptions(formatOptions(data)))
-      .catch((err) => console.log(err));
+      .catch((error) => window.flash(error.message, "danger"));
   }, [url, setData]);
 
   return <Select options={options} onChange={(selectedOption) => setData(selectedOption.value)} isSearchable={true} isClearable={true} {...rest} className="form-select-lg" />;

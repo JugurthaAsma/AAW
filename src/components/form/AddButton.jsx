@@ -17,7 +17,7 @@ const AddButton = ({ url, body, redirect, content = "+" }) => {
         // console.log("add ", data, ", redirect to ", redirect);
         navigate(redirect);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => window.flash(error.message, "danger"));
   };
 
   return (
