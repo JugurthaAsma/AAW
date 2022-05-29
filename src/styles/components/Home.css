@@ -76,3 +76,16 @@ p{
 .error{
     color: red;
 }
+
+.success{
+    color: green;
+}
+
+.imagesHome{
+    border-radius: 10px;
+    height: 550px;
+    width: 950px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
