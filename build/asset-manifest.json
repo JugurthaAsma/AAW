@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ba9edc0.css",
+    "main.js": "/static/js/main.e53e06f0.js",
+    "static/media/hylia.png": "/static/media/hylia.fa67e5d03fc84da45e4a.png",
+    "static/media/jugurtha.png": "/static/media/jugurtha.ec9e459d852be4dcf881.png",
+    "static/media/visitor.png": "/static/media/visitor.3cce5e09d3728d9483d6.png",
+    "static/media/successmsg.png": "/static/media/successmsg.efc651b4cbc00c98cd4e.png",
+    "static/media/errormessage.png": "/static/media/errormessage.03d686be6e1814fa9cad.png",
+    "static/media/filter.png": "/static/media/filter.38edbb796ab26c002475.png",
+    "static/media/see.png": "/static/media/see.e7046c2c582f09ae9c7f.png",
+    "static/media/hand.png": "/static/media/hand.8f26edeaf1c94e098de4.png",
+    "static/media/adminaccount.png": "/static/media/adminaccount.ee17de3961ae21e8a762.png",
+    "static/media/admin.png": "/static/media/admin.9bdc51520eb508a26783.png",
+    "static/media/add.png": "/static/media/add.af24adc07d91f2824cb3.png",
+    "index.html": "/index.html",
+    "main.9ba9edc0.css.map": "/static/css/main.9ba9edc0.css.map",
+    "main.e53e06f0.js.map": "/static/js/main.e53e06f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ba9edc0.css",
+    "static/js/main.e53e06f0.js"
+  ]
+}
