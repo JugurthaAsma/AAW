@@ -39,13 +39,13 @@ There is some examples of features of the project when we visit the home page.
 
     - The header
 
-    - Consult the home page
-    - Consult the about page
+      - Consult the home page
+      - Consult the about page
 
     - The sidebar
 
-    - Consult the plannings
-    - consult the manches
+      - Consult the plannings
+      - consult the manches
 
     - Using the Search input to filter the list of the items in the page (search by the attributes of the item).
     - A Flash message will pop up when sometimes when an action is done or when an error occurs.
